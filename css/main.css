@@ -118,7 +118,6 @@ header img {
     margin: 10px 15px;
 }
 
-
 #container
 {
     min-height: 100%;     
@@ -136,25 +135,49 @@ header img {
 #right {
     float: right;
     width: 300px;
-    background-color: #fff;
+    background-color: #efefef;
+    border-left: 2px solid darkgrey;
     z-index: 50;
     position: absolute;
     bottom: 0;
     right: 0;
     top: 100px;
-    opacity: .8;
+    opacity: .95;
 }
+#controls {
+    height: 40px;
+}
+
 #money, #people, #supplies {
     width: 90%;
-    height:31%;
+    height:30%;
     margin:1%;
     text-align:left;
 }
 
-h3 {
-    font: 20px Arial, #6d6e70;
+.total {
+    float: right;
+    font: 16px Arial, #6d6e70;
 }
 
+h3 {
+    font: 20px Arial, #6d6e70;
+    margin: 6px 0;
+}
+
+#slider {
+    width:90%;
+    margin-left: 14px;
+}
+
+.leaflet-container {
+    background: #efefef;
+}
+
+.iconStack {
+    height: 32px;
+    width: 32px;
+}
 
 
 /* ==========================================================================
