@@ -1,7 +1,8 @@
 [
 	{
+		"ARC_num": "3",
 		"DisasterName": "Costa Rica Floods",
-		"Date": "6/1/99",
+		"Date": "1999-06-01",
 		"Region": "LAC",
 		"Country": "Costa Rica",
 		"DisasterType": "Floods",
@@ -25,8 +26,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "1",
 		"DisasterName": "Ethiopia Drought",
-		"Date": "6/1/99",
+		"Date": "1999-06-01",
 		"Region": "Africa",
 		"Country": "Ethiopia",
 		"DisasterType": "Drought",
@@ -50,8 +52,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "2",
 		"DisasterName": "Mexico Floods",
-		"Date": "6/1/99",
+		"Date": "1999-06-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Floods",
@@ -75,8 +78,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "7",
 		"DisasterName": "Cambodia Floods",
-		"Date": "8/1/99",
+		"Date": "1999-08-01",
 		"Region": "Europe/Asia",
 		"Country": "Cambodia",
 		"DisasterType": "Floods",
@@ -100,8 +104,9 @@
 		"TotalContributions": "25000"
 	},
 	{
+		"ARC_num": "4",
 		"DisasterName": "China Floods",
-		"Date": "8/1/99",
+		"Date": "1999-08-01",
 		"Region": "Europe/Asia",
 		"Country": "China",
 		"DisasterType": "Floods",
@@ -125,8 +130,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "6",
 		"DisasterName": "Nicaragua Volcano",
-		"Date": "8/1/99",
+		"Date": "1999-08-01",
 		"Region": "LAC",
 		"Country": "Nicaragua",
 		"DisasterType": "Volcano",
@@ -150,8 +156,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "5",
 		"DisasterName": "Turkey Earthquake",
-		"Date": "8/1/99",
+		"Date": "1999-08-01",
 		"Region": "Europe/Asia",
 		"Country": "Turkey",
 		"DisasterType": "Earthquake",
@@ -175,8 +182,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "9",
 		"DisasterName": "Bahamas Storm",
-		"Date": "9/1/99",
+		"Date": "1999-09-01",
 		"Region": "LAC",
 		"Country": "Bahamas",
 		"DisasterType": "Storm",
@@ -200,8 +208,9 @@
 		"TotalContributions": "132193"
 	},
 	{
+		"ARC_num": "8",
 		"DisasterName": "Greece Earthquake",
-		"Date": "9/1/99",
+		"Date": "1999-09-01",
 		"Region": "Europe/Asia",
 		"Country": "Greece",
 		"DisasterType": "Earthquake",
@@ -225,8 +234,9 @@
 		"TotalContributions": "80000"
 	},
 	{
+		"ARC_num": "11",
 		"DisasterName": "Japan Industrial",
-		"Date": "9/1/99",
+		"Date": "1999-09-01",
 		"Region": "Europe/Asia",
 		"Country": "Japan",
 		"DisasterType": "Industrial",
@@ -250,8 +260,9 @@
 		"TotalContributions": "200"
 	},
 	{
+		"ARC_num": "12",
 		"DisasterName": "Mexico Earthquake",
-		"Date": "9/1/99",
+		"Date": "1999-09-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Earthquake",
@@ -275,8 +286,9 @@
 		"TotalContributions": "150000"
 	},
 	{
+		"ARC_num": "10",
 		"DisasterName": "Taiwan Earthquake",
-		"Date": "9/1/99",
+		"Date": "1999-09-01",
 		"Region": "Europe/Asia",
 		"Country": "Taiwan",
 		"DisasterType": "Earthquake",
@@ -300,8 +312,9 @@
 		"TotalContributions": "1200000"
 	},
 	{
+		"ARC_num": "16",
 		"DisasterName": "Bangladesh Floods",
-		"Date": "10/1/99",
+		"Date": "1999-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Bangladesh",
 		"DisasterType": "Floods",
@@ -325,8 +338,9 @@
 		"TotalContributions": "25000"
 	},
 	{
+		"ARC_num": "13",
 		"DisasterName": "Mexico Floods",
-		"Date": "10/1/99",
+		"Date": "1999-10-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Floods",
@@ -350,8 +364,9 @@
 		"TotalContributions": "205000"
 	},
 	{
+		"ARC_num": "14",
 		"DisasterName": "Russian Fed. Conflict",
-		"Date": "10/1/99",
+		"Date": "1999-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Russia",
 		"DisasterType": "Conflict",
@@ -375,8 +390,9 @@
 		"TotalContributions": "610134"
 	},
 	{
+		"ARC_num": "15",
 		"DisasterName": "Timor-Leste Conflict",
-		"Date": "10/1/99",
+		"Date": "1999-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Timor",
 		"DisasterType": "Conflict",
@@ -400,8 +416,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "20",
 		"DisasterName": "Antigua Storm",
-		"Date": "11/1/99",
+		"Date": "1999-11-01",
 		"Region": "LAC",
 		"Country": "Antigua",
 		"DisasterType": "Storm",
@@ -425,8 +442,9 @@
 		"TotalContributions": "15000"
 	},
 	{
+		"ARC_num": "20",
 		"DisasterName": "Dominica Storm",
-		"Date": "11/1/99",
+		"Date": "1999-11-01",
 		"Region": "LAC",
 		"Country": "Dominican Republic",
 		"DisasterType": "Storm",
@@ -450,8 +468,9 @@
 		"TotalContributions": "15000"
 	},
 	{
+		"ARC_num": "20",
 		"DisasterName": "Grenada Storm",
-		"Date": "11/1/99",
+		"Date": "1999-11-01",
 		"Region": "LAC",
 		"Country": "Grenada",
 		"DisasterType": "Storm",
@@ -475,8 +494,9 @@
 		"TotalContributions": "9000"
 	},
 	{
+		"ARC_num": "17",
 		"DisasterName": "India Storm",
-		"Date": "11/1/99",
+		"Date": "1999-11-01",
 		"Region": "Europe/Asia",
 		"Country": "India",
 		"DisasterType": "Storm",
@@ -500,8 +520,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "20",
 		"DisasterName": "St. Kitts & Nevis Storm",
-		"Date": "11/1/99",
+		"Date": "1999-11-01",
 		"Region": "LAC",
 		"Country": "St. Kitts & Nevis",
 		"DisasterType": "Storm",
@@ -525,8 +546,9 @@
 		"TotalContributions": "15000"
 	},
 	{
+		"ARC_num": "20",
 		"DisasterName": "St. Maartens Storm",
-		"Date": "11/1/99",
+		"Date": "1999-11-01",
 		"Region": "LAC",
 		"Country": "St. Maartens",
 		"DisasterType": "Storm",
@@ -550,8 +572,9 @@
 		"TotalContributions": "9000"
 	},
 	{
+		"ARC_num": "19",
 		"DisasterName": "Turkey Earthquake",
-		"Date": "11/1/99",
+		"Date": "1999-11-01",
 		"Region": "Europe/Asia",
 		"Country": "Turkey",
 		"DisasterType": "Earthquake",
@@ -575,8 +598,9 @@
 		"TotalContributions": "5153184"
 	},
 	{
+		"ARC_num": "18",
 		"DisasterName": "Vietnam Floods",
-		"Date": "11/1/99",
+		"Date": "1999-11-01",
 		"Region": "Europe/Asia",
 		"Country": "Vietnam",
 		"DisasterType": "Floods",
@@ -600,8 +624,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "21",
 		"DisasterName": "Venezuela Floods",
-		"Date": "12/1/99",
+		"Date": "1999-12-01",
 		"Region": "LAC",
 		"Country": "Venezuela",
 		"DisasterType": "Floods",
@@ -625,8 +650,9 @@
 		"TotalContributions": "1056000"
 	},
 	{
+		"ARC_num": "22",
 		"DisasterName": "Botswana Floods",
-		"Date": "2/1/00",
+		"Date": "2000-02-01",
 		"Region": "Africa",
 		"Country": "Botswana",
 		"DisasterType": "Floods",
@@ -650,8 +676,9 @@
 		"TotalContributions": "23333"
 	},
 	{
+		"ARC_num": "22",
 		"DisasterName": "South Africa Floods",
-		"Date": "2/1/00",
+		"Date": "2000-02-01",
 		"Region": "Africa",
 		"Country": "South Africa",
 		"DisasterType": "Floods",
@@ -675,8 +702,9 @@
 		"TotalContributions": "23333"
 	},
 	{
+		"ARC_num": "22",
 		"DisasterName": "Zimbabwe Floods",
-		"Date": "2/1/00",
+		"Date": "2000-02-01",
 		"Region": "Africa",
 		"Country": "Zimbabwe",
 		"DisasterType": "Floods",
@@ -700,8 +728,9 @@
 		"TotalContributions": "23333"
 	},
 	{
+		"ARC_num": "23",
 		"DisasterName": "Madagascar Floods",
-		"Date": "3/1/00",
+		"Date": "2000-03-01",
 		"Region": "Africa",
 		"Country": "Madagascar",
 		"DisasterType": "Floods",
@@ -725,8 +754,9 @@
 		"TotalContributions": "25000"
 	},
 	{
+		"ARC_num": "24",
 		"DisasterName": "Ethiopia Drought",
-		"Date": "4/1/00",
+		"Date": "2000-04-01",
 		"Region": "Africa",
 		"Country": "Ethiopia",
 		"DisasterType": "Drought",
@@ -750,8 +780,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "25",
 		"DisasterName": "Indonesia Earthquake",
-		"Date": "6/1/00",
+		"Date": "2000-06-01",
 		"Region": "Europe/Asia",
 		"Country": "Indonesia",
 		"DisasterType": "Earthquake",
@@ -775,8 +806,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "27",
 		"DisasterName": "Bangladesh Floods",
-		"Date": "8/1/00",
+		"Date": "2000-08-01",
 		"Region": "Europe/Asia",
 		"Country": "Bangladesh",
 		"DisasterType": "Floods",
@@ -800,8 +832,9 @@
 		"TotalContributions": "25000"
 	},
 	{
+		"ARC_num": "26",
 		"DisasterName": "India Floods",
-		"Date": "8/1/00",
+		"Date": "2000-08-01",
 		"Region": "Europe/Asia",
 		"Country": "India",
 		"DisasterType": "Floods",
@@ -825,8 +858,9 @@
 		"TotalContributions": "389265"
 	},
 	{
+		"ARC_num": "28",
 		"DisasterName": "Cambodia Floods",
-		"Date": "9/1/00",
+		"Date": "2000-09-01",
 		"Region": "Europe/Asia",
 		"Country": "Cambodia",
 		"DisasterType": "Floods",
@@ -850,8 +884,9 @@
 		"TotalContributions": "352704"
 	},
 	{
+		"ARC_num": "29",
 		"DisasterName": "Vietnam Floods",
-		"Date": "9/1/00",
+		"Date": "2000-09-01",
 		"Region": "Europe/Asia",
 		"Country": "Vietnam",
 		"DisasterType": "Floods",
@@ -875,8 +910,9 @@
 		"TotalContributions": "20000"
 	},
 	{
+		"ARC_num": "30",
 		"DisasterName": "Belize Storm",
-		"Date": "10/1/00",
+		"Date": "2000-10-01",
 		"Region": "LAC",
 		"Country": "Belize",
 		"DisasterType": "Storm",
@@ -900,8 +936,9 @@
 		"TotalContributions": "118500"
 	},
 	{
+		"ARC_num": "32",
 		"DisasterName": "Israel Conflict",
-		"Date": "10/1/00",
+		"Date": "2000-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Israel",
 		"DisasterType": "Conflict",
@@ -925,8 +962,9 @@
 		"TotalContributions": "40000"
 	},
 	{
+		"ARC_num": "32",
 		"DisasterName": "Jordan Conflict",
-		"Date": "10/1/00",
+		"Date": "2000-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Jordan",
 		"DisasterType": "Conflict",
@@ -950,8 +988,9 @@
 		"TotalContributions": "172000"
 	},
 	{
+		"ARC_num": "32",
 		"DisasterName": "Palestine Conflict",
-		"Date": "10/1/00",
+		"Date": "2000-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Palestine",
 		"DisasterType": "Conflict",
@@ -975,8 +1014,9 @@
 		"TotalContributions": "90000"
 	},
 	{
+		"ARC_num": "34",
 		"DisasterName": "Austria Miscellaneous",
-		"Date": "11/1/00",
+		"Date": "2000-11-01",
 		"Region": "Europe/Asia",
 		"Country": "Austria",
 		"DisasterType": "Miscellaneous",
@@ -1000,8 +1040,9 @@
 		"TotalContributions": "2578"
 	},
 	{
+		"ARC_num": "35",
 		"DisasterName": "Azerbaijan Earthquake",
-		"Date": "11/1/00",
+		"Date": "2000-11-01",
 		"Region": "Europe/Asia",
 		"Country": "Azerbaijan",
 		"DisasterType": "Earthquake",
@@ -1025,8 +1066,9 @@
 		"TotalContributions": "30500"
 	},
 	{
+		"ARC_num": "33",
 		"DisasterName": "Taiwan Transport",
-		"Date": "11/1/00",
+		"Date": "2000-11-01",
 		"Region": "Europe/Asia",
 		"Country": "Taiwan",
 		"DisasterType": "Transport",
@@ -1050,8 +1092,9 @@
 		"TotalContributions": "7500"
 	},
 	{
+		"ARC_num": "36",
 		"DisasterName": "Sri Lanka Storm",
-		"Date": "12/1/00",
+		"Date": "2000-12-01",
 		"Region": "Europe/Asia",
 		"Country": "Sri Lanka",
 		"DisasterType": "Storm",
@@ -1075,8 +1118,9 @@
 		"TotalContributions": "20000"
 	},
 	{
+		"ARC_num": "39",
 		"DisasterName": "China Storm",
-		"Date": "1/1/01",
+		"Date": "2001-01-01",
 		"Region": "Europe/Asia",
 		"Country": "China",
 		"DisasterType": "Storm",
@@ -1100,8 +1144,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "38",
 		"DisasterName": "El Salvador Earthquake",
-		"Date": "1/1/01",
+		"Date": "2001-01-01",
 		"Region": "LAC",
 		"Country": "El Salvador",
 		"DisasterType": "Earthquake",
@@ -1125,8 +1170,9 @@
 		"TotalContributions": "227500"
 	},
 	{
+		"ARC_num": "40",
 		"DisasterName": "India Earthquake",
-		"Date": "1/1/01",
+		"Date": "2001-01-01",
 		"Region": "Europe/Asia",
 		"Country": "India",
 		"DisasterType": "Earthquake",
@@ -1150,8 +1196,9 @@
 		"TotalContributions": "14000000"
 	},
 	{
+		"ARC_num": "37",
 		"DisasterName": "South Africa Epidemic",
-		"Date": "1/1/01",
+		"Date": "2001-01-01",
 		"Region": "Africa",
 		"Country": "South Africa",
 		"DisasterType": "Epidemic",
@@ -1175,8 +1222,9 @@
 		"TotalContributions": "25000"
 	},
 	{
+		"ARC_num": "41",
 		"DisasterName": "El Salvador Earthquake",
-		"Date": "2/1/01",
+		"Date": "2001-02-01",
 		"Region": "LAC",
 		"Country": "El Salvador",
 		"DisasterType": "Earthquake",
@@ -1200,8 +1248,9 @@
 		"TotalContributions": "690000"
 	},
 	{
+		"ARC_num": "43",
 		"DisasterName": "Malawi Floods",
-		"Date": "2/1/01",
+		"Date": "2001-02-01",
 		"Region": "Africa",
 		"Country": "Malawi",
 		"DisasterType": "Floods",
@@ -1225,8 +1274,9 @@
 		"TotalContributions": "174000"
 	},
 	{
+		"ARC_num": "42",
 		"DisasterName": "Mozambique Floods",
-		"Date": "2/1/01",
+		"Date": "2001-02-01",
 		"Region": "Africa",
 		"Country": "Mozambique",
 		"DisasterType": "Floods",
@@ -1250,8 +1300,9 @@
 		"TotalContributions": "250000"
 	},
 	{
+		"ARC_num": "44",
 		"DisasterName": "Bolivia Floods",
-		"Date": "3/1/01",
+		"Date": "2001-03-01",
 		"Region": "LAC",
 		"Country": "Bolivia",
 		"DisasterType": "Floods",
@@ -1275,8 +1326,9 @@
 		"TotalContributions": "15000"
 	},
 	{
+		"ARC_num": "45",
 		"DisasterName": "Peru Floods",
-		"Date": "3/1/01",
+		"Date": "2001-03-01",
 		"Region": "LAC",
 		"Country": "Peru",
 		"DisasterType": "Floods",
@@ -1300,8 +1352,9 @@
 		"TotalContributions": "15000"
 	},
 	{
+		"ARC_num": "46",
 		"DisasterName": "Canada Transport",
-		"Date": "4/1/01",
+		"Date": "2001-04-01",
 		"Region": "North America",
 		"Country": "Canada",
 		"DisasterType": "Transport",
@@ -1325,8 +1378,9 @@
 		"TotalContributions": "1000"
 	},
 	{
+		"ARC_num": "47",
 		"DisasterName": "Russian Fed. Floods",
-		"Date": "5/1/01",
+		"Date": "2001-05-01",
 		"Region": "Europe/Asia",
 		"Country": "Russia",
 		"DisasterType": "Floods",
@@ -1350,8 +1404,9 @@
 		"TotalContributions": "25000"
 	},
 	{
+		"ARC_num": "49",
 		"DisasterName": "Bosnia Floods",
-		"Date": "6/1/01",
+		"Date": "2001-06-01",
 		"Region": "Europe/Asia",
 		"Country": "Bosnia and Herzegovina",
 		"DisasterType": "Floods",
@@ -1375,8 +1430,9 @@
 		"TotalContributions": "18000"
 	},
 	{
+		"ARC_num": "48",
 		"DisasterName": "Macedonia Conflict",
-		"Date": "6/1/01",
+		"Date": "2001-06-01",
 		"Region": "Europe/Asia",
 		"Country": "Macedonia",
 		"DisasterType": "Conflict",
@@ -1400,8 +1456,9 @@
 		"TotalContributions": "20700"
 	},
 	{
+		"ARC_num": "50",
 		"DisasterName": "Peru Earthquake",
-		"Date": "6/1/01",
+		"Date": "2001-06-01",
 		"Region": "LAC",
 		"Country": "Peru",
 		"DisasterType": "Earthquake",
@@ -1425,8 +1482,9 @@
 		"TotalContributions": "699130"
 	},
 	{
+		"ARC_num": "51",
 		"DisasterName": "India Floods",
-		"Date": "7/1/01",
+		"Date": "2001-07-01",
 		"Region": "Europe/Asia",
 		"Country": "India",
 		"DisasterType": "Floods",
@@ -1450,8 +1508,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "52",
 		"DisasterName": "El Salvador Drought",
-		"Date": "8/1/01",
+		"Date": "2001-08-01",
 		"Region": "LAC",
 		"Country": "El Salvador",
 		"DisasterType": "Drought",
@@ -1475,8 +1534,9 @@
 		"TotalContributions": "25000"
 	},
 	{
+		"ARC_num": "52",
 		"DisasterName": "Guatemala Drought",
-		"Date": "8/1/01",
+		"Date": "2001-08-01",
 		"Region": "LAC",
 		"Country": "Guatemala",
 		"DisasterType": "Drought",
@@ -1500,8 +1560,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "52",
 		"DisasterName": "Honduras Drought",
-		"Date": "8/1/01",
+		"Date": "2001-08-01",
 		"Region": "LAC",
 		"Country": "Honduras",
 		"DisasterType": "Drought",
@@ -1525,8 +1586,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "52",
 		"DisasterName": "Nicaragua Drought",
-		"Date": "8/1/01",
+		"Date": "2001-08-01",
 		"Region": "LAC",
 		"Country": "Nicaragua",
 		"DisasterType": "Drought",
@@ -1550,8 +1612,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "54",
 		"DisasterName": "Afghanistan Conflict",
-		"Date": "9/1/01",
+		"Date": "2001-09-01",
 		"Region": "Europe/Asia",
 		"Country": "Afghanistan",
 		"DisasterType": "Conflict",
@@ -1575,8 +1638,9 @@
 		"TotalContributions": "12000000"
 	},
 	{
+		"ARC_num": "53",
 		"DisasterName": "Ecuador Volcano",
-		"Date": "9/1/01",
+		"Date": "2001-09-01",
 		"Region": "LAC",
 		"Country": "Ecuador",
 		"DisasterType": "Volcano",
@@ -1600,8 +1664,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "54",
 		"DisasterName": "Iran Conflict",
-		"Date": "9/1/01",
+		"Date": "2001-09-01",
 		"Region": "Europe/Asia",
 		"Country": "Iran",
 		"DisasterType": "Conflict",
@@ -1625,8 +1690,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "56",
 		"DisasterName": "Mexico Transport",
-		"Date": "9/1/01",
+		"Date": "2001-09-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Transport",
@@ -1650,8 +1716,9 @@
 		"TotalContributions": "15000"
 	},
 	{
+		"ARC_num": "54",
 		"DisasterName": "Pakistan Conflict",
-		"Date": "9/1/01",
+		"Date": "2001-09-01",
 		"Region": "Europe/Asia",
 		"Country": "Pakistan",
 		"DisasterType": "Conflict",
@@ -1675,8 +1742,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "54",
 		"DisasterName": "Turkmenistan Conflict",
-		"Date": "9/1/01",
+		"Date": "2001-09-01",
 		"Region": "Europe/Asia",
 		"Country": "Turkmenistan",
 		"DisasterType": "Conflict",
@@ -1700,8 +1768,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "55",
 		"DisasterName": "US Terrorism",
-		"Date": "9/1/01",
+		"Date": "2001-09-01",
 		"Region": "North America",
 		"Country": "United States of America",
 		"DisasterType": "Terrorism",
@@ -1725,8 +1794,9 @@
 		"TotalContributions": "3515479"
 	},
 	{
+		"ARC_num": "54",
 		"DisasterName": "Uzbekistan Conflict",
-		"Date": "9/1/01",
+		"Date": "2001-09-01",
 		"Region": "Europe/Asia",
 		"Country": "Uzbekistan",
 		"DisasterType": "Conflict",
@@ -1750,8 +1820,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "58",
 		"DisasterName": "Belize Meteorological",
-		"Date": "10/1/01",
+		"Date": "2001-10-01",
 		"Region": "LAC",
 		"Country": "Belize",
 		"DisasterType": "Storm",
@@ -1775,8 +1846,9 @@
 		"TotalContributions": "97982"
 	},
 	{
+		"ARC_num": "59",
 		"DisasterName": "Belize Transport",
-		"Date": "10/1/01",
+		"Date": "2001-10-01",
 		"Region": "LAC",
 		"Country": "Belize",
 		"DisasterType": "Transport",
@@ -1800,8 +1872,9 @@
 		"TotalContributions": "4400"
 	},
 	{
+		"ARC_num": "60",
 		"DisasterName": "Honduras Storm",
-		"Date": "10/1/01",
+		"Date": "2001-10-01",
 		"Region": "LAC",
 		"Country": "Honduras",
 		"DisasterType": "Storm",
@@ -1825,8 +1898,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "57",
 		"DisasterName": "Mexico Storm",
-		"Date": "10/1/01",
+		"Date": "2001-10-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Storm",
@@ -1850,8 +1924,9 @@
 		"TotalContributions": "25000"
 	},
 	{
+		"ARC_num": "61",
 		"DisasterName": "Bahamas Storm",
-		"Date": "11/1/01",
+		"Date": "2001-11-01",
 		"Region": "LAC",
 		"Country": "Bahamas",
 		"DisasterType": "Storm",
@@ -1875,8 +1950,9 @@
 		"TotalContributions": "5000"
 	},
 	{
+		"ARC_num": "60",
 		"DisasterName": "Cuba Storm",
-		"Date": "11/1/01",
+		"Date": "2001-11-01",
 		"Region": "LAC",
 		"Country": "Cuba",
 		"DisasterType": "Storm",
@@ -1900,8 +1976,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "60",
 		"DisasterName": "Jamaica Storm",
-		"Date": "11/1/01",
+		"Date": "2001-11-01",
 		"Region": "LAC",
 		"Country": "Jamaica",
 		"DisasterType": "Storm",
@@ -1925,8 +2002,9 @@
 		"TotalContributions": "5000"
 	},
 	{
+		"ARC_num": "60",
 		"DisasterName": "Nicaragua Storm",
-		"Date": "11/1/01",
+		"Date": "2001-11-01",
 		"Region": "LAC",
 		"Country": "Nicaragua",
 		"DisasterType": "Storm",
@@ -1950,8 +2028,9 @@
 		"TotalContributions": "60000"
 	},
 	{
+		"ARC_num": "62",
 		"DisasterName": "US Transport",
-		"Date": "11/1/01",
+		"Date": "2001-11-01",
 		"Region": "North America",
 		"Country": "United States of America",
 		"DisasterType": "Transport",
@@ -1975,8 +2054,9 @@
 		"TotalContributions": "500"
 	},
 	{
+		"ARC_num": "64",
 		"DisasterName": "Albania Storm",
-		"Date": "1/1/02",
+		"Date": "2002-01-01",
 		"Region": "Europe/Asia",
 		"Country": "Albania",
 		"DisasterType": "Storm",
@@ -2000,8 +2080,9 @@
 		"TotalContributions": "71832"
 	},
 	{
+		"ARC_num": "63",
 		"DisasterName": "Cambodia Miscellaneous",
-		"Date": "1/1/02",
+		"Date": "2002-01-01",
 		"Region": "Europe/Asia",
 		"Country": "Cambodia",
 		"DisasterType": "Miscellaneous",
@@ -2025,8 +2106,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "65",
 		"DisasterName": "DR Congo Volcano",
-		"Date": "1/1/02",
+		"Date": "2002-01-01",
 		"Region": "Africa",
 		"Country": "Democratic Republic of the Congo",
 		"DisasterType": "Volcano",
@@ -2050,8 +2132,9 @@
 		"TotalContributions": "45000"
 	},
 	{
+		"ARC_num": "66",
 		"DisasterName": "Nigeria Industrial",
-		"Date": "1/1/02",
+		"Date": "2002-01-01",
 		"Region": "Africa",
 		"Country": "Nigeria",
 		"DisasterType": "Industrial",
@@ -2075,8 +2158,9 @@
 		"TotalContributions": "21612"
 	},
 	{
+		"ARC_num": "67",
 		"DisasterName": "Turkey Earthquake",
-		"Date": "2/1/02",
+		"Date": "2002-02-01",
 		"Region": "Europe/Asia",
 		"Country": "Turkey",
 		"DisasterType": "Earthquake",
@@ -2100,8 +2184,9 @@
 		"TotalContributions": "350424"
 	},
 	{
+		"ARC_num": "69",
 		"DisasterName": "Afghanistan Earthquake",
-		"Date": "3/1/02",
+		"Date": "2002-03-01",
 		"Region": "Europe/Asia",
 		"Country": "Afghanistan",
 		"DisasterType": "Earthquake",
@@ -2125,8 +2210,9 @@
 		"TotalContributions": "104805"
 	},
 	{
+		"ARC_num": "68",
 		"DisasterName": "Bolivia Floods",
-		"Date": "3/1/02",
+		"Date": "2002-03-01",
 		"Region": "LAC",
 		"Country": "Bolivia",
 		"DisasterType": "Floods",
@@ -2150,8 +2236,9 @@
 		"TotalContributions": "11700"
 	},
 	{
+		"ARC_num": "70",
 		"DisasterName": "Jordan Conflict",
-		"Date": "4/1/02",
+		"Date": "2002-04-01",
 		"Region": "Europe/Asia",
 		"Country": "Jordan",
 		"DisasterType": "Conflict",
@@ -2175,8 +2262,9 @@
 		"TotalContributions": "225000"
 	},
 	{
+		"ARC_num": "71",
 		"DisasterName": "Costa Rica Floods",
-		"Date": "5/1/02",
+		"Date": "2002-05-01",
 		"Region": "LAC",
 		"Country": "Costa Rica",
 		"DisasterType": "Floods",
@@ -2200,8 +2288,9 @@
 		"TotalContributions": "2000"
 	},
 	{
+		"ARC_num": "72",
 		"DisasterName": "Kenya Floods",
-		"Date": "5/1/02",
+		"Date": "2002-05-01",
 		"Region": "Africa",
 		"Country": "Kenya",
 		"DisasterType": "Floods",
@@ -2225,8 +2314,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "73",
 		"DisasterName": "Malawi Food Insecurity",
-		"Date": "5/1/02",
+		"Date": "2002-05-01",
 		"Region": "Africa",
 		"Country": "Malawi",
 		"DisasterType": "Food Insecurity",
@@ -2250,8 +2340,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "71",
 		"DisasterName": "Panama Floods",
-		"Date": "5/1/02",
+		"Date": "2002-05-01",
 		"Region": "LAC",
 		"Country": "Panama",
 		"DisasterType": "Floods",
@@ -2275,8 +2366,9 @@
 		"TotalContributions": "2000"
 	},
 	{
+		"ARC_num": "76",
 		"DisasterName": "China Floods",
-		"Date": "6/1/02",
+		"Date": "2002-06-01",
 		"Region": "Europe/Asia",
 		"Country": "China",
 		"DisasterType": "Floods",
@@ -2300,8 +2392,9 @@
 		"TotalContributions": "75000"
 	},
 	{
+		"ARC_num": "76",
 		"DisasterName": "China Floods",
-		"Date": "6/1/02",
+		"Date": "2002-06-01",
 		"Region": "Europe/Asia",
 		"Country": "China",
 		"DisasterType": "Floods",
@@ -2325,8 +2418,9 @@
 		"TotalContributions": "25000"
 	},
 	{
+		"ARC_num": "76",
 		"DisasterName": "China Floods",
-		"Date": "6/1/02",
+		"Date": "2002-06-01",
 		"Region": "Europe/Asia",
 		"Country": "China",
 		"DisasterType": "Floods",
@@ -2350,8 +2444,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "74",
 		"DisasterName": "Nicaragua  Floods",
-		"Date": "6/1/02",
+		"Date": "2002-06-01",
 		"Region": "LAC",
 		"Country": "Nicaragua",
 		"DisasterType": "Floods",
@@ -2375,8 +2470,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "75",
 		"DisasterName": "Syria Miscellaneous",
-		"Date": "6/1/02",
+		"Date": "2002-06-01",
 		"Region": "Europe/Asia",
 		"Country": "Syria",
 		"DisasterType": "Miscellaneous",
@@ -2400,8 +2496,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "80",
 		"DisasterName": "Bolivia Storm",
-		"Date": "7/1/02",
+		"Date": "2002-07-01",
 		"Region": "LAC",
 		"Country": "Bolivia",
 		"DisasterType": "Storm",
@@ -2425,8 +2522,9 @@
 		"TotalContributions": "5000"
 	},
 	{
+		"ARC_num": "78",
 		"DisasterName": "FS Micronesia Storm",
-		"Date": "7/1/02",
+		"Date": "2002-07-01",
 		"Region": "Europe/Asia",
 		"Country": "FS Micronesia",
 		"DisasterType": "Storm",
@@ -2450,8 +2548,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "79",
 		"DisasterName": "Peru Storm",
-		"Date": "7/1/02",
+		"Date": "2002-07-01",
 		"Region": "LAC",
 		"Country": "Peru",
 		"DisasterType": "Storm",
@@ -2475,8 +2574,9 @@
 		"TotalContributions": "5000"
 	},
 	{
+		"ARC_num": "77",
 		"DisasterName": "Russian Fed. Floods",
-		"Date": "7/1/02",
+		"Date": "2002-07-01",
 		"Region": "Europe/Asia",
 		"Country": "Russia",
 		"DisasterType": "Floods",
@@ -2500,8 +2600,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "81",
 		"DisasterName": "Venezuela Floods",
-		"Date": "7/1/02",
+		"Date": "2002-07-01",
 		"Region": "LAC",
 		"Country": "Venezuela",
 		"DisasterType": "Floods",
@@ -2525,8 +2626,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "83",
 		"DisasterName": "Austria Floods",
-		"Date": "8/1/02",
+		"Date": "2002-08-01",
 		"Region": "Europe/Asia",
 		"Country": "Austria",
 		"DisasterType": "Floods",
@@ -2550,8 +2652,9 @@
 		"TotalContributions": "25000"
 	},
 	{
+		"ARC_num": "83",
 		"DisasterName": "Czech Republic Floods",
-		"Date": "8/1/02",
+		"Date": "2002-08-01",
 		"Region": "Europe/Asia",
 		"Country": "Czech Republic",
 		"DisasterType": "Floods",
@@ -2575,8 +2678,9 @@
 		"TotalContributions": "90000"
 	},
 	{
+		"ARC_num": "83",
 		"DisasterName": "Germany Floods",
-		"Date": "8/1/02",
+		"Date": "2002-08-01",
 		"Region": "Europe/Asia",
 		"Country": "Germany",
 		"DisasterType": "Floods",
@@ -2600,8 +2704,9 @@
 		"TotalContributions": "75000"
 	},
 	{
+		"ARC_num": "83",
 		"DisasterName": "Hungary Floods",
-		"Date": "8/1/02",
+		"Date": "2002-08-01",
 		"Region": "Europe/Asia",
 		"Country": "Hungary",
 		"DisasterType": "Floods",
@@ -2625,8 +2730,9 @@
 		"TotalContributions": "35000"
 	},
 	{
+		"ARC_num": "82",
 		"DisasterName": "India Floods",
-		"Date": "8/1/02",
+		"Date": "2002-08-01",
 		"Region": "Europe/Asia",
 		"Country": "India",
 		"DisasterType": "Floods",
@@ -2650,8 +2756,9 @@
 		"TotalContributions": "232253"
 	},
 	{
+		"ARC_num": "83",
 		"DisasterName": "Romania Floods",
-		"Date": "8/1/02",
+		"Date": "2002-08-01",
 		"Region": "Europe/Asia",
 		"Country": "Romania",
 		"DisasterType": "Floods",
@@ -2675,8 +2782,9 @@
 		"TotalContributions": "115140"
 	},
 	{
+		"ARC_num": "83",
 		"DisasterName": "Slovakia Floods",
-		"Date": "8/1/02",
+		"Date": "2002-08-01",
 		"Region": "Europe/Asia",
 		"Country": "Slovakia",
 		"DisasterType": "Floods",
@@ -2700,8 +2808,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "84",
 		"DisasterName": "Mexico Storm",
-		"Date": "9/1/02",
+		"Date": "2002-09-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Storm",
@@ -2725,8 +2834,9 @@
 		"TotalContributions": "60000"
 	},
 	{
+		"ARC_num": "89",
 		"DisasterName": "Australia Terrorism",
-		"Date": "10/1/02",
+		"Date": "2002-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Australia",
 		"DisasterType": "Terrorism",
@@ -2750,8 +2860,9 @@
 		"TotalContributions": "237899"
 	},
 	{
+		"ARC_num": "91",
 		"DisasterName": "Cuba Storm",
-		"Date": "10/1/02",
+		"Date": "2002-10-01",
 		"Region": "LAC",
 		"Country": "Cuba",
 		"DisasterType": "Storm",
@@ -2775,8 +2886,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "89",
 		"DisasterName": "Indonesia Terrorism",
-		"Date": "10/1/02",
+		"Date": "2002-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Indonesia",
 		"DisasterType": "Terrorism",
@@ -2800,8 +2912,9 @@
 		"TotalContributions": "46670"
 	},
 	{
+		"ARC_num": "88",
 		"DisasterName": "Italy Earthquake",
-		"Date": "10/1/02",
+		"Date": "2002-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Italy",
 		"DisasterType": "Earthquake",
@@ -2825,8 +2938,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "92",
 		"DisasterName": "Lesotho Food Insecurity",
-		"Date": "10/1/02",
+		"Date": "2002-10-01",
 		"Region": "Africa",
 		"Country": "Lesotho",
 		"DisasterType": "Food Insecurity",
@@ -2850,8 +2964,9 @@
 		"TotalContributions": "25000"
 	},
 	{
+		"ARC_num": "86",
 		"DisasterName": "Mexico Storm",
-		"Date": "10/1/02",
+		"Date": "2002-10-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Storm",
@@ -2875,8 +2990,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "85",
 		"DisasterName": "Paraguay Drought",
-		"Date": "10/1/02",
+		"Date": "2002-10-01",
 		"Region": "LAC",
 		"Country": "Paraguay",
 		"DisasterType": "Drought",
@@ -2900,8 +3016,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "87",
 		"DisasterName": "South Korea Storm",
-		"Date": "10/1/02",
+		"Date": "2002-10-01",
 		"Region": "Europe/Asia",
 		"Country": "South Korea",
 		"DisasterType": "Storm",
@@ -2925,8 +3042,9 @@
 		"TotalContributions": "130000"
 	},
 	{
+		"ARC_num": "90",
 		"DisasterName": "Vietnam Miscellaneous",
-		"Date": "10/1/02",
+		"Date": "2002-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Vietnam",
 		"DisasterType": "Miscellaneous",
@@ -2950,8 +3068,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "93",
 		"DisasterName": "Costa Rica Floods",
-		"Date": "12/1/02",
+		"Date": "2002-12-01",
 		"Region": "LAC",
 		"Country": "Costa Rica",
 		"DisasterType": "Floods",
@@ -2975,8 +3094,9 @@
 		"TotalContributions": "1000"
 	},
 	{
+		"ARC_num": "95",
 		"DisasterName": "Kenya Epidemic",
-		"Date": "12/1/02",
+		"Date": "2002-12-01",
 		"Region": "Africa",
 		"Country": "Kenya",
 		"DisasterType": "Epidemic",
@@ -3000,8 +3120,9 @@
 		"TotalContributions": "5000"
 	},
 	{
+		"ARC_num": "94",
 		"DisasterName": "Panama Floods",
-		"Date": "12/1/02",
+		"Date": "2002-12-01",
 		"Region": "LAC",
 		"Country": "Panama",
 		"DisasterType": "Floods",
@@ -3025,8 +3146,9 @@
 		"TotalContributions": "1345"
 	},
 	{
+		"ARC_num": "97",
 		"DisasterName": "Mexico Earthquake",
-		"Date": "1/1/03",
+		"Date": "2003-01-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Earthquake",
@@ -3050,8 +3172,9 @@
 		"TotalContributions": "350000"
 	},
 	{
+		"ARC_num": "97",
 		"DisasterName": "Mexico Earthquake",
-		"Date": "1/1/03",
+		"Date": "2003-01-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Earthquake",
@@ -3075,8 +3198,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "96",
 		"DisasterName": "Solomon Islands Storm",
-		"Date": "1/1/03",
+		"Date": "2003-01-01",
 		"Region": "Europe/Asia",
 		"Country": "Solomon Islands",
 		"DisasterType": "Storm",
@@ -3100,8 +3224,9 @@
 		"TotalContributions": "7242"
 	},
 	{
+		"ARC_num": "99",
 		"DisasterName": "China Earthquake",
-		"Date": "2/1/03",
+		"Date": "2003-02-01",
 		"Region": "Europe/Asia",
 		"Country": "China",
 		"DisasterType": "Earthquake",
@@ -3125,8 +3250,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "98",
 		"DisasterName": "South Korea Transport",
-		"Date": "2/1/03",
+		"Date": "2003-02-01",
 		"Region": "Europe/Asia",
 		"Country": "South Korea",
 		"DisasterType": "Transport",
@@ -3150,8 +3276,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "100",
 		"DisasterName": "Iraq Conflict",
-		"Date": "3/1/03",
+		"Date": "2003-03-01",
 		"Region": "Europe/Asia",
 		"Country": "Iraq",
 		"DisasterType": "Conflict",
@@ -3175,8 +3302,9 @@
 		"TotalContributions": "421694"
 	},
 	{
+		"ARC_num": "100",
 		"DisasterName": "Jordan Conflict",
-		"Date": "3/1/03",
+		"Date": "2003-03-01",
 		"Region": "Europe/Asia",
 		"Country": "Jordan",
 		"DisasterType": "Conflict",
@@ -3200,8 +3328,9 @@
 		"TotalContributions": "32812"
 	},
 	{
+		"ARC_num": "100",
 		"DisasterName": "Syria Conflict",
-		"Date": "3/1/03",
+		"Date": "2003-03-01",
 		"Region": "Europe/Asia",
 		"Country": "Syria",
 		"DisasterType": "Conflict",
@@ -3225,8 +3354,9 @@
 		"TotalContributions": "15000"
 	},
 	{
+		"ARC_num": "100",
 		"DisasterName": "Turkey Conflict",
-		"Date": "3/1/03",
+		"Date": "2003-03-01",
 		"Region": "Europe/Asia",
 		"Country": "Turkey",
 		"DisasterType": "Conflict",
@@ -3250,8 +3380,9 @@
 		"TotalContributions": "17812"
 	},
 	{
+		"ARC_num": "108",
 		"DisasterName": "Algeria Earthquake",
-		"Date": "5/1/03",
+		"Date": "2003-05-01",
 		"Region": "Africa",
 		"Country": "Algeria",
 		"DisasterType": "Earthquake",
@@ -3275,8 +3406,9 @@
 		"TotalContributions": "65870"
 	},
 	{
+		"ARC_num": "101",
 		"DisasterName": "Argentina Floods",
-		"Date": "5/1/03",
+		"Date": "2003-05-01",
 		"Region": "LAC",
 		"Country": "Argentina",
 		"DisasterType": "Floods",
@@ -3300,8 +3432,9 @@
 		"TotalContributions": "15000"
 	},
 	{
+		"ARC_num": "103",
 		"DisasterName": "China Epidemic",
-		"Date": "5/1/03",
+		"Date": "2003-05-01",
 		"Region": "Europe/Asia",
 		"Country": "China",
 		"DisasterType": "Epidemic",
@@ -3325,8 +3458,9 @@
 		"TotalContributions": "32500"
 	},
 	{
+		"ARC_num": "103",
 		"DisasterName": "China Epidemic",
-		"Date": "5/1/03",
+		"Date": "2003-05-01",
 		"Region": "Europe/Asia",
 		"Country": "China",
 		"DisasterType": "Epidemic",
@@ -3350,8 +3484,9 @@
 		"TotalContributions": "370642"
 	},
 	{
+		"ARC_num": "103",
 		"DisasterName": "Hong Kong Epidemic",
-		"Date": "5/1/03",
+		"Date": "2003-05-01",
 		"Region": "Europe/Asia",
 		"Country": "Hong Kong",
 		"DisasterType": "Epidemic",
@@ -3375,8 +3510,9 @@
 		"TotalContributions": "60000"
 	},
 	{
+		"ARC_num": "104",
 		"DisasterName": "Sri Lanka Floods",
-		"Date": "5/1/03",
+		"Date": "2003-05-01",
 		"Region": "Europe/Asia",
 		"Country": "Sri Lanka",
 		"DisasterType": "Floods",
@@ -3400,8 +3536,9 @@
 		"TotalContributions": "21400"
 	},
 	{
+		"ARC_num": "102",
 		"DisasterName": "Turkey Earthquake",
-		"Date": "5/1/03",
+		"Date": "2003-05-01",
 		"Region": "Europe/Asia",
 		"Country": "Turkey",
 		"DisasterType": "Earthquake",
@@ -3425,8 +3562,9 @@
 		"TotalContributions": "331380"
 	},
 	{
+		"ARC_num": "105",
 		"DisasterName": "Panama Floods",
-		"Date": "7/1/03",
+		"Date": "2003-07-01",
 		"Region": "LAC",
 		"Country": "Panama",
 		"DisasterType": "Floods",
@@ -3450,8 +3588,9 @@
 		"TotalContributions": "16700"
 	},
 	{
+		"ARC_num": "109",
 		"DisasterName": "Liberia Conflict",
-		"Date": "8/1/03",
+		"Date": "2003-08-01",
 		"Region": "Africa",
 		"Country": "Liberia",
 		"DisasterType": "Conflict",
@@ -3475,8 +3614,9 @@
 		"TotalContributions": "35027"
 	},
 	{
+		"ARC_num": "106",
 		"DisasterName": "Canada Wildfire",
-		"Date": "9/1/03",
+		"Date": "2003-09-01",
 		"Region": "North America",
 		"Country": "Canada",
 		"DisasterType": "Wildfire",
@@ -3500,8 +3640,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "110",
 		"DisasterName": "Mexico Floods",
-		"Date": "9/1/03",
+		"Date": "2003-09-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Floods",
@@ -3525,8 +3666,9 @@
 		"TotalContributions": "10500"
 	},
 	{
+		"ARC_num": "107",
 		"DisasterName": "Dominican Republic Earthquake",
-		"Date": "10/1/03",
+		"Date": "2003-10-01",
 		"Region": "LAC",
 		"Country": "Dominican Republic",
 		"DisasterType": "Earthquake",
@@ -3550,8 +3692,9 @@
 		"TotalContributions": "25000"
 	},
 	{
+		"ARC_num": "111",
 		"DisasterName": "South Korea Storm",
-		"Date": "10/1/03",
+		"Date": "2003-10-01",
 		"Region": "Europe/Asia",
 		"Country": "South Korea",
 		"DisasterType": "Storm",
@@ -3575,8 +3718,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "112",
 		"DisasterName": "Dominican Republic Floods",
-		"Date": "11/1/03",
+		"Date": "2003-11-01",
 		"Region": "LAC",
 		"Country": "Dominican Republic",
 		"DisasterType": "Floods",
@@ -3600,8 +3744,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "112",
 		"DisasterName": "Dominican Republic Floods",
-		"Date": "11/1/03",
+		"Date": "2003-11-01",
 		"Region": "LAC",
 		"Country": "Dominican Republic",
 		"DisasterType": "Floods",
@@ -3625,8 +3770,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "113",
 		"DisasterName": "Iran Earthquake",
-		"Date": "12/1/03",
+		"Date": "2003-12-01",
 		"Region": "Europe/Asia",
 		"Country": "Iran",
 		"DisasterType": "Earthquake",
@@ -3650,8 +3796,9 @@
 		"TotalContributions": "1175802"
 	},
 	{
+		"ARC_num": "113",
 		"DisasterName": "Iran Earthquake",
-		"Date": "12/1/03",
+		"Date": "2003-12-01",
 		"Region": "Europe/Asia",
 		"Country": "Iran",
 		"DisasterType": "Earthquake",
@@ -3675,8 +3822,9 @@
 		"TotalContributions": "19975"
 	},
 	{
+		"ARC_num": "113",
 		"DisasterName": "Iran Earthquake",
-		"Date": "12/1/03",
+		"Date": "2003-12-01",
 		"Region": "Europe/Asia",
 		"Country": "Iran",
 		"DisasterType": "Earthquake",
@@ -3700,8 +3848,9 @@
 		"TotalContributions": "60000"
 	},
 	{
+		"ARC_num": "114",
 		"DisasterName": "Panama Earthquake",
-		"Date": "12/1/03",
+		"Date": "2003-12-01",
 		"Region": "LAC",
 		"Country": "Panama",
 		"DisasterType": "Earthquake",
@@ -3725,8 +3874,9 @@
 		"TotalContributions": "6178"
 	},
 	{
+		"ARC_num": "115",
 		"DisasterName": "North Korea Transport",
-		"Date": "4/1/04",
+		"Date": "2004-04-01",
 		"Region": "Europe/Asia",
 		"Country": "North Korea",
 		"DisasterType": "Transport",
@@ -3750,8 +3900,9 @@
 		"TotalContributions": "110000"
 	},
 	{
+		"ARC_num": "116",
 		"DisasterName": "Dominican Republic Floods",
-		"Date": "5/1/04",
+		"Date": "2004-05-01",
 		"Region": "LAC",
 		"Country": "Dominican Republic",
 		"DisasterType": "Floods",
@@ -3775,8 +3926,9 @@
 		"TotalContributions": "220135"
 	},
 	{
+		"ARC_num": "116",
 		"DisasterName": "Haiti Floods",
-		"Date": "5/1/04",
+		"Date": "2004-05-01",
 		"Region": "LAC",
 		"Country": "Haiti",
 		"DisasterType": "Floods",
@@ -3800,8 +3952,9 @@
 		"TotalContributions": "44558"
 	},
 	{
+		"ARC_num": "117",
 		"DisasterName": "Jamaica Conflict",
-		"Date": "5/1/04",
+		"Date": "2004-05-01",
 		"Region": "LAC",
 		"Country": "Jamaica",
 		"DisasterType": "Conflict",
@@ -3825,8 +3978,9 @@
 		"TotalContributions": "3000"
 	},
 	{
+		"ARC_num": "116",
 		"DisasterName": "Malawi Epidemic",
-		"Date": "5/1/04",
+		"Date": "2004-05-01",
 		"Region": "Africa",
 		"Country": "Malawi",
 		"DisasterType": "Epidemic",
@@ -3850,8 +4004,9 @@
 		"TotalContributions": "61220"
 	},
 	{
+		"ARC_num": "116",
 		"DisasterName": "Dominican Republic Floods",
-		"Date": "7/1/04",
+		"Date": "2004-07-01",
 		"Region": "LAC",
 		"Country": "Dominican Republic",
 		"DisasterType": "Floods",
@@ -3875,8 +4030,9 @@
 		"TotalContributions": "110266"
 	},
 	{
+		"ARC_num": "116",
 		"DisasterName": "Haiti Floods",
-		"Date": "7/1/04",
+		"Date": "2004-07-01",
 		"Region": "LAC",
 		"Country": "Haiti",
 		"DisasterType": "Floods",
@@ -3900,8 +4056,9 @@
 		"TotalContributions": "97442"
 	},
 	{
+		"ARC_num": "121",
 		"DisasterName": "Bangladesh Floods",
-		"Date": "8/1/04",
+		"Date": "2004-08-01",
 		"Region": "Europe/Asia",
 		"Country": "Bangladesh",
 		"DisasterType": "Floods",
@@ -3925,8 +4082,9 @@
 		"TotalContributions": "35975"
 	},
 	{
+		"ARC_num": "120",
 		"DisasterName": "Chad Conflict",
-		"Date": "8/1/04",
+		"Date": "2004-08-01",
 		"Region": "Africa",
 		"Country": "Chad",
 		"DisasterType": "Conflict",
@@ -3950,8 +4108,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "119",
 		"DisasterName": "Paraguay Miscellaneous",
-		"Date": "8/1/04",
+		"Date": "2004-08-01",
 		"Region": "LAC",
 		"Country": "Paraguay",
 		"DisasterType": "Miscellaneous",
@@ -3975,8 +4134,9 @@
 		"TotalContributions": "18675"
 	},
 	{
+		"ARC_num": "120",
 		"DisasterName": "Sudan Conflict",
-		"Date": "8/1/04",
+		"Date": "2004-08-01",
 		"Region": "Africa",
 		"Country": "Sudan",
 		"DisasterType": "Conflict",
@@ -4000,8 +4160,9 @@
 		"TotalContributions": "247400"
 	},
 	{
+		"ARC_num": "122",
 		"DisasterName": "Taiwan Storm",
-		"Date": "8/1/04",
+		"Date": "2004-08-01",
 		"Region": "Europe/Asia",
 		"Country": "Taiwan",
 		"DisasterType": "Storm",
@@ -4025,8 +4186,9 @@
 		"TotalContributions": "59897"
 	},
 	{
+		"ARC_num": "123",
 		"DisasterName": "Bahamas Storm",
-		"Date": "9/1/04",
+		"Date": "2004-09-01",
 		"Region": "LAC",
 		"Country": "Bahamas",
 		"DisasterType": "Storm",
@@ -4050,8 +4212,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "123",
 		"DisasterName": "Cayman Islands Storm",
-		"Date": "9/1/04",
+		"Date": "2004-09-01",
 		"Region": "LAC",
 		"Country": "Cayman Islands",
 		"DisasterType": "Storm",
@@ -4075,8 +4238,9 @@
 		"TotalContributions": "112854"
 	},
 	{
+		"ARC_num": "123",
 		"DisasterName": "Grenada Storm",
-		"Date": "9/1/04",
+		"Date": "2004-09-01",
 		"Region": "LAC",
 		"Country": "Grenada",
 		"DisasterType": "Storm",
@@ -4100,8 +4264,9 @@
 		"TotalContributions": "302452"
 	},
 	{
+		"ARC_num": "124",
 		"DisasterName": "Haiti Floods",
-		"Date": "9/1/04",
+		"Date": "2004-09-01",
 		"Region": "LAC",
 		"Country": "Haiti",
 		"DisasterType": "Floods",
@@ -4125,8 +4290,9 @@
 		"TotalContributions": "401375"
 	},
 	{
+		"ARC_num": "123",
 		"DisasterName": "Jamaica Storm",
-		"Date": "9/1/04",
+		"Date": "2004-09-01",
 		"Region": "LAC",
 		"Country": "Jamaica",
 		"DisasterType": "Storm",
@@ -4150,8 +4316,9 @@
 		"TotalContributions": "131047"
 	},
 	{
+		"ARC_num": "125",
 		"DisasterName": "Costa Rica Floods",
-		"Date": "11/1/04",
+		"Date": "2004-11-01",
 		"Region": "LAC",
 		"Country": "Costa Rica",
 		"DisasterType": "Floods",
@@ -4175,8 +4342,9 @@
 		"TotalContributions": "2655"
 	},
 	{
+		"ARC_num": "127",
 		"DisasterName": "Indonesia Tsunami",
-		"Date": "12/1/04",
+		"Date": "2004-12-01",
 		"Region": "Europe/Asia",
 		"Country": "Indonesia",
 		"DisasterType": "Tsunami",
@@ -4200,8 +4368,9 @@
 		"TotalContributions": "477328824"
 	},
 	{
+		"ARC_num": "127",
 		"DisasterName": "Maldives Tsunami",
-		"Date": "12/1/04",
+		"Date": "2004-12-01",
 		"Region": "Europe/Asia",
 		"Country": "Maldives",
 		"DisasterType": "Tsunami",
@@ -4225,8 +4394,9 @@
 		"TotalContributions": "1822267"
 	},
 	{
+		"ARC_num": "126",
 		"DisasterName": "Panama Floods",
-		"Date": "12/1/04",
+		"Date": "2004-12-01",
 		"Region": "LAC",
 		"Country": "Panama",
 		"DisasterType": "Floods",
@@ -4250,8 +4420,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "127",
 		"DisasterName": "Sri Lanka Tsunami",
-		"Date": "12/1/04",
+		"Date": "2004-12-01",
 		"Region": "Europe/Asia",
 		"Country": "Sri Lanka",
 		"DisasterType": "Tsunami",
@@ -4275,8 +4446,9 @@
 		"TotalContributions": "103848910"
 	},
 	{
+		"ARC_num": "128",
 		"DisasterName": "Guyana Floods",
-		"Date": "1/1/05",
+		"Date": "2005-01-01",
 		"Region": "LAC",
 		"Country": "Guyana",
 		"DisasterType": "Floods",
@@ -4300,8 +4472,9 @@
 		"TotalContributions": "13100"
 	},
 	{
+		"ARC_num": "129",
 		"DisasterName": "Canada Floods",
-		"Date": "6/1/05",
+		"Date": "2005-06-01",
 		"Region": "North America",
 		"Country": "Canada",
 		"DisasterType": "Floods",
@@ -4325,11 +4498,12 @@
 		"TotalContributions": "5000"
 	},
 	{
+		"ARC_num": "130",
 		"DisasterName": "Hurricane Dennis - Grenada",
-		"Date": "7/1/05",
+		"Date": "2005-07-01",
 		"Region": "LAC",
 		"Country": "Grenada",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "Storm",
 		"TotalAffected": "",
 		"Money": "75000",
 		"PeopleDeployed": "",
@@ -4350,11 +4524,12 @@
 		"TotalContributions": "75000"
 	},
 	{
+		"ARC_num": "130",
 		"DisasterName": "Hurricane Dennis - Haiti",
-		"Date": "7/1/05",
+		"Date": "2005-07-01",
 		"Region": "LAC",
 		"Country": "Haiti",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "Storm",
 		"TotalAffected": "",
 		"Money": "100000",
 		"PeopleDeployed": "",
@@ -4375,11 +4550,12 @@
 		"TotalContributions": "108693"
 	},
 	{
+		"ARC_num": "130",
 		"DisasterName": "Hurricane Dennis - Jamaica",
-		"Date": "7/1/05",
+		"Date": "2005-07-01",
 		"Region": "LAC",
 		"Country": "Jamaica",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "Storm",
 		"TotalAffected": "",
 		"Money": "25000",
 		"PeopleDeployed": "",
@@ -4400,8 +4576,9 @@
 		"TotalContributions": "32475"
 	},
 	{
+		"ARC_num": "131",
 		"DisasterName": "Sahel Food Crisis",
-		"Date": "7/1/05",
+		"Date": "2005-07-01",
 		"Region": "Africa",
 		"Country": "Niger",
 		"DisasterType": "Food Insecurity",
@@ -4425,8 +4602,9 @@
 		"TotalContributions": "36200"
 	},
 	{
+		"ARC_num": "132",
 		"DisasterName": "Hurricane Katrina",
-		"Date": "8/1/05",
+		"Date": "2005-08-01",
 		"Region": "North America",
 		"Country": "United States of America",
 		"DisasterType": "Tropical Storm",
@@ -4450,8 +4628,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "136",
 		"DisasterName": "Hurricane Wilma - Bahamas",
-		"Date": "10/1/05",
+		"Date": "2005-10-01",
 		"Region": "LAC",
 		"Country": "Bahamas",
 		"DisasterType": "Storm",
@@ -4475,8 +4654,9 @@
 		"TotalContributions": "20597"
 	},
 	{
+		"ARC_num": "135",
 		"DisasterName": "El Salvador Hurricane Stan & Volcano Eruption",
-		"Date": "10/1/05",
+		"Date": "2005-10-01",
 		"Region": "LAC",
 		"Country": "El Salvador",
 		"DisasterType": "Volcano",
@@ -4500,8 +4680,9 @@
 		"TotalContributions": "7034"
 	},
 	{
+		"ARC_num": "134",
 		"DisasterName": "Hurricane Stan - Guatemala",
-		"Date": "10/1/05",
+		"Date": "2005-10-01",
 		"Region": "LAC",
 		"Country": "Guatemala",
 		"DisasterType": "Tropical Storm",
@@ -4525,8 +4706,9 @@
 		"TotalContributions": "47581"
 	},
 	{
+		"ARC_num": "134",
 		"DisasterName": "Hurricane Stan - Mexico",
-		"Date": "10/1/05",
+		"Date": "2005-10-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Tropical Storm",
@@ -4550,8 +4732,9 @@
 		"TotalContributions": "342378"
 	},
 	{
+		"ARC_num": "136",
 		"DisasterName": "Hurricane Wilma - Mexico",
-		"Date": "10/1/05",
+		"Date": "2005-10-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Storm",
@@ -4575,8 +4758,9 @@
 		"TotalContributions": "497744"
 	},
 	{
+		"ARC_num": "133",
 		"DisasterName": "Pakistan Earthquake",
-		"Date": "10/1/05",
+		"Date": "2005-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Pakistan",
 		"DisasterType": "Earthquake",
@@ -4600,8 +4784,9 @@
 		"TotalContributions": "12558310"
 	},
 	{
+		"ARC_num": "137",
 		"DisasterName": "Vietnam Typhoon Damrey",
-		"Date": "10/1/05",
+		"Date": "2005-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Vietnam",
 		"DisasterType": "Storm",
@@ -4625,8 +4810,9 @@
 		"TotalContributions": "21068"
 	},
 	{
+		"ARC_num": "138",
 		"DisasterName": "Colombia Volcano",
-		"Date": "11/1/05",
+		"Date": "2005-11-01",
 		"Region": "LAC",
 		"Country": "Colombia",
 		"DisasterType": "Volcano",
@@ -4650,8 +4836,9 @@
 		"TotalContributions": "17402"
 	},
 	{
+		"ARC_num": "139",
 		"DisasterName": "Southern Africa Food Security Crisis - Lesotho",
-		"Date": "1/1/06",
+		"Date": "2006-01-01",
 		"Region": "Africa",
 		"Country": "Lesotho",
 		"DisasterType": "Drought",
@@ -4675,8 +4862,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "139",
 		"DisasterName": "Southern Africa Food Security Crisis - Malawi",
-		"Date": "1/1/06",
+		"Date": "2006-01-01",
 		"Region": "Africa",
 		"Country": "Malawi",
 		"DisasterType": "Drought",
@@ -4700,8 +4888,9 @@
 		"TotalContributions": "150000"
 	},
 	{
+		"ARC_num": "139",
 		"DisasterName": "Southern Africa Food Security Crisis - Zambia",
-		"Date": "1/1/06",
+		"Date": "2006-01-01",
 		"Region": "Africa",
 		"Country": "Zambia",
 		"DisasterType": "Drought",
@@ -4725,8 +4914,9 @@
 		"TotalContributions": "400000"
 	},
 	{
+		"ARC_num": "139",
 		"DisasterName": "Southern Africa Food Security Crisis - Zimbabwe",
-		"Date": "1/1/06",
+		"Date": "2006-01-01",
 		"Region": "Africa",
 		"Country": "Zimbabwe",
 		"DisasterType": "Drought",
@@ -4750,11 +4940,12 @@
 		"TotalContributions": "250000"
 	},
 	{
+		"ARC_num": "143",
 		"DisasterName": "Philippines Mudslides",
-		"Date": "2/1/06",
+		"Date": "2006-02-01",
 		"Region": "Europe/Asia",
 		"Country": "Philippines",
-		"DisasterType": "Population Movement",
+		"DisasterType": "Mass Movement Wet",
 		"TotalAffected": "",
 		"Money": "55000",
 		"PeopleDeployed": "",
@@ -4775,8 +4966,9 @@
 		"TotalContributions": "55000"
 	},
 	{
+		"ARC_num": "142",
 		"DisasterName": "Timor-Leste Floods",
-		"Date": "2/1/06",
+		"Date": "2006-02-01",
 		"Region": "Europe/Asia",
 		"Country": "Timor",
 		"DisasterType": "Floods",
@@ -4800,8 +4992,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "141",
 		"DisasterName": "Iraq Humanitarian Emergency",
-		"Date": "3/1/06",
+		"Date": "2006-03-01",
 		"Region": "Europe/Asia",
 		"Country": "Iraq",
 		"DisasterType": "Conflict",
@@ -4825,8 +5018,9 @@
 		"TotalContributions": "188443"
 	},
 	{
+		"ARC_num": "140",
 		"DisasterName": "Eastern Africa Drought",
-		"Date": "3/1/06",
+		"Date": "2006-03-01",
 		"Region": "Africa",
 		"Country": "Kenya",
 		"DisasterType": "Drought",
@@ -4850,8 +5044,9 @@
 		"TotalContributions": "150000"
 	},
 	{
+		"ARC_num": "145",
 		"DisasterName": "Ethiopia Drought",
-		"Date": "4/1/06",
+		"Date": "2006-04-01",
 		"Region": "Africa",
 		"Country": "Ethiopia",
 		"DisasterType": "Drought",
@@ -4875,8 +5070,9 @@
 		"TotalContributions": "94461"
 	},
 	{
+		"ARC_num": "146",
 		"DisasterName": "Somalia Drought",
-		"Date": "4/1/06",
+		"Date": "2006-04-01",
 		"Region": "Africa",
 		"Country": "Somalia",
 		"DisasterType": "Drought",
@@ -4900,8 +5096,9 @@
 		"TotalContributions": "250000"
 	},
 	{
+		"ARC_num": "147",
 		"DisasterName": "Spain Terrorism",
-		"Date": "4/1/06",
+		"Date": "2006-04-01",
 		"Region": "Europe/Asia",
 		"Country": "Spain",
 		"DisasterType": "Terrorism",
@@ -4925,8 +5122,9 @@
 		"TotalContributions": "20000"
 	},
 	{
+		"ARC_num": "144",
 		"DisasterName": "Angola Cholera Epidemic",
-		"Date": "5/1/06",
+		"Date": "2006-05-01",
 		"Region": "Africa",
 		"Country": "Angola",
 		"DisasterType": "Epidemic",
@@ -4950,8 +5148,9 @@
 		"TotalContributions": "5000"
 	},
 	{
+		"ARC_num": "148",
 		"DisasterName": "Colombia Floods",
-		"Date": "5/1/06",
+		"Date": "2006-05-01",
 		"Region": "LAC",
 		"Country": "Colombia",
 		"DisasterType": "Floods",
@@ -4975,8 +5174,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "149",
 		"DisasterName": "Indonesia Yogyakarta Earthquake",
-		"Date": "5/1/06",
+		"Date": "2006-05-01",
 		"Region": "Europe/Asia",
 		"Country": "Indonesia",
 		"DisasterType": "Earthquake",
@@ -5000,8 +5200,9 @@
 		"TotalContributions": "1485750"
 	},
 	{
+		"ARC_num": "151",
 		"DisasterName": "Middle East Humanitarian Crisis",
-		"Date": "7/1/06",
+		"Date": "2006-07-01",
 		"Region": "Europe/Asia",
 		"Country": "Lebanon",
 		"DisasterType": "Conflict",
@@ -5025,8 +5226,9 @@
 		"TotalContributions": "1889600"
 	},
 	{
+		"ARC_num": "150",
 		"DisasterName": "Romania Floods",
-		"Date": "7/1/06",
+		"Date": "2006-07-01",
 		"Region": "Europe/Asia",
 		"Country": "Romania",
 		"DisasterType": "Floods",
@@ -5050,8 +5252,9 @@
 		"TotalContributions": "5000"
 	},
 	{
+		"ARC_num": "152",
 		"DisasterName": "China Floods",
-		"Date": "8/1/06",
+		"Date": "2006-08-01",
 		"Region": "Europe/Asia",
 		"Country": "China",
 		"DisasterType": "Floods",
@@ -5075,8 +5278,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "153",
 		"DisasterName": "Ecuador Volanic Eruption",
-		"Date": "8/1/06",
+		"Date": "2006-08-01",
 		"Region": "LAC",
 		"Country": "Ecuador",
 		"DisasterType": "Volcano",
@@ -5100,8 +5304,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "154",
 		"DisasterName": "Ethiopia Floods",
-		"Date": "8/1/06",
+		"Date": "2006-08-01",
 		"Region": "Africa",
 		"Country": "Ethiopia",
 		"DisasterType": "Floods",
@@ -5125,8 +5330,9 @@
 		"TotalContributions": "85000"
 	},
 	{
+		"ARC_num": "155",
 		"DisasterName": "Sudan Floods",
-		"Date": "9/1/06",
+		"Date": "2006-09-01",
 		"Region": "Africa",
 		"Country": "Sudan",
 		"DisasterType": "Floods",
@@ -5150,11 +5356,12 @@
 		"TotalContributions": "46900"
 	},
 	{
+		"ARC_num": "156",
 		"DisasterName": "Philippines Typhoons",
-		"Date": "10/1/06",
+		"Date": "2006-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Philippines",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "Storm",
 		"TotalAffected": "",
 		"Money": "787000",
 		"PeopleDeployed": "2",
@@ -5175,11 +5382,12 @@
 		"TotalContributions": "793500"
 	},
 	{
+		"ARC_num": "157",
 		"DisasterName": "Vietnam Typhoons",
-		"Date": "10/1/06",
+		"Date": "2006-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Vietnam",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "Storm",
 		"TotalAffected": "",
 		"Money": "63000",
 		"PeopleDeployed": "",
@@ -5200,8 +5408,9 @@
 		"TotalContributions": "63000"
 	},
 	{
+		"ARC_num": "159",
 		"DisasterName": "Kenya Floods",
-		"Date": "11/1/06",
+		"Date": "2006-11-01",
 		"Region": "Africa",
 		"Country": "Kenya",
 		"DisasterType": "Floods",
@@ -5225,8 +5434,9 @@
 		"TotalContributions": "200000"
 	},
 	{
+		"ARC_num": "158",
 		"DisasterName": "Somalia Conflict",
-		"Date": "11/1/06",
+		"Date": "2006-11-01",
 		"Region": "Africa",
 		"Country": "Somalia",
 		"DisasterType": "Conflict",
@@ -5250,8 +5460,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "160",
 		"DisasterName": "Somalia Floods",
-		"Date": "11/1/06",
+		"Date": "2006-11-01",
 		"Region": "Africa",
 		"Country": "Somalia",
 		"DisasterType": "Floods",
@@ -5275,8 +5486,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "162",
 		"DisasterName": "Bolivia Floods",
-		"Date": "2/1/07",
+		"Date": "2007-02-01",
 		"Region": "LAC",
 		"Country": "Bolivia",
 		"DisasterType": "Floods",
@@ -5300,8 +5512,9 @@
 		"TotalContributions": "150000"
 	},
 	{
+		"ARC_num": "161",
 		"DisasterName": "Mozambique Floods",
-		"Date": "2/1/07",
+		"Date": "2007-02-01",
 		"Region": "Africa",
 		"Country": "Mozambique",
 		"DisasterType": "Floods",
@@ -5325,8 +5538,9 @@
 		"TotalContributions": "245000"
 	},
 	{
+		"ARC_num": "164",
 		"DisasterName": "Madagascar Cyclones",
-		"Date": "3/1/07",
+		"Date": "2007-03-01",
 		"Region": "Africa",
 		"Country": "Madagascar",
 		"DisasterType": "Storm",
@@ -5350,8 +5564,9 @@
 		"TotalContributions": "102000"
 	},
 	{
+		"ARC_num": "163",
 		"DisasterName": "Sri Lanka Conflict",
-		"Date": "3/1/07",
+		"Date": "2007-03-01",
 		"Region": "Europe/Asia",
 		"Country": "Sri Lanka",
 		"DisasterType": "Conflict",
@@ -5375,8 +5590,9 @@
 		"TotalContributions": "2000000"
 	},
 	{
+		"ARC_num": "165",
 		"DisasterName": "Solomon Islands Tsunami/ Earthquake",
-		"Date": "4/1/07",
+		"Date": "2007-04-01",
 		"Region": "Europe/Asia",
 		"Country": "Solomon Islands",
 		"DisasterType": "Earthquake",
@@ -5400,8 +5616,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "166",
 		"DisasterName": "Colombia Tolima Floods",
-		"Date": "5/1/07",
+		"Date": "2007-05-01",
 		"Region": "LAC",
 		"Country": "Colombia",
 		"DisasterType": "Floods",
@@ -5425,8 +5642,9 @@
 		"TotalContributions": "5000"
 	},
 	{
+		"ARC_num": "167",
 		"DisasterName": "Mexico Coahuila Tornado",
-		"Date": "5/1/07",
+		"Date": "2007-05-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Storm",
@@ -5450,8 +5668,9 @@
 		"TotalContributions": "20000"
 	},
 	{
+		"ARC_num": "168",
 		"DisasterName": "Somalia Conflict",
-		"Date": "6/1/07",
+		"Date": "2007-06-01",
 		"Region": "Africa",
 		"Country": "Somalia",
 		"DisasterType": "Conflict",
@@ -5475,8 +5694,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "169",
 		"DisasterName": "Sudan Conflict",
-		"Date": "6/1/07",
+		"Date": "2007-06-01",
 		"Region": "Africa",
 		"Country": "Sudan",
 		"DisasterType": "Conflict",
@@ -5500,8 +5720,9 @@
 		"TotalContributions": "200000"
 	},
 	{
+		"ARC_num": "171",
 		"DisasterName": "Bangladesh Floods",
-		"Date": "7/1/07",
+		"Date": "2007-07-01",
 		"Region": "Europe/Asia",
 		"Country": "Bangladesh",
 		"DisasterType": "Floods",
@@ -5525,8 +5746,9 @@
 		"TotalContributions": "124500"
 	},
 	{
+		"ARC_num": "172",
 		"DisasterName": "Iraq Conflict",
-		"Date": "7/1/07",
+		"Date": "2007-07-01",
 		"Region": "Europe/Asia",
 		"Country": "Iraq",
 		"DisasterType": "Conflict",
@@ -5550,8 +5772,9 @@
 		"TotalContributions": "250000"
 	},
 	{
+		"ARC_num": "170",
 		"DisasterName": "Pakistan Cyclone Yemyin",
-		"Date": "7/1/07",
+		"Date": "2007-07-01",
 		"Region": "Europe/Asia",
 		"Country": "Pakistan",
 		"DisasterType": "Storm",
@@ -5575,8 +5798,9 @@
 		"TotalContributions": "295000"
 	},
 	{
+		"ARC_num": "173",
 		"DisasterName": "Sudan Floods",
-		"Date": "7/1/07",
+		"Date": "2007-07-01",
 		"Region": "Africa",
 		"Country": "Sudan",
 		"DisasterType": "Floods",
@@ -5600,8 +5824,9 @@
 		"TotalContributions": "153400"
 	},
 	{
+		"ARC_num": "174",
 		"DisasterName": "United Kingdom Floods",
-		"Date": "7/1/07",
+		"Date": "2007-07-01",
 		"Region": "Europe/Asia",
 		"Country": "United Kingdom",
 		"DisasterType": "Floods",
@@ -5625,8 +5850,9 @@
 		"TotalContributions": "20188"
 	},
 	{
+		"ARC_num": "177",
 		"DisasterName": "Hurricane Dean",
-		"Date": "8/1/07",
+		"Date": "2007-08-01",
 		"Region": "LAC",
 		"Country": "Haiti",
 		"DisasterType": "Storm",
@@ -5650,8 +5876,9 @@
 		"TotalContributions": "2500"
 	},
 	{
+		"ARC_num": "177",
 		"DisasterName": "Hurricane Dean",
-		"Date": "8/1/07",
+		"Date": "2007-08-01",
 		"Region": "LAC",
 		"Country": "Jamaica",
 		"DisasterType": "Storm",
@@ -5675,8 +5902,9 @@
 		"TotalContributions": "34565"
 	},
 	{
+		"ARC_num": "177",
 		"DisasterName": "Hurricane Dean",
-		"Date": "8/1/07",
+		"Date": "2007-08-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Storm",
@@ -5700,8 +5928,9 @@
 		"TotalContributions": "298680"
 	},
 	{
+		"ARC_num": "175",
 		"DisasterName": "Nepal Floods",
-		"Date": "8/1/07",
+		"Date": "2007-08-01",
 		"Region": "Europe/Asia",
 		"Country": "Nepal",
 		"DisasterType": "Floods",
@@ -5725,8 +5954,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "176",
 		"DisasterName": "Peru Earthquake",
-		"Date": "8/1/07",
+		"Date": "2007-08-01",
 		"Region": "LAC",
 		"Country": "Peru",
 		"DisasterType": "Earthquake",
@@ -5750,8 +5980,9 @@
 		"TotalContributions": "3400000"
 	},
 	{
+		"ARC_num": "178",
 		"DisasterName": "Greece Wildfire",
-		"Date": "9/1/07",
+		"Date": "2007-09-01",
 		"Region": "Europe/Asia",
 		"Country": "Greece",
 		"DisasterType": "Wildfire",
@@ -5775,8 +6006,9 @@
 		"TotalContributions": "40000"
 	},
 	{
+		"ARC_num": "179",
 		"DisasterName": "Hurricane Felix",
-		"Date": "9/1/07",
+		"Date": "2007-09-01",
 		"Region": "LAC",
 		"Country": "Honduras",
 		"DisasterType": "Storm",
@@ -5800,8 +6032,9 @@
 		"TotalContributions": "22500"
 	},
 	{
+		"ARC_num": "179",
 		"DisasterName": "Hurricane Felix",
-		"Date": "9/1/07",
+		"Date": "2007-09-01",
 		"Region": "LAC",
 		"Country": "Honduras",
 		"DisasterType": "Storm",
@@ -5825,8 +6058,9 @@
 		"TotalContributions": "47500"
 	},
 	{
+		"ARC_num": "180",
 		"DisasterName": "Indonesia Bengkulu Earthquake",
-		"Date": "9/1/07",
+		"Date": "2007-09-01",
 		"Region": "Europe/Asia",
 		"Country": "Indonesia",
 		"DisasterType": "Earthquake",
@@ -5850,8 +6084,9 @@
 		"TotalContributions": "3000"
 	},
 	{
+		"ARC_num": "179",
 		"DisasterName": "Hurricane Felix",
-		"Date": "9/1/07",
+		"Date": "2007-09-01",
 		"Region": "LAC",
 		"Country": "Nicaragua",
 		"DisasterType": "Storm",
@@ -5875,8 +6110,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "182",
 		"DisasterName": "Togo Floods",
-		"Date": "9/1/07",
+		"Date": "2007-09-01",
 		"Region": "Africa",
 		"Country": "Togo",
 		"DisasterType": "Floods",
@@ -5900,8 +6136,9 @@
 		"TotalContributions": "19970"
 	},
 	{
+		"ARC_num": "181",
 		"DisasterName": "Uganda Floods",
-		"Date": "9/1/07",
+		"Date": "2007-09-01",
 		"Region": "Africa",
 		"Country": "Uganda",
 		"DisasterType": "Floods",
@@ -5925,11 +6162,12 @@
 		"TotalContributions": "17400"
 	},
 	{
+		"ARC_num": "183",
 		"DisasterName": "Tropical Storm Noel",
-		"Date": "10/1/07",
+		"Date": "2007-10-01",
 		"Region": "LAC",
 		"Country": "Dominican Republic",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "Storm",
 		"TotalAffected": "200000",
 		"Money": "35000",
 		"PeopleDeployed": "",
@@ -5950,11 +6188,12 @@
 		"TotalContributions": "104055"
 	},
 	{
+		"ARC_num": "183",
 		"DisasterName": "Tropical Storm Noel",
-		"Date": "11/1/07",
+		"Date": "2007-11-01",
 		"Region": "LAC",
 		"Country": "Bahamas",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "Storm",
 		"TotalAffected": "",
 		"Money": "30000",
 		"PeopleDeployed": "2",
@@ -5975,8 +6214,9 @@
 		"TotalContributions": "37440"
 	},
 	{
+		"ARC_num": "186",
 		"DisasterName": "Bangladesh Cyclone Sidr",
-		"Date": "11/1/07",
+		"Date": "2007-11-01",
 		"Region": "Europe/Asia",
 		"Country": "Bangladesh",
 		"DisasterType": "Storm",
@@ -6000,11 +6240,12 @@
 		"TotalContributions": "1356654"
 	},
 	{
+		"ARC_num": "183",
 		"DisasterName": "Tropical Storm Noel",
-		"Date": "11/1/07",
+		"Date": "2007-11-01",
 		"Region": "LAC",
 		"Country": "Haiti",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "Storm",
 		"TotalAffected": "",
 		"Money": "50000",
 		"PeopleDeployed": "",
@@ -6025,8 +6266,9 @@
 		"TotalContributions": "58073"
 	},
 	{
+		"ARC_num": "184",
 		"DisasterName": "Mexico Floods",
-		"Date": "11/1/07",
+		"Date": "2007-11-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Floods",
@@ -6050,8 +6292,9 @@
 		"TotalContributions": "1900000"
 	},
 	{
+		"ARC_num": "187",
 		"DisasterName": "Papua New Guinea Storm",
-		"Date": "11/1/07",
+		"Date": "2007-11-01",
 		"Region": "Europe/Asia",
 		"Country": "Papua New Guinea",
 		"DisasterType": "Storm",
@@ -6075,11 +6318,12 @@
 		"TotalContributions": "23750"
 	},
 	{
+		"ARC_num": "185",
 		"DisasterName": "Vietnam Typhoon Lekima",
-		"Date": "11/1/07",
+		"Date": "2007-11-01",
 		"Region": "Europe/Asia",
 		"Country": "Vietnam",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "Storm",
 		"TotalAffected": "600000",
 		"Money": "115000",
 		"PeopleDeployed": "",
@@ -6100,8 +6344,9 @@
 		"TotalContributions": "115000"
 	},
 	{
+		"ARC_num": "188",
 		"DisasterName": "Kenya Election Civil Unrest",
-		"Date": "1/1/08",
+		"Date": "2008-01-01",
 		"Region": "Africa",
 		"Country": "Kenya",
 		"DisasterType": "Civil Unrest",
@@ -6125,8 +6370,9 @@
 		"TotalContributions": "300000"
 	},
 	{
+		"ARC_num": "189",
 		"DisasterName": "China Snow Disaster",
-		"Date": "2/1/08",
+		"Date": "2008-02-01",
 		"Region": "Europe/Asia",
 		"Country": "China",
 		"DisasterType": "Storm",
@@ -6150,8 +6396,9 @@
 		"TotalContributions": "867000"
 	},
 	{
+		"ARC_num": "192",
 		"DisasterName": "Ecuador Floods",
-		"Date": "2/1/08",
+		"Date": "2008-02-01",
 		"Region": "LAC",
 		"Country": "Ecuador",
 		"DisasterType": "Floods",
@@ -6175,8 +6422,9 @@
 		"TotalContributions": "245000"
 	},
 	{
+		"ARC_num": "190",
 		"DisasterName": "Guyana Civil Unrest",
-		"Date": "2/1/08",
+		"Date": "2008-02-01",
 		"Region": "Africa",
 		"Country": "Guyana",
 		"DisasterType": "Civil Unrest",
@@ -6200,8 +6448,9 @@
 		"TotalContributions": "12400"
 	},
 	{
+		"ARC_num": "191",
 		"DisasterName": "Sudan Conflict",
-		"Date": "2/1/08",
+		"Date": "2008-02-01",
 		"Region": "Africa",
 		"Country": "Sudan",
 		"DisasterType": "Conflict",
@@ -6225,8 +6474,9 @@
 		"TotalContributions": "714000"
 	},
 	{
+		"ARC_num": "193",
 		"DisasterName": "Iraq Conflict",
-		"Date": "3/8/08",
+		"Date": "2008-03-08",
 		"Region": "Europe/Asia",
 		"Country": "Iraq",
 		"DisasterType": "Conflict",
@@ -6250,8 +6500,9 @@
 		"TotalContributions": "269000"
 	},
 	{
+		"ARC_num": "194",
 		"DisasterName": "Madagascar Cyclone Ivan",
-		"Date": "3/8/08",
+		"Date": "2008-03-08",
 		"Region": "Africa",
 		"Country": "Madagascar",
 		"DisasterType": "Storm",
@@ -6275,8 +6526,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "195",
 		"DisasterName": "Southern Africa Floods - Cyclone Jokwe",
-		"Date": "3/8/08",
+		"Date": "2008-03-08",
 		"Region": "Africa",
 		"Country": "Mozambique",
 		"DisasterType": "Floods",
@@ -6300,8 +6552,9 @@
 		"TotalContributions": "300000"
 	},
 	{
+		"ARC_num": "196",
 		"DisasterName": "Southern Africa Floods - Cyclone Jokwe",
-		"Date": "3/8/08",
+		"Date": "2008-03-08",
 		"Region": "Africa",
 		"Country": "Tanzania",
 		"DisasterType": "Floods",
@@ -6325,8 +6578,9 @@
 		"TotalContributions": "48500"
 	},
 	{
+		"ARC_num": "198",
 		"DisasterName": "China Sichuan Earthquake",
-		"Date": "5/8/08",
+		"Date": "2008-05-08",
 		"Region": "Europe/Asia",
 		"Country": "China",
 		"DisasterType": "Earthquake",
@@ -6350,8 +6604,9 @@
 		"TotalContributions": "55000000"
 	},
 	{
+		"ARC_num": "197",
 		"DisasterName": "Myanmar Cyclone Nargis",
-		"Date": "5/8/08",
+		"Date": "2008-05-08",
 		"Region": "Europe/Asia",
 		"Country": "Myanmar",
 		"DisasterType": "Storm",
@@ -6375,8 +6630,9 @@
 		"TotalContributions": "3400000"
 	},
 	{
+		"ARC_num": "201",
 		"DisasterName": "Chile Floods",
-		"Date": "6/8/08",
+		"Date": "2008-06-08",
 		"Region": "LAC",
 		"Country": "Chile",
 		"DisasterType": "Floods",
@@ -6400,8 +6656,9 @@
 		"TotalContributions": "2000"
 	},
 	{
+		"ARC_num": "199",
 		"DisasterName": "Ethiopia Food Insecurity",
-		"Date": "6/8/08",
+		"Date": "2008-06-08",
 		"Region": "Africa",
 		"Country": "Ethiopia",
 		"DisasterType": "Food Insecurity",
@@ -6425,11 +6682,12 @@
 		"TotalContributions": "100000"
 	},
 	{
-		"DisasterName": "Typhoon Fengshen - Philippines",
-		"Date": "6/8/08",
+		"ARC_num": "202",
+		"DisasterName": "Philippines Ð Typhoon Fengshen",
+		"Date": "2008-06-08",
 		"Region": "Europe/Asia",
 		"Country": "Philippines",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "Storm",
 		"TotalAffected": "4800000",
 		"Money": "185000",
 		"PeopleDeployed": "1",
@@ -6450,8 +6708,9 @@
 		"TotalContributions": "185000"
 	},
 	{
+		"ARC_num": "200",
 		"DisasterName": "South Africa Civil Unrest",
-		"Date": "6/8/08",
+		"Date": "2008-06-08",
 		"Region": "Africa",
 		"Country": "South Africa",
 		"DisasterType": "Civil Unrest",
@@ -6475,8 +6734,9 @@
 		"TotalContributions": "10000"
 	},
 	{
+		"ARC_num": "204",
 		"DisasterName": "Suriname Floods",
-		"Date": "7/1/08",
+		"Date": "2008-07-01",
 		"Region": "LAC",
 		"Country": "Suriname",
 		"DisasterType": "Floods",
@@ -6500,8 +6760,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "203",
 		"DisasterName": "Yemen Conflict",
-		"Date": "7/8/08",
+		"Date": "2008-07-08",
 		"Region": "Europe/Asia",
 		"Country": "Yemen",
 		"DisasterType": "Conflict",
@@ -6525,8 +6786,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "206",
 		"DisasterName": "Georgia Conflict",
-		"Date": "8/1/08",
+		"Date": "2008-08-01",
 		"Region": "Europe/Asia",
 		"Country": "Georgia",
 		"DisasterType": "Conflict",
@@ -6550,8 +6812,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "205",
 		"DisasterName": "Moldova and Ukraine Floods",
-		"Date": "8/1/08",
+		"Date": "2008-08-01",
 		"Region": "Europe/Asia",
 		"Country": "Ukraine",
 		"DisasterType": "Floods",
@@ -6575,11 +6838,12 @@
 		"TotalContributions": "44250"
 	},
 	{
+		"ARC_num": "209",
 		"DisasterName": "Carribean Hurricane Season 2008 - Bahamas",
-		"Date": "9/8/08",
+		"Date": "2008-09-08",
 		"Region": "LAC",
 		"Country": "Bahamas",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "Storm",
 		"TotalAffected": "9750",
 		"Money": "121044",
 		"PeopleDeployed": "1",
@@ -6600,11 +6864,12 @@
 		"TotalContributions": "121044"
 	},
 	{
+		"ARC_num": "210",
 		"DisasterName": "Cuba Hurricane Season 2008",
-		"Date": "9/8/08",
+		"Date": "2008-09-08",
 		"Region": "LAC",
 		"Country": "Cuba",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "Storm",
 		"TotalAffected": "2900000",
 		"Money": "1129943",
 		"PeopleDeployed": "",
@@ -6625,11 +6890,12 @@
 		"TotalContributions": "1129943"
 	},
 	{
+		"ARC_num": "208",
 		"DisasterName": "Haiti Hurricane Season 2008",
-		"Date": "9/8/08",
+		"Date": "2008-09-08",
 		"Region": "LAC",
 		"Country": "Haiti",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "Storm",
 		"TotalAffected": "800000",
 		"Money": "283682",
 		"PeopleDeployed": "5",
@@ -6650,11 +6916,12 @@
 		"TotalContributions": "1532876"
 	},
 	{
+		"ARC_num": "209",
 		"DisasterName": "Carribean Hurricane Season 2008 -  Jamaica",
-		"Date": "9/8/08",
+		"Date": "2008-09-08",
 		"Region": "LAC",
 		"Country": "Jamaica",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "Storm",
 		"TotalAffected": "4000",
 		"Money": "",
 		"PeopleDeployed": "",
@@ -6675,8 +6942,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "207",
 		"DisasterName": "Nepal Floods",
-		"Date": "9/8/08",
+		"Date": "2008-09-08",
 		"Region": "Europe/Asia",
 		"Country": "Nepal",
 		"DisasterType": "Floods",
@@ -6700,8 +6968,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "211",
 		"DisasterName": "Central America Floods",
-		"Date": "10/1/08",
+		"Date": "2008-10-01",
 		"Region": "LAC",
 		"Country": "[rollup]",
 		"DisasterType": "Floods",
@@ -6725,8 +6994,9 @@
 		"TotalContributions": "246683"
 	},
 	{
+		"ARC_num": "211",
 		"DisasterName": "Central America Floods",
-		"Date": "10/1/08",
+		"Date": "2008-10-01",
 		"Region": "LAC",
 		"Country": "Guatemala",
 		"DisasterType": "Floods",
@@ -6750,8 +7020,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "211",
 		"DisasterName": "Central America Floods",
-		"Date": "10/1/08",
+		"Date": "2008-10-01",
 		"Region": "LAC",
 		"Country": "Honduras",
 		"DisasterType": "Floods",
@@ -6775,8 +7046,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "211",
 		"DisasterName": "Central America Floods",
-		"Date": "10/1/08",
+		"Date": "2008-10-01",
 		"Region": "LAC",
 		"Country": "Nicaragua",
 		"DisasterType": "Floods",
@@ -6800,8 +7072,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "212",
 		"DisasterName": "Pakistan Baluchistan Earthquake",
-		"Date": "11/8/08",
+		"Date": "2008-11-08",
 		"Region": "Europe/Asia",
 		"Country": "Pakistan",
 		"DisasterType": "Earthquake",
@@ -6825,8 +7098,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "213",
 		"DisasterName": "Vietnam Floods",
-		"Date": "11/8/08",
+		"Date": "2008-11-08",
 		"Region": "Europe/Asia",
 		"Country": "Vietnam",
 		"DisasterType": "Floods",
@@ -6850,8 +7124,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "214",
 		"DisasterName": "Panama & Costa Rica Floods",
-		"Date": "12/8/08",
+		"Date": "2008-12-08",
 		"Region": "LAC",
 		"Country": "Panama",
 		"DisasterType": "Floods",
@@ -6875,8 +7150,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "214",
 		"DisasterName": "Panama & Costa Rica Floods",
-		"Date": "12/9/08",
+		"Date": "2008-12-09",
 		"Region": "LAC",
 		"Country": "Costa Rica",
 		"DisasterType": "Floods",
@@ -6900,8 +7176,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "215",
 		"DisasterName": "Horn of Africa Food Insecurity Crisis",
-		"Date": "12/10/08",
+		"Date": "2008-12-10",
 		"Region": "Africa",
 		"Country": "Djibouti",
 		"DisasterType": "Food Insecurity",
@@ -6925,8 +7202,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "215",
 		"DisasterName": "Horn of Africa Food Insecurity Crisis",
-		"Date": "12/11/08",
+		"Date": "2008-12-11",
 		"Region": "Africa",
 		"Country": "Ethiopia",
 		"DisasterType": "Food Insecurity",
@@ -6950,8 +7228,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "215",
 		"DisasterName": "Horn of Africa Food Insecurity Crisis",
-		"Date": "12/12/08",
+		"Date": "2008-12-12",
 		"Region": "Africa",
 		"Country": "Kenya",
 		"DisasterType": "Food Insecurity",
@@ -6975,8 +7254,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "215",
 		"DisasterName": "Horn of Africa Food Insecurity Crisis",
-		"Date": "12/13/08",
+		"Date": "2008-12-13",
 		"Region": "Africa",
 		"Country": "Somalia",
 		"DisasterType": "Food Insecurity",
@@ -7000,8 +7280,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "216",
 		"DisasterName": "Uganda, Rwanda, Burundi Population Movement",
-		"Date": "12/14/08",
+		"Date": "2008-12-14",
 		"Region": "Africa",
 		"Country": "Uganda",
 		"DisasterType": "Conflict",
@@ -7025,8 +7306,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "218",
 		"DisasterName": "Gaza Conflict - Israel",
-		"Date": "12/17/08",
+		"Date": "2008-12-17",
 		"Region": "Europe/Asia",
 		"Country": "Israel",
 		"DisasterType": "Conflict",
@@ -7050,8 +7332,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "218",
 		"DisasterName": "Gaza Conflict - Palestine",
-		"Date": "12/17/08",
+		"Date": "2008-12-17",
 		"Region": "Europe/Asia",
 		"Country": "Palestine",
 		"DisasterType": "Conflict",
@@ -7075,8 +7358,9 @@
 		"TotalContributions": "921250"
 	},
 	{
+		"ARC_num": "217",
 		"DisasterName": "Zimbabwe Cholera Epidemic",
-		"Date": "12/17/08",
+		"Date": "2008-12-17",
 		"Region": "Africa",
 		"Country": "Zimbabwe",
 		"DisasterType": "Epidemic",
@@ -7100,8 +7384,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "219",
 		"DisasterName": "Costa Rica Earthquake",
-		"Date": "1/8/09",
+		"Date": "2009-01-08",
 		"Region": "LAC",
 		"Country": "Costa Rica",
 		"DisasterType": "Earthquake",
@@ -7125,8 +7410,9 @@
 		"TotalContributions": "74200"
 	},
 	{
+		"ARC_num": "220",
 		"DisasterName": "Australia Wildfires",
-		"Date": "2/7/09",
+		"Date": "2009-02-07",
 		"Region": "Europe/Asia",
 		"Country": "Australia",
 		"DisasterType": "Wildfire",
@@ -7150,8 +7436,9 @@
 		"TotalContributions": "1520000"
 	},
 	{
+		"ARC_num": "221",
 		"DisasterName": "Sri Lanka Conflict",
-		"Date": "3/5/09",
+		"Date": "2009-03-05",
 		"Region": "Europe/Asia",
 		"Country": "Sri Lanka",
 		"DisasterType": "Conflict",
@@ -7175,8 +7462,9 @@
 		"TotalContributions": "500000"
 	},
 	{
+		"ARC_num": "222",
 		"DisasterName": "Colombia Floods",
-		"Date": "3/19/09",
+		"Date": "2009-03-19",
 		"Region": "LAC",
 		"Country": "Colombia",
 		"DisasterType": "Floods",
@@ -7200,8 +7488,9 @@
 		"TotalContributions": "30000"
 	},
 	{
+		"ARC_num": "223",
 		"DisasterName": "Italy Earthquake",
-		"Date": "4/7/09",
+		"Date": "2009-04-07",
 		"Region": "Europe/Asia",
 		"Country": "Italy",
 		"DisasterType": "Earthquake",
@@ -7225,8 +7514,9 @@
 		"TotalContributions": "981315"
 	},
 	{
+		"ARC_num": "224",
 		"DisasterName": "Namibia Floods",
-		"Date": "5/15/09",
+		"Date": "2009-05-15",
 		"Region": "Africa",
 		"Country": "Namibia",
 		"DisasterType": "Floods",
@@ -7250,8 +7540,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "226",
 		"DisasterName": "Pakistan Internally Displaced Persons Crisis",
-		"Date": "5/15/09",
+		"Date": "2009-05-15",
 		"Region": "Europe/Asia",
 		"Country": "Pakistan",
 		"DisasterType": "Conflict",
@@ -7275,8 +7566,9 @@
 		"TotalContributions": "330000"
 	},
 	{
+		"ARC_num": "225",
 		"DisasterName": "Africa Polio Outbreak",
-		"Date": "5/15/09",
+		"Date": "2009-05-15",
 		"Region": "Africa",
 		"Country": "Sudan",
 		"DisasterType": "Epidemic",
@@ -7300,8 +7592,9 @@
 		"TotalContributions": "200000"
 	},
 	{
+		"ARC_num": "227",
 		"DisasterName": "Bangladesh Cyclone Aila",
-		"Date": "6/26/09",
+		"Date": "2009-06-26",
 		"Region": "Europe/Asia",
 		"Country": "Bangladesh",
 		"DisasterType": "Storm",
@@ -7325,8 +7618,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "228",
 		"DisasterName": "Tajikistan Mudslides and Floods",
-		"Date": "8/12/09",
+		"Date": "2009-08-12",
 		"Region": "Europe/Asia",
 		"Country": "Tajikistan",
 		"DisasterType": "Floods",
@@ -7350,8 +7644,9 @@
 		"TotalContributions": "11500"
 	},
 	{
+		"ARC_num": "229",
 		"DisasterName": "Syria Drought",
-		"Date": "9/1/09",
+		"Date": "2009-09-01",
 		"Region": "Europe/Asia",
 		"Country": "Syria",
 		"DisasterType": "Drought",
@@ -7375,8 +7670,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "232",
 		"DisasterName": "Java Indonesia Earthquake",
-		"Date": "9/2/09",
+		"Date": "2009-09-02",
 		"Region": "Europe/Asia",
 		"Country": "Indonesia",
 		"DisasterType": "Earthquake",
@@ -7400,8 +7696,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "234",
 		"DisasterName": "West Sumatra Indonesia Earthquake",
-		"Date": "9/2/09",
+		"Date": "2009-09-02",
 		"Region": "Europe/Asia",
 		"Country": "Indonesia",
 		"DisasterType": "Earthquake",
@@ -7425,8 +7722,9 @@
 		"TotalContributions": "1664193"
 	},
 	{
+		"ARC_num": "233",
 		"DisasterName": "Southeast Asia Typhoons - Philippines",
-		"Date": "9/2/09",
+		"Date": "2009-09-02",
 		"Region": "Europe/Asia",
 		"Country": "Philippines",
 		"DisasterType": "Tropical Storm",
@@ -7450,8 +7748,9 @@
 		"TotalContributions": "1168000"
 	},
 	{
+		"ARC_num": "233",
 		"DisasterName": "Southeast Asia Typhoons - Vietnam",
-		"Date": "9/2/09",
+		"Date": "2009-09-02",
 		"Region": "Europe/Asia",
 		"Country": "Vietnam",
 		"DisasterType": "Tropical Storm",
@@ -7475,8 +7774,9 @@
 		"TotalContributions": "2150000"
 	},
 	{
+		"ARC_num": "231",
 		"DisasterName": "Mexico Hurricane Jimena",
-		"Date": "9/3/09",
+		"Date": "2009-09-03",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Tropical Storm",
@@ -7500,8 +7800,9 @@
 		"TotalContributions": "259500"
 	},
 	{
+		"ARC_num": "230",
 		"DisasterName": "West & Central Africa Floods - Burkina Faso",
-		"Date": "9/10/09",
+		"Date": "2009-09-10",
 		"Region": "Africa",
 		"Country": "Burkina Faso",
 		"DisasterType": "Floods",
@@ -7525,8 +7826,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "230",
 		"DisasterName": "West & Central Africa Floods - Senegal",
-		"Date": "9/10/09",
+		"Date": "2009-09-10",
 		"Region": "Africa",
 		"Country": "Senegal",
 		"DisasterType": "Floods",
@@ -7550,8 +7852,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "235",
 		"DisasterName": "Samoa Islands Tsunami",
-		"Date": "10/1/09",
+		"Date": "2009-10-01",
 		"Region": "Europe/Asia",
 		"Country": "Samoa",
 		"DisasterType": "Tsunami",
@@ -7575,8 +7878,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "236",
 		"DisasterName": "India Floods",
-		"Date": "10/27/09",
+		"Date": "2009-10-27",
 		"Region": "Europe/Asia",
 		"Country": "India",
 		"DisasterType": "Floods",
@@ -7600,8 +7904,9 @@
 		"TotalContributions": "190000"
 	},
 	{
+		"ARC_num": "237",
 		"DisasterName": "Kenya Drought",
-		"Date": "11/5/09",
+		"Date": "2009-11-05",
 		"Region": "Africa",
 		"Country": "Kenya",
 		"DisasterType": "Drought",
@@ -7625,8 +7930,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "238",
 		"DisasterName": "Haiti Floods",
-		"Date": "11/12/09",
+		"Date": "2009-11-12",
 		"Region": "LAC",
 		"Country": "Haiti",
 		"DisasterType": "Floods",
@@ -7650,8 +7956,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "239",
 		"DisasterName": "El Salvador Floods",
-		"Date": "11/16/09",
+		"Date": "2009-11-16",
 		"Region": "LAC",
 		"Country": "El Salvador",
 		"DisasterType": "Floods",
@@ -7675,8 +7982,9 @@
 		"TotalContributions": "274845"
 	},
 	{
+		"ARC_num": "240",
 		"DisasterName": "Haiti Earthquake",
-		"Date": "1/12/10",
+		"Date": "2010-01-12",
 		"Region": "LAC",
 		"Country": "Haiti",
 		"DisasterType": "Earthquake",
@@ -7700,8 +8008,9 @@
 		"TotalContributions": "139611532"
 	},
 	{
+		"ARC_num": "241",
 		"DisasterName": "Tanzania Floods",
-		"Date": "1/25/10",
+		"Date": "2010-01-25",
 		"Region": "Africa",
 		"Country": "Tanzania",
 		"DisasterType": "Floods",
@@ -7725,8 +8034,9 @@
 		"TotalContributions": "200000"
 	},
 	{
+		"ARC_num": "242",
 		"DisasterName": "Chile Earthquake",
-		"Date": "2/27/10",
+		"Date": "2010-02-27",
 		"Region": "LAC",
 		"Country": "Chile",
 		"DisasterType": "Earthquake",
@@ -7750,8 +8060,9 @@
 		"TotalContributions": "6400000"
 	},
 	{
+		"ARC_num": "243",
 		"DisasterName": "China Earthquake",
-		"Date": "4/10/10",
+		"Date": "2010-04-10",
 		"Region": "Europe/Asia",
 		"Country": "China",
 		"DisasterType": "Earthquake",
@@ -7775,8 +8086,9 @@
 		"TotalContributions": "500000"
 	},
 	{
+		"ARC_num": "244",
 		"DisasterName": "Mongolia Severe Winter",
-		"Date": "5/10/10",
+		"Date": "2010-05-10",
 		"Region": "Europe/Asia",
 		"Country": "Mongolia",
 		"DisasterType": "Winter storm",
@@ -7800,8 +8112,9 @@
 		"TotalContributions": "145000"
 	},
 	{
+		"ARC_num": "245",
 		"DisasterName": "Nepal Diarrhea Outbreak",
-		"Date": "5/20/10",
+		"Date": "2010-05-20",
 		"Region": "Europe/Asia",
 		"Country": "Nepal",
 		"DisasterType": "Epidemic",
@@ -7825,8 +8138,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "246",
 		"DisasterName": "Tropical Storm Agatha",
-		"Date": "6/1/10",
+		"Date": "2010-06-01",
 		"Region": "LAC",
 		"Country": "Guatemala",
 		"DisasterType": "Tropical Storm",
@@ -7850,8 +8164,9 @@
 		"TotalContributions": "180000"
 	},
 	{
+		"ARC_num": "247",
 		"DisasterName": "Kyrgyzstan-Uzbekistan Population Movement",
-		"Date": "6/1/10",
+		"Date": "2010-06-01",
 		"Region": "Europe/Asia",
 		"Country": "Kyrgyzstan",
 		"DisasterType": "Conflict",
@@ -7875,8 +8190,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "247",
 		"DisasterName": "Kyrgyzstan-Uzbekistan Population Movement",
-		"Date": "6/1/10",
+		"Date": "2010-06-01",
 		"Region": "Europe/Asia",
 		"Country": "Uzbekistan",
 		"DisasterType": "Conflict",
@@ -7900,8 +8216,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "248",
 		"DisasterName": "Pakistan Monsoon Floods",
-		"Date": "8/2/10",
+		"Date": "2010-08-02",
 		"Region": "Europe/Asia",
 		"Country": "Pakistan",
 		"DisasterType": "Floods",
@@ -7925,8 +8242,9 @@
 		"TotalContributions": "8200000"
 	},
 	{
+		"ARC_num": "249",
 		"DisasterName": "Mexico Floods",
-		"Date": "10/1/10",
+		"Date": "2010-10-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Floods",
@@ -7950,8 +8268,9 @@
 		"TotalContributions": "200000"
 	},
 	{
+		"ARC_num": "250",
 		"DisasterName": "Vietnam Floods",
-		"Date": "10/18/10",
+		"Date": "2010-10-18",
 		"Region": "Europe/Asia",
 		"Country": "Vietnam",
 		"DisasterType": "Floods",
@@ -7975,8 +8294,9 @@
 		"TotalContributions": "30000"
 	},
 	{
+		"ARC_num": "251",
 		"DisasterName": "Haiti & Dominican Republic Cholera Outbreak",
-		"Date": "10/24/10",
+		"Date": "2010-10-24",
 		"Region": "LAC",
 		"Country": "Dominican Republic",
 		"DisasterType": "Epidemic",
@@ -8000,8 +8320,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "251",
 		"DisasterName": "Haiti & Dominican Republic Cholera Outbreak",
-		"Date": "10/24/10",
+		"Date": "2010-10-24",
 		"Region": "LAC",
 		"Country": "Haiti",
 		"DisasterType": "Epidemic",
@@ -8025,8 +8346,9 @@
 		"TotalContributions": "16068357"
 	},
 	{
+		"ARC_num": "252",
 		"DisasterName": "Philippines Typhoon Megi",
-		"Date": "10/26/10",
+		"Date": "2010-10-26",
 		"Region": "Europe/Asia",
 		"Country": "Philippines",
 		"DisasterType": "Tropical Storm",
@@ -8050,8 +8372,9 @@
 		"TotalContributions": "30000"
 	},
 	{
+		"ARC_num": "254",
 		"DisasterName": "Caribbean Hurricane Tomas",
-		"Date": "11/3/10",
+		"Date": "2010-11-03",
 		"Region": "LAC",
 		"Country": "Barbados",
 		"DisasterType": "Tropical Storm",
@@ -8075,8 +8398,9 @@
 		"TotalContributions": "145000"
 	},
 	{
+		"ARC_num": "253",
 		"DisasterName": "Indonesia Tsunami & Volcanic Eruption",
-		"Date": "11/8/10",
+		"Date": "2010-11-08",
 		"Region": "Europe/Asia",
 		"Country": "Indonesia",
 		"DisasterType": "Tsunami & Volcanic Eruption",
@@ -8100,8 +8424,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "255",
 		"DisasterName": "Belize Hurricane Richard",
-		"Date": "11/9/10",
+		"Date": "2010-11-09",
 		"Region": "LAC",
 		"Country": "Belize",
 		"DisasterType": "Tropical Storm",
@@ -8125,8 +8450,9 @@
 		"TotalContributions": "80000"
 	},
 	{
+		"ARC_num": "256",
 		"DisasterName": "Costa Rica Floods",
-		"Date": "11/10/10",
+		"Date": "2010-11-10",
 		"Region": "LAC",
 		"Country": "Costa Rica",
 		"DisasterType": "Floods",
@@ -8150,8 +8476,9 @@
 		"TotalContributions": "322330"
 	},
 	{
+		"ARC_num": "258",
 		"DisasterName": "Panama Floods",
-		"Date": "11/30/10",
+		"Date": "2010-11-30",
 		"Region": "LAC",
 		"Country": "Panama",
 		"DisasterType": "Floods",
@@ -8175,8 +8502,9 @@
 		"TotalContributions": "9812"
 	},
 	{
+		"ARC_num": "257",
 		"DisasterName": "Colombian Floods",
-		"Date": "12/16/10",
+		"Date": "2010-12-16",
 		"Region": "LAC",
 		"Country": "Colombia",
 		"DisasterType": "Floods",
@@ -8200,8 +8528,9 @@
 		"TotalContributions": "240000"
 	},
 	{
+		"ARC_num": "260",
 		"DisasterName": "New Zealand Earthquake",
-		"Date": "2/23/11",
+		"Date": "2011-02-23",
 		"Region": "Europe/Asia",
 		"Country": "New Zealand",
 		"DisasterType": "Earthquake",
@@ -8225,8 +8554,9 @@
 		"TotalContributions": "826450"
 	},
 	{
+		"ARC_num": "259",
 		"DisasterName": "North Africa & Middle East Civil Unrest",
-		"Date": "2/28/11",
+		"Date": "2011-02-28",
 		"Region": "Europe/Asia",
 		"Country": "[Rollup]",
 		"DisasterType": "Civil Unrest",
@@ -8250,8 +8580,9 @@
 		"TotalContributions": "540270"
 	},
 	{
+		"ARC_num": "259",
 		"DisasterName": "North Africa & Middle East Civil Unrest",
-		"Date": "2/28/11",
+		"Date": "2011-02-28",
 		"Region": "Europe/Asia",
 		"Country": "Syria",
 		"DisasterType": "Civil Unrest",
@@ -8275,8 +8606,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "259",
 		"DisasterName": "North Africa & Middle East Civil Unrest",
-		"Date": "2/28/11",
+		"Date": "2011-02-28",
 		"Region": "Europe/Asia",
 		"Country": "Tunisia",
 		"DisasterType": "Civil Unrest",
@@ -8300,8 +8632,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "261",
 		"DisasterName": "Paraguay Dengue Epidemic",
-		"Date": "3/1/11",
+		"Date": "2011-03-01",
 		"Region": "LAC",
 		"Country": "Paraguay",
 		"DisasterType": "Epidemic",
@@ -8325,8 +8658,9 @@
 		"TotalContributions": "56000"
 	},
 	{
+		"ARC_num": "262",
 		"DisasterName": "Japan Earthquake & Tsunami",
-		"Date": "3/11/11",
+		"Date": "2011-03-11",
 		"Region": "Europe/Asia",
 		"Country": "Japan",
 		"DisasterType": "Earthquake/ Tsunami",
@@ -8350,8 +8684,9 @@
 		"TotalContributions": "279800000"
 	},
 	{
+		"ARC_num": "263",
 		"DisasterName": "Bolivia Floods",
-		"Date": "3/23/11",
+		"Date": "2011-03-23",
 		"Region": "LAC",
 		"Country": "Bolivia",
 		"DisasterType": "Floods",
@@ -8375,8 +8710,9 @@
 		"TotalContributions": "182000"
 	},
 	{
+		"ARC_num": "265",
 		"DisasterName": "Namibia Floods",
-		"Date": "3/25/11",
+		"Date": "2011-03-25",
 		"Region": "Africa",
 		"Country": "Namibia",
 		"DisasterType": "Floods",
@@ -8400,8 +8736,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "264",
 		"DisasterName": "West African Population Movement",
-		"Date": "4/1/11",
+		"Date": "2011-04-01",
 		"Region": "Africa",
 		"Country": "Liberia",
 		"DisasterType": "Population Movement",
@@ -8425,8 +8762,9 @@
 		"TotalContributions": "150000"
 	},
 	{
+		"ARC_num": "266",
 		"DisasterName": "Horn of Africa Drought",
-		"Date": "7/28/11",
+		"Date": "2011-07-28",
 		"Region": "Africa",
 		"Country": "[rollup]",
 		"DisasterType": "Drought",
@@ -8450,8 +8788,9 @@
 		"TotalContributions": "4178905"
 	},
 	{
+		"ARC_num": "266",
 		"DisasterName": "Horn of Africa Drought",
-		"Date": "7/28/11",
+		"Date": "2011-07-28",
 		"Region": "Africa",
 		"Country": "Ethiopia",
 		"DisasterType": "Drought",
@@ -8475,8 +8814,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "266",
 		"DisasterName": "Horn of Africa Drought",
-		"Date": "7/28/11",
+		"Date": "2011-07-28",
 		"Region": "Africa",
 		"Country": "Kenya",
 		"DisasterType": "Drought",
@@ -8500,8 +8840,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "266",
 		"DisasterName": "Horn of Africa Drought",
-		"Date": "7/28/11",
+		"Date": "2011-07-28",
 		"Region": "Africa",
 		"Country": "Somalia",
 		"DisasterType": "Drought",
@@ -8525,8 +8866,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "266",
 		"DisasterName": "Horn of Africa Drought",
-		"Date": "7/28/11",
+		"Date": "2011-07-28",
 		"Region": "Africa",
 		"Country": "Tanzania",
 		"DisasterType": "Drought",
@@ -8550,8 +8892,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "267",
 		"DisasterName": "DPR Korea (North Korea) Floods",
-		"Date": "8/24/11",
+		"Date": "2011-08-24",
 		"Region": "Europe/Asia",
 		"Country": "North Korea",
 		"DisasterType": "Floods",
@@ -8575,8 +8918,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "268",
 		"DisasterName": "Bangladesh Floods",
-		"Date": "8/31/11",
+		"Date": "2011-08-31",
 		"Region": "Europe/Asia",
 		"Country": "Bangladesh",
 		"DisasterType": "Floods",
@@ -8600,8 +8944,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "269",
 		"DisasterName": "Pakistan Floods",
-		"Date": "9/12/11",
+		"Date": "2011-09-12",
 		"Region": "Europe/Asia",
 		"Country": "Pakistan",
 		"DisasterType": "Floods",
@@ -8625,8 +8970,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "270",
 		"DisasterName": "Philippines Typhoons",
-		"Date": "10/6/11",
+		"Date": "2011-10-06",
 		"Region": "Europe/Asia",
 		"Country": "Philippines",
 		"DisasterType": "Tropical Storm",
@@ -8650,8 +8996,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "271",
 		"DisasterName": "Central America Floods",
-		"Date": "10/20/11",
+		"Date": "2011-10-20",
 		"Region": "LAC",
 		"Country": "[rollup]",
 		"DisasterType": "Floods",
@@ -8675,8 +9022,9 @@
 		"TotalContributions": "303940"
 	},
 	{
+		"ARC_num": "271",
 		"DisasterName": "Central America Floods",
-		"Date": "10/20/11",
+		"Date": "2011-10-20",
 		"Region": "LAC",
 		"Country": "El Salvador",
 		"DisasterType": "Floods",
@@ -8700,8 +9048,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "271",
 		"DisasterName": "Central America Floods",
-		"Date": "10/20/11",
+		"Date": "2011-10-20",
 		"Region": "LAC",
 		"Country": "Guatemala",
 		"DisasterType": "Floods",
@@ -8725,8 +9074,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "271",
 		"DisasterName": "Central America Floods",
-		"Date": "10/20/11",
+		"Date": "2011-10-20",
 		"Region": "LAC",
 		"Country": "Honduras",
 		"DisasterType": "Floods",
@@ -8750,8 +9100,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "271",
 		"DisasterName": "Central America Floods",
-		"Date": "10/20/11",
+		"Date": "2011-10-20",
 		"Region": "LAC",
 		"Country": "Nicaragua",
 		"DisasterType": "Floods",
@@ -8775,8 +9126,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "272",
 		"DisasterName": "Turkey  Earthquake",
-		"Date": "10/26/11",
+		"Date": "2011-10-26",
 		"Region": "Europe/Asia",
 		"Country": "Turkey",
 		"DisasterType": "Earthquake",
@@ -8800,8 +9152,9 @@
 		"TotalContributions": "897000"
 	},
 	{
+		"ARC_num": "273",
 		"DisasterName": "Mexico Floods",
-		"Date": "11/1/11",
+		"Date": "2011-11-01",
 		"Region": "LAC",
 		"Country": "Mexico",
 		"DisasterType": "Floods",
@@ -8825,8 +9178,9 @@
 		"TotalContributions": "270000"
 	},
 	{
+		"ARC_num": "275",
 		"DisasterName": "Thailand Floods",
-		"Date": "11/10/11",
+		"Date": "2011-11-10",
 		"Region": "Europe/Asia",
 		"Country": "Thailand",
 		"DisasterType": "Floods",
@@ -8850,8 +9204,9 @@
 		"TotalContributions": "167000"
 	},
 	{
+		"ARC_num": "274",
 		"DisasterName": "Vietnam Floods",
-		"Date": "11/10/11",
+		"Date": "2011-11-10",
 		"Region": "Europe/Asia",
 		"Country": "Vietnam",
 		"DisasterType": "Floods",
@@ -8875,8 +9230,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "276",
 		"DisasterName": "Colombia Floods",
-		"Date": "12/5/11",
+		"Date": "2011-12-05",
 		"Region": "LAC",
 		"Country": "Colombia",
 		"DisasterType": "Floods",
@@ -8900,8 +9256,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "277",
 		"DisasterName": "Philippines Typhoon Washi",
-		"Date": "12/21/11",
+		"Date": "2011-12-21",
 		"Region": "Europe/Asia",
 		"Country": "Philippines",
 		"DisasterType": "Tropical Storm",
@@ -8925,8 +9282,9 @@
 		"TotalContributions": "268000"
 	},
 	{
+		"ARC_num": "278",
 		"DisasterName": "Sahel Food Crisis",
-		"Date": "2/8/12",
+		"Date": "2012-02-08",
 		"Region": "Africa",
 		"Country": "[rollup]",
 		"DisasterType": "Food Insecurity",
@@ -8950,8 +9308,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "278",
 		"DisasterName": "Sahel Food Crisis",
-		"Date": "2/8/12",
+		"Date": "2012-02-08",
 		"Region": "Africa",
 		"Country": "Burkina Faso",
 		"DisasterType": "Food Insecurity",
@@ -8975,8 +9334,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "278",
 		"DisasterName": "Sahel Food Crisis",
-		"Date": "2/8/12",
+		"Date": "2012-02-08",
 		"Region": "Africa",
 		"Country": "Chad",
 		"DisasterType": "Food Insecurity",
@@ -9000,8 +9360,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "278",
 		"DisasterName": "Sahel Food Crisis",
-		"Date": "2/8/12",
+		"Date": "2012-02-08",
 		"Region": "Africa",
 		"Country": "Mali",
 		"DisasterType": "Food Insecurity",
@@ -9025,8 +9386,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "278",
 		"DisasterName": "Sahel Food Crisis",
-		"Date": "2/8/12",
+		"Date": "2012-02-08",
 		"Region": "Africa",
 		"Country": "Mauritania",
 		"DisasterType": "Food Insecurity",
@@ -9050,8 +9412,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "278",
 		"DisasterName": "Sahel Food Crisis",
-		"Date": "2/8/12",
+		"Date": "2012-02-08",
 		"Region": "Africa",
 		"Country": "Niger",
 		"DisasterType": "Food Insecurity",
@@ -9075,8 +9438,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "278",
 		"DisasterName": "Sahel Food Crisis",
-		"Date": "2/8/12",
+		"Date": "2012-02-08",
 		"Region": "Africa",
 		"Country": "Senegal",
 		"DisasterType": "Food Insecurity",
@@ -9100,8 +9464,9 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "279",
 		"DisasterName": "Paraguay Drought",
-		"Date": "3/5/12",
+		"Date": "2012-03-05",
 		"Region": "LAC",
 		"Country": "Paraguay",
 		"DisasterType": "Drought",
@@ -9125,8 +9490,9 @@
 		"TotalContributions": "45000"
 	},
 	{
+		"ARC_num": "280",
 		"DisasterName": "Bolivia Floods",
-		"Date": "3/16/12",
+		"Date": "2012-03-16",
 		"Region": "LAC",
 		"Country": "Bolivia",
 		"DisasterType": "Floods",
@@ -9150,8 +9516,9 @@
 		"TotalContributions": "75000"
 	},
 	{
+		"ARC_num": "281",
 		"DisasterName": "Peru Floods",
-		"Date": "4/17/12",
+		"Date": "2012-04-17",
 		"Region": "LAC",
 		"Country": "Peru",
 		"DisasterType": "Floods",
@@ -9175,8 +9542,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "282",
 		"DisasterName": "Afghanistan Floods",
-		"Date": "6/12/12",
+		"Date": "2012-06-12",
 		"Region": "Europe/Asia",
 		"Country": "Afghanistan",
 		"DisasterType": "Floods",
@@ -9200,8 +9568,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "283",
 		"DisasterName": "Syria Crisis",
-		"Date": "7/27/12",
+		"Date": "2012-07-27",
 		"Region": "Europe/Asia",
 		"Country": "Syria",
 		"DisasterType": "Civil Unrest",
@@ -9225,8 +9594,9 @@
 		"TotalContributions": "200000"
 	},
 	{
+		"ARC_num": "284",
 		"DisasterName": "Philippines Floods",
-		"Date": "8/10/12",
+		"Date": "2012-08-10",
 		"Region": "Europe/Asia",
 		"Country": "Philippines",
 		"DisasterType": "Floods",
@@ -9250,8 +9620,9 @@
 		"TotalContributions": "50000"
 	},
 	{
+		"ARC_num": "286",
 		"DisasterName": "Bangladesh Floods",
-		"Date": "8/12/12",
+		"Date": "2012-08-12",
 		"Region": "Europe/Asia",
 		"Country": "Bangladesh",
 		"DisasterType": "Floods",
@@ -9275,8 +9646,9 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "285",
 		"DisasterName": "Sierra Leone Cholera Outbreak",
-		"Date": "8/13/12",
+		"Date": "2012-08-13",
 		"Region": "Africa",
 		"Country": "Sierra Leone",
 		"DisasterType": "Epidemic",
@@ -9300,11 +9672,12 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "287",
 		"DisasterName": "Nigeria Flood",
-		"Date": "9/1/12",
+		"Date": "2012-09-01",
 		"Region": "Africa",
 		"Country": "Nigeria",
-		"DisasterType": "Flood",
+		"DisasterType": "",
 		"TotalAffected": "20000",
 		"Money": "100000",
 		"PeopleDeployed": "1",
@@ -9325,11 +9698,12 @@
 		"TotalContributions": "100000"
 	},
 	{
+		"ARC_num": "288",
 		"DisasterName": "Hurricane Sandy",
-		"Date": "11/1/12",
+		"Date": "2012-11-01",
 		"Region": "LAC",
 		"Country": "Jamaica",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "",
 		"TotalAffected": "2525000",
 		"Money": "",
 		"PeopleDeployed": "",
@@ -9350,11 +9724,12 @@
 		"TotalContributions": "51000"
 	},
 	{
+		"ARC_num": "288",
 		"DisasterName": "Hurricane Sandy",
-		"Date": "11/1/12",
+		"Date": "2012-11-01",
 		"Region": "LAC",
 		"Country": "Haiti",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "",
 		"TotalAffected": "2525000",
 		"Money": "100000",
 		"PeopleDeployed": "",
@@ -9375,11 +9750,12 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "288",
 		"DisasterName": "Hurricane Sandy",
-		"Date": "11/1/12",
+		"Date": "2012-11-01",
 		"Region": "LAC",
 		"Country": "Cuba",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "",
 		"TotalAffected": "2525000",
 		"Money": "500000",
 		"PeopleDeployed": "",
@@ -9400,11 +9776,12 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "290",
 		"DisasterName": "Malawi Food Security",
-		"Date": "11/1/12",
+		"Date": "2012-11-01",
 		"Region": "Africa",
 		"Country": "Malawi",
-		"DisasterType": "Food Insecurity",
+		"DisasterType": "",
 		"TotalAffected": "1900000",
 		"Money": "150000",
 		"PeopleDeployed": "",
@@ -9425,11 +9802,12 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "289",
 		"DisasterName": "Panama Floods",
-		"Date": "11/1/12",
+		"Date": "2012-11-01",
 		"Region": "LAC",
 		"Country": "Panama",
-		"DisasterType": "Floods",
+		"DisasterType": "",
 		"TotalAffected": "5118",
 		"Money": "21400",
 		"PeopleDeployed": "",
@@ -9450,11 +9828,12 @@
 		"TotalContributions": "56400"
 	},
 	{
+		"ARC_num": "291",
 		"DisasterName": "Philippines Typhoon Bopha",
-		"Date": "12/1/12",
+		"Date": "2012-12-01",
 		"Region": "Europe/Asia",
 		"Country": "Philippines",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "",
 		"TotalAffected": "6400000",
 		"Money": "100000",
 		"PeopleDeployed": "",
@@ -9475,11 +9854,12 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "292",
 		"DisasterName": "Palestine Gaza Crisis",
-		"Date": "1/1/13",
+		"Date": "2013-01-01",
 		"Region": "Europe/Asia",
 		"Country": "Palestine",
-		"DisasterType": "Civil Unrest",
+		"DisasterType": "",
 		"TotalAffected": "12000",
 		"Money": "100000",
 		"PeopleDeployed": "",
@@ -9500,11 +9880,12 @@
 		"TotalContributions": "0"
 	},
 	{
-		"DisasterName": "Zimbabwe Food Security",
-		"Date": "1/1/13",
+		"ARC_num": "293",
+		"DisasterName": "Zimbabwe food Security",
+		"Date": "2013-01-01",
 		"Region": "Africa",
 		"Country": "Zimbabwe",
-		"DisasterType": "Food Insecurity",
+		"DisasterType": "",
 		"TotalAffected": "1600000",
 		"Money": "50000",
 		"PeopleDeployed": "",
@@ -9525,11 +9906,12 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "294",
 		"DisasterName": "Mozambique Floods",
-		"Date": "2/1/13",
+		"Date": "2013-02-01",
 		"Region": "Africa",
 		"Country": "Mozambique",
-		"DisasterType": "Floods",
+		"DisasterType": "",
 		"TotalAffected": "243671",
 		"Money": "100000",
 		"PeopleDeployed": "",
@@ -9550,11 +9932,12 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "296",
 		"DisasterName": "Argentina Floods",
-		"Date": "4/1/13",
+		"Date": "2013-04-01",
 		"Region": "LAC",
 		"Country": "Argentina",
-		"DisasterType": "Floods",
+		"DisasterType": "",
 		"TotalAffected": "350000",
 		"Money": "",
 		"PeopleDeployed": "1",
@@ -9575,11 +9958,12 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "295",
 		"DisasterName": "DRC Population Movement",
-		"Date": "4/1/13",
+		"Date": "2013-04-01",
 		"Region": "Africa",
 		"Country": "Democratic Republic of the Congo",
-		"DisasterType": "Population Movement",
+		"DisasterType": "",
 		"TotalAffected": "",
 		"Money": "150000",
 		"PeopleDeployed": "1",
@@ -9600,11 +9984,12 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "297",
 		"DisasterName": "Kenya Floods",
-		"Date": "4/1/13",
+		"Date": "2013-04-01",
 		"Region": "Africa",
 		"Country": "Kenya",
-		"DisasterType": "Floods",
+		"DisasterType": "",
 		"TotalAffected": "20000",
 		"Money": "200000",
 		"PeopleDeployed": "",
@@ -9625,11 +10010,12 @@
 		"TotalContributions": "0"
 	},
 	{
+		"ARC_num": "298",
 		"DisasterName": "Bangladesh Tropical Cyclone",
-		"Date": "5/1/13",
+		"Date": "2013-05-01",
 		"Region": "Europe/Asia",
 		"Country": "Bangladesh",
-		"DisasterType": "Tropical Storm",
+		"DisasterType": "",
 		"TotalAffected": "1500000",
 		"Money": "100000",
 		"PeopleDeployed": "",
@@ -9650,28 +10036,29 @@
 		"TotalContributions": "120000"
 	},
 	{
+		"ARC_num": "",
 		"DisasterName": "",
 		"Date": "",
 		"Region": "",
 		"Country": "",
 		"DisasterType": "",
-		"TotalAffected": "",
-		"Money": "",
-		"PeopleDeployed": "",
-		"TotalSupplies": "",
-		"HygieneKits": "",
-		"Blankets": "",
-		"JerryCans": "",
-		"Buckets": "",
-		"Tents": "",
-		"KitchenSets": "",
-		"SleepingMats": "",
-		"MosquitoNets": "",
-		"FoodParcels": "",
-		"Tarps": "",
-		"Vehicles": "",
-		"OtherItems": "",
-		"RiceBags": "",
-		"TotalContributions": ""
+		"TotalAffected": "252,714,818",
+		"Money": "447,881,387",
+		"PeopleDeployed": "481",
+		"TotalSupplies": "6,593,219",
+		"HygieneKits": "130,336",
+		"Blankets": "755,926",
+		"JerryCans": "102,604",
+		"Buckets": "48,850",
+		"Tents": "8,005",
+		"KitchenSets": "62,500",
+		"SleepingMats": "61,598",
+		"MosquitoNets": "168,200",
+		"FoodParcels": "71,100",
+		"Tarps": "71,780",
+		"Vehicles": "17",
+		"OtherItems": "9,250",
+		"RiceBags": "0",
+		"TotalContributions": "1,202,751,520"
 	}
 ]

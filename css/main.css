@@ -15,7 +15,7 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    /*color: #222;*/
 }
 
 body {
@@ -105,17 +105,23 @@ html, body {
 header {
     float: left;
     height: 100px;
-    background: #fff;
+    background-color: rgba(255,255,255,0.8);
     width: 100%;
     color: #000;
     z-index: 1000;
-    opacity: .8;
     position: relative;
 }
 
 header img {
     padding: 5px;
     margin: 10px 15px;
+}
+
+header p {
+    float:right;
+    font: bold 30px arial;
+    margin-right: 20px;
+    color: #6d6e70;
 }
 
 #container
@@ -134,30 +140,36 @@ header img {
 }
 #right {
     float: right;
-    width: 300px;
-    background-color: #efefef;
-    border-left: 2px solid darkgrey;
+    width: 250px;
+    background-color: rgba(255,255,255,0.8);
+    /*border-left: 1px solid darkgrey;*/
     z-index: 50;
     position: absolute;
     bottom: 0;
     right: 0;
     top: 100px;
-    opacity: .95;
+    padding-left:5px;
 }
 #controls {
-    height: 40px;
+    height: 55px;
+/*    border-bottom: 1px solid #d7d7d8;*/
+    background-repeat:no-repeat;
 }
 
-#money, #people, #supplies {
+#money, #people, #supplies, #disasters {
     width: 90%;
-    height:30%;
-    margin:1%;
-    text-align:left;
+    height: 20%;
+    margin: 5px;
+    text-align: left;
+}
+#money {
+    margin-top: 45px;
 }
 
 .total {
     float: right;
     font: 16px Arial, #6d6e70;
+    margin-top: -25px;
 }
 
 h3 {
@@ -167,11 +179,16 @@ h3 {
 
 #slider {
     width:90%;
-    margin-left: 14px;
+    margin: 40px 0 0 14px;
+}
+
+#sliderValue {
+    text-align: center;
+    font-size:18px;
 }
 
 .leaflet-container {
-    background: #efefef;
+    background: #fff;
 }
 
 .iconStack {
@@ -179,6 +196,20 @@ h3 {
     width: 32px;
 }
 
+#majorEvent {
+    z-index: 10000;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    font: 40px Arial;
+    color: #6d6e70;
+}
+
+.disaster {
+    height: 32px;
+    width: 32px;
+    margin:2px;
+}
 
 /* ==========================================================================
    Helper classes

@@ -21,8 +21,7 @@ var map = L.map('map',{
 	minZoom: 2,
 	attributionControl: false,
 	zoomControl: false,
-	dragging: false,
-		
+	// dragging: false
 });
 
 var attrib = new L.Control.Attribution({
@@ -74,6 +73,23 @@ function parseWorld(world,iroc,year) {
 	displayed = [];
 	notdisplayed = [];
 
+	var redStyle = {
+		color: "#fff",
+		weight: 1,
+		fillColor: "red",
+		fillOpacity: 0.7
+	}
+	var greyStyle = {
+		color: "#fff",
+		weight: 1,
+		fillColor: "grey",
+	}
+
+	var highlightStyle = {
+		fillColor: "red",
+		fillOpacity: 0.5		    
+	};
+
 	if (year) {
 		year = (new Date(year).getFullYear() + 1);
 	} else {
@@ -99,22 +115,40 @@ function parseWorld(world,iroc,year) {
 			}
 		});
 
+		var highlight = function(feature, layer) {
+			(function(layer, properties) {
+
+				layer.on("mouseover", function (e){
+					layer.setStyle(highlightStyle);
+				});				
+				
+				var popupContent = "<p class='countryListHeader'>" + properties.name + "</p>";
+				// $.each(arcPrograms, function(ai, program) {
+				// 	var pName = program.COUNTRY.toUpperCase();
+				// 	var selectedCountry = properties.NAME.toUpperCase();
+				// 	if (pName == selectedCountry) {
+				// 		popupContent += "<li class='programListItem'><img class='imageBullet' src=" + program.SECTOR_PRIMARY.substring(0,2) + ".png>" + program.PROJECT_NAME + "</li>"					
+				// 	}					
+				// });
+				// popupContent += "</ul>"	
+				layer.bindPopup(popupContent);
+
+				layer.on("mouseout", function (e){
+					layer.setStyle(redStyle);
+				});
+
+			})(layer, feature.properties);
+		};
+
 	redLayer = L.geoJson(red, {
-		style: {
-			"color": "red",
-			"weight": 1,
-			"opacity": 0.65
-		}
+		style: redStyle,
+		onEachFeature: highlight
 	});
 
 	redLayer.addTo(map);
 
 	greyLayer = L.geoJson(grey, {
-		style: {
-			"color": "grey",
-			"weight": 1,
-			"opacity": 0.65
-		}
+		style: greyStyle
 	});
 
 	greyLayer.addTo(map);
@@ -124,6 +158,7 @@ function buildStuff(year) {
 	money = 0;
 	people = 0;
 	supplies = 0;
+	var disasters = [];
 	$.each(iroc_response, function(a,b) {
 		var pYear = new Date(b.Date).getFullYear();
 		if (pYear == year) {
@@ -144,6 +179,8 @@ function buildStuff(year) {
 			money = money + pMoney;
 			people = people + pPeople;
 			supplies = supplies + pSupplies;
+
+			disasters.push(b);
 		}
 	});
 
@@ -174,7 +211,6 @@ function buildStuff(year) {
 			$("#moneyStack").append('<img src="images/money.png" alt="moneybag" name="$1 million"  class="iconStack money" />');
 		}
 	}
-	
 
 	$("#peopleStack").empty();
 	var peopleStacks = Math.floor(people/10);
@@ -211,54 +247,63 @@ function buildStuff(year) {
 			$("#suppliesStack").append('<img src="images/supplies.png" alt="moneybag" name="10000" class="iconStack supplies" />');
 		}
 	}
+
+	$('#disastersStack').empty();
+	$('#disastersTotal').empty();
+	$('#disastersTotal').html(disasters.length);
+	$.each(disasters, function(a,b){
+		var dType = b.DisasterType.toLowerCase().replace(/\s+/g, '');
+		$('#disastersStack').append('<a title="'+ b.DisasterName +'"><img src="images/'+ dType + '.png" alt="'+ dType +'" class="disaster" /></a>')
+	});
 }
 
 function annotate(year) {
 	switch (year) {
 		case "1999":
-		//stuff for 1999
+			$("#majorEvent").html('Turkey Earthquake');
 		break;
 		case "2000":
-		//
+			//$("#majorEvent").html('Cambodian Floods');
+			$("#majorEvent").html('');
 		break;
 		case "2001":
-		//
+			$("#majorEvent").html('Indian Earthquake');
 		break;
-		case "2002";
-		//
+		case "2002":
+			$("#majorEvent").html('');
 		break;
-		case "2003";
-		//
+		case "2003":
+			$("#majorEvent").html('');
 		break;
-		case "2004";
-			$("#majorEvent").html();
+		case "2004":
+			$("#majorEvent").html('Asian Tsunami');
 		break;
-		case "2005";
-		//
+		case "2005":
+			$("#majorEvent").html('Pakistan Earthquake');
 		break;
 		case "2006":
-		//
+			$("#majorEvent").html('');
 		break;
 		case "2007":
-		//
+			$("#majorEvent").html('');
 		break;
-		case "2008";
-		//
+		case "2008":
+			$("#majorEvent").html('China Sichuan Earthquake');
 		break;
-		case "2009";
-		//
+		case "2009":
+			$("#majorEvent").html('');
 		break;
-		case "2010";
-		//
+		case "2010":
+			$("#majorEvent").html('Haiti Earthquake <br />Pakistan Floods');
 		break;
-		case "2011";
-		//
+		case "2011":
+			$("#majorEvent").html('Japan Earthquake & Tsunami');
 		break;
-		case "2012";
-		//
+		case "2012":
+			$("#majorEvent").html('');
 		break;
-		case "2013";
-		//
+		case "2013":
+			$("#majorEvent").html('');
 		break;
 	}
 }
@@ -269,7 +314,8 @@ getWorld();
 //slider control
 $('#slider').change(function(){
 	var selectedYear = this.value;
-	$("#sliderValue").html(selectedYear);
+	$('#controls').css({'background-image': 'url(images/'+selectedYear+'.png)',
+		'background-repeat': 'no-repeat'});
 	map.removeLayer(redLayer);
 	map.removeLayer(greyLayer);
 	parseWorld(worldcountries,iroc_response,selectedYear);
