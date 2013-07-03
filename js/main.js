@@ -33,7 +33,7 @@ map.addControl(attrib);
 function getWorld() {
 	$.ajax({
 		type: 'GET',
-		url: "data/worldCountries.json",
+		url: "data/worldcountries.json",
 		contentType: "application/json",
 		dataType: 'json',
 		timeout: 10000,
