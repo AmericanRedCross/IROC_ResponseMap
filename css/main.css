@@ -140,7 +140,7 @@ header p {
 }
 #right {
     float: right;
-    width: 250px;
+    width: 350px;
     background-color: rgba(255,255,255,0.8);
     /*border-left: 1px solid darkgrey;*/
     z-index: 50;
@@ -209,6 +209,11 @@ h3 {
     height: 32px;
     width: 32px;
     margin:2px;
+}
+.disasterHeading {
+    height:60px;
+    width: 60px;
+    margin: 5px;
 }
 
 /* ==========================================================================
