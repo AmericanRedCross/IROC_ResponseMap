@@ -164,6 +164,16 @@ header p {
 }
 #money {
     margin-top: 45px;
+    height: 200px;
+}
+#people {
+    height:125px;
+}
+#supplies {
+    height: 250px;
+}
+#disasters {
+    height:250px;
 }
 
 .total {
