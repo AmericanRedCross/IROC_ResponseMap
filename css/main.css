@@ -158,7 +158,6 @@ header p {
 
 #money, #people, #supplies, #disasters {
     width: 90%;
-    height: 20%;
     margin: 5px;
     text-align: left;
 }
