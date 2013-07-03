@@ -203,14 +203,22 @@ function parseWorld(world,iroc,year) {
 			}
 
 		});
-
 moneyFormated = money.formatNumber(0, '.', ',');
-moneyPeople = people.formatNumber(0, '.', ',');
-moneySupplies = supplies.formatNumber(0, '.', ',');
+peopleFormated = people.formatNumber(0, '.', ',');
+suppliesFormated = supplies.formatNumber(0, '.', ',');
 
+if (moneyFormated < 1) {
+	moneyFormated = '';
+}
+if (peopleFormated < 1) {
+	peopleFormated = '';
+}
+if (suppliesFormated < 1) {
+	suppliesFormated ='';
+}
 $('#moneyTotal').html('$' + moneyFormated);
-$('#peopleTotal').html(moneyPeople);
-$('#suppliesTotal').html(moneySupplies);
+$('#peopleTotal').html(peopleFormated);
+$('#suppliesTotal').html(suppliesFormated);
 
 var moneyCount = Math.floor(money/1000000);
 if (moneyCount<1) {
@@ -255,16 +263,16 @@ if (suppliesCount<1) {
 $("#suppliesStack").empty();
 var suppliesStacks = Math.floor(suppliesCount/10);
 var suppliesRemain = Math.round(suppliesCount % 10);
-if (peopleStacks > 1) {
+if (suppliesStacks > 1) {
 	for (i=0;i<suppliesStacks;i++) {
-		$("#suppliesStack").append('<img src="images/mattress.png" alt="supplies" name="100000" class="iconStack mattress" />');
+		$("#suppliesStack").append('<img src="images/boxes.png" alt="supplies" name="100000" class="iconStack mattress" />');
 	}
 	for (i=0;i<suppliesRemain;i++) {
 		$("#suppliesStack").append('<img src="images/supplies.png" alt="supplies" name="10000" class="iconStack supplies" />');
 	}
 } else {
 	for (i=0;i<suppliesCount;i++) {
-		$("#suppliesStack").append('<img src="images/supplies.png" alt="moneybag" name="10000" class="iconStack supplies" />');
+		$("#suppliesStack").append('<img src="images/boxes.png" alt="moneybag" name="10000" class="iconStack supplies" />');
 	}
 }
 
