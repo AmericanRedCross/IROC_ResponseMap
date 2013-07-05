@@ -219,6 +219,7 @@ if (suppliesFormated < 1) {
 $('#moneyTotal').html('$' + moneyFormated);
 $('#peopleTotal').html(peopleFormated);
 $('#suppliesTotal').html(suppliesFormated);
+$('#disastersTotal').html(disasters.length);
 
 var moneyCount = Math.floor(money/1000000);
 if (moneyCount<1) {
@@ -226,7 +227,7 @@ if (moneyCount<1) {
 }
 $("#moneyStack").empty();
 var moneyStacks = Math.floor(moneyCount/10);
-var moneyRemain = Math.round(moneyCount % 10);
+var moneyRemain = Math.ceil(moneyCount % 10);
 if (moneyStacks > 1) {
 	for (i=0;i<moneyStacks;i++) {
 		$("#moneyStack").append('<img src="images/moneybag.png" alt="moneybag" name="$10 million" class="iconStack moneybag" />');
@@ -242,7 +243,7 @@ if (moneyStacks > 1) {
 
 $("#peopleStack").empty();
 var peopleStacks = Math.floor(people/10);
-var peopleRemain = Math.round(people % 10);
+var peopleRemain = Math.ceil(people % 10);
 if (peopleStacks > 1) {
 	for (i=0;i<peopleStacks;i++) {
 		$("#peopleStack").append('<img src="images/people.png" alt="people" name="10" class="iconStack people" />');
@@ -255,30 +256,53 @@ if (peopleStacks > 1) {
 		$("#peopleStack").append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
 	}
 }
+var supStacksMil;
+var supRemainMil;
+var supCount;
+var supStacks;
+var supRemain;
 
-var suppliesCount = Math.floor(supplies/10000);
-if (suppliesCount<1) {
-	suppliesCount = 1;
-}
-$("#suppliesStack").empty();
-var suppliesStacks = Math.floor(suppliesCount/10);
-var suppliesRemain = Math.round(suppliesCount % 10);
-if (suppliesStacks > 1) {
-	for (i=0;i<suppliesStacks;i++) {
-		$("#suppliesStack").append('<img src="images/boxes.png" alt="supplies" name="100000" class="iconStack mattress" />');
+if (supplies > 1000000) {
+	supStacksMil = Math.floor(supplies/1000000);
+	supRemainMil = Math.ceil(supplies % 1000000);
+	supStacks = Math.floor(supRemainMil/10000);
+	if (supStacks < 1) {
+		supStacks = 1;
 	}
-	for (i=0;i<suppliesRemain;i++) {
+	supRemain = Math.ceil(supStacks % 10);
+} else {
+	supStacks = Math.floor(supplies/10000);
+	if (supStacks < 1) {
+		supStacks = 1;
+	}
+	supRemain = Math.ceil(supStacks % 10);
+}
+
+$("#suppliesStack").empty();
+if (supStacksMil) {
+	for (i=0;i<supStacksMil;i++) {
+		$("#suppliesStack").append('<img src="images/milboxes.png" alt="supplies" name="1000000" class="iconStack boxes" />');
+	}
+	for (i=0;i<supStacks;i++) {
+		$("#suppliesStack").append('<img src="images/boxes.png" alt="supplies" name="100000" class="iconStack boxes" />');
+	}
+	for (i=0;i<supRemain;i++) {
+		$("#suppliesStack").append('<img src="images/supplies.png" alt="supplies" name="10000" class="iconStack supplies" />');
+	}
+} else if (supStacks > 1) {
+	for (i=0;i<supStacks;i++) {
+		$("#suppliesStack").append('<img src="images/boxes.png" alt="supplies" name="100000" class="iconStack boxes" />');
+	}
+	for (i=0;i<supRemain;i++) {
 		$("#suppliesStack").append('<img src="images/supplies.png" alt="supplies" name="10000" class="iconStack supplies" />');
 	}
 } else {
-	for (i=0;i<suppliesCount;i++) {
+	for (i=0;i<supStacks;i++) {
 		$("#suppliesStack").append('<img src="images/boxes.png" alt="moneybag" name="10000" class="iconStack supplies" />');
 	}
 }
 
 $('#disastersStack').empty();
-$('#disastersTotal').empty();
-$('#disastersTotal').html(disasters.length);
 $.each(disasters, function(a,b){
 	var dType = b.DisasterType.toLowerCase().replace(/\s+/g, '');
 	$('#disastersStack').append('<a title="'+ b.DisasterName +'"><img src="images/'+ dType + '.png" alt="'+ dType +'" class="disaster" /></a>');

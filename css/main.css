@@ -158,21 +158,13 @@ header p {
 
 #money, #people, #supplies, #disasters {
     width: 90%;
+    height: 23%;
     margin: 5px;
     text-align: left;
+    overflow-y: auto;
 }
 #money {
     margin-top: 45px;
-    height: 200px;
-}
-#people {
-    height:125px;
-}
-#supplies {
-    height: 250px;
-}
-#disasters {
-    height:250px;
 }
 
 .total {
@@ -201,8 +193,8 @@ h3 {
 }
 
 .iconStack {
-    height: 32px;
-    width: 32px;
+    height: 20px;
+    width: 20px;
 }
 
 #majorEvent {
@@ -215,8 +207,8 @@ h3 {
 }
 
 .disaster {
-    height: 32px;
-    width: 32px;
+    height: 20px;
+    width: 20px;
     margin:2px;
 }
 .disasterHeading {
