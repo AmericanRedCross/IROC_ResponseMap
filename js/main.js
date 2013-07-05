@@ -255,21 +255,29 @@ if (peopleStacks > 1) {
 		$("#peopleStack").append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
 	}
 }
+var supStacksMil;
+var supRemainMil;
+var supCount;
+var supStacks;
+var supRemain;
 if (supplies > 1000000) {
 	var suppliesCount = Math.floor(supplies/1000000);
+	supStacksMil = Math.floor(supplies/1000000);
+	supStacks = Math.floor(supRemainMil/10000);
+		supStacks = 1;
+	supRemain = Math.ceil(supStacks % 10);
 } else {
-	var suppliesCount = Math.floor(supplies/10000);
+	supStacks = Math.floor(supplies/10000);
+		supStacks = 1;
+	}
+	supRemain = Math.ceil(supStacks % 10);
 }
 
-if (suppliesCount<1) {
-	suppliesCount = 1;
 }
 $("#suppliesStack").empty();
 var suppliesStacks = Math.floor(suppliesCount/10);
-var suppliesRemain = Math.round(suppliesCount % 10);
-if (suppliesStacks > 1) {
-	for (i=0;i<suppliesStacks;i++) {
-		$("#suppliesStack").append('<img src="images/boxes.png" alt="supplies" name="100000" class="iconStack mattress" />');
+if (supStacksMil) {
+	for (i=0;i<supStacksMil;i++) {
 	}
 	for (i=0;i<suppliesRemain;i++) {
 		$("#suppliesStack").append('<img src="images/supplies.png" alt="supplies" name="10000" class="iconStack supplies" />');
