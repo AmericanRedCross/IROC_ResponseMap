@@ -255,8 +255,12 @@ if (peopleStacks > 1) {
 		$("#peopleStack").append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
 	}
 }
+if (supplies > 1000000) {
+	var suppliesCount = Math.floor(supplies/1000000);
+} else {
+	var suppliesCount = Math.floor(supplies/10000);
+}
 
-var suppliesCount = Math.floor(supplies/10000);
 if (suppliesCount<1) {
 	suppliesCount = 1;
 }
