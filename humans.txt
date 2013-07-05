@@ -4,6 +4,7 @@
 # TEAM
 
     Dale Kunce -- Lead -- @calimapnerd
+    Dale Kunce -- Developer -- @calimapnerd
 
 # THANKS
 
