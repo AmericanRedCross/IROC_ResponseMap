@@ -3,7 +3,6 @@
 
 # TEAM
 
-    Dale Kunce -- Lead -- @calimapnerd
     Dale Kunce -- Developer -- @calimapnerd
 
 # THANKS
@@ -13,4 +12,5 @@
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    LeafletJS, Normalize.css, jQuery, Modernizr
+    IDE: Sublime Text, GIMP, github
