@@ -158,7 +158,7 @@ header p {
 
 #money, #people, #supplies, #disasters {
     width: 90%;
-    height: 23%;
+    height: 17%;
     margin: 5px;
     text-align: left;
     overflow-y: auto;
@@ -215,6 +215,13 @@ h3 {
     height:60px;
     width: 60px;
     margin: 5px;
+}
+
+#disclaimer {
+    position: absolute;
+    bottom: 0;
+    font:10px Arial;
+    color: #6d6e70;
 }
 
 /* ==========================================================================
