@@ -158,10 +158,11 @@ header p {
 
 #money, #people, #supplies, #disasters {
     width: 90%;
-    height: 17%;
+    /*height: 17%;*/
     margin: 5px;
     text-align: left;
     overflow-y: auto;
+    float:left;
 }
 #money {
     margin-top: 45px;
@@ -193,8 +194,8 @@ h3 {
 }
 
 .iconStack {
-    height: 24px;
-    width: 24px;
+    height: 30px;
+    width: 30px;
 }
 
 #majorEvent {
@@ -203,12 +204,13 @@ h3 {
     top: 150px;
     left: 50px;
     font: 40px Arial;
-    color: #6d6e70;
+    color: #000;
+    cursor: pointer;
 }
 
 .disaster {
-    height: 24px;
-    width: 24px;
+    height: 30px;
+    width: 30px;
     margin:2px;
 }
 .disasterHeading {
@@ -220,8 +222,10 @@ h3 {
 #disclaimer {
     position: absolute;
     bottom: 0;
-    font:10px Arial;
+    right: 5px;
+    font:12px Arial;
     color: #6d6e70;
+    cursor: pointer;
 }
 
 /* ==========================================================================

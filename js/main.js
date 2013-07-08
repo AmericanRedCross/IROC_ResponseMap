@@ -9,18 +9,22 @@ var money = 0;
 var people = 0;
 var supplies = 0;
 
+var highlight;
+
 Number.prototype.formatNumber = function(c, d, t){
 	var n = this, c = isNaN(c = Math.abs(c)) ? 2 : c, d = d == undefined ? "," : d, t = t == undefined ? "." : t, s = n < 0 ? "-" : "", i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", j = (j = i.length) > 3 ? j % 3 : 0;
 	return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
 };
 
+var bounds = new L.LatLngBounds([90,250],[-80,-200]);
+
 
 var map = L.map('map',{
 	center: center,
-	zoom: 2,
-	minZoom: 2,
+	zoom: 1,
 	attributionControl: false,
 	zoomControl: false,
+	maxBounds: bounds,
 	// dragging: false
 });
 
@@ -115,7 +119,7 @@ function parseWorld(world,iroc,year) {
 		}
 	});
 
-	var highlight = function(feature, layer) {
+	highlight = function(feature, layer) {
 		(function(layer, properties) {
 
 			layer.on("mouseover", function (e){
@@ -235,6 +239,8 @@ if (moneyStacks > 1) {
 	for (i=0;i<moneyRemain;i++) {
 		$("#moneyStack").append('<img src="images/money.png" alt="moneybag" name="$1 million" class="iconStack money" />');
 	}
+} else if (money == 0) {
+	$("#moneyStack").append('No donations made.');
 } else {
 	for (i=0;i<moneyCount;i++) {
 		$("#moneyStack").append('<img src="images/money.png" alt="moneybag" name="$1 million"  class="iconStack money" />');
@@ -251,6 +257,8 @@ if (peopleStacks > 1) {
 	for (i=0;i<peopleRemain;i++) {
 		$("#peopleStack").append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
 	}
+} else if (people == 0){
+	$("#peopleStack").append('No staff responded.');
 } else {
 	for (i=0;i<people;i++) {
 		$("#peopleStack").append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
@@ -296,16 +304,18 @@ if (supStacksMil) {
 	for (i=0;i<supRemain;i++) {
 		$("#suppliesStack").append('<img src="images/supplies.png" alt="supplies" name="10000" class="iconStack supplies" />');
 	}
+} else if (supplies == 0) {
+	$("#suppliesStack").append('No supplies distributed.');
 } else {
 	for (i=0;i<supStacks;i++) {
-		$("#suppliesStack").append('<img src="images/boxes.png" alt="moneybag" name="10000" class="iconStack supplies" />');
+		$("#suppliesStack").append('<img src="images/supplies.png" alt="moneybag" name="10000" class="iconStack supplies" />');
 	}
 }
 
 $('#disastersStack').empty();
 $.each(disasters, function(a,b){
 	var dType = b.DisasterType.toLowerCase().replace(/\s+/g, '');
-	$('#disastersStack').append('<a title="'+ b.DisasterName +'"><img src="images/'+ dType + '.png" alt="'+ dType +'" class="disaster" /></a>');
+	$('#disastersStack').append('<a title="'+ b.DisasterName +'"><img src="images/'+ dType + '.png" alt="'+ dType +'" class="disaster" name="'+ b.DisasterName +'"/></a>');
 });
 }
 
@@ -360,14 +370,14 @@ function annotate(year) {
 			break;
 		}
 
-		$('#majorEvent').append(html).show(700);
-	}
+	$('#majorEvent').append(html).show(700);
+}
 
 //fire function to for initial page load
 getWorld();
 
 //slider control
-$('#slider').change(function(){
+$('#slider').change(function (){
 	var selectedYear = this.value;
 	$('#controls').css({'background-image': 'url(images/'+selectedYear+'.png)',
 		'background-repeat': 'no-repeat',
@@ -380,3 +390,13 @@ $('#slider').change(function(){
 });
 
 $('#slider').change();
+
+// $(document).on('hover', '.disaster', (function() {
+//     var cHigh = $(this).name();
+//     $.each(red, function(a, b) {
+// 		var cName = b.properties.name.toUpperCase();
+// 		if (cName == cHigh) {
+// 			highlight();
+// 		}
+// 	});
+// }));
