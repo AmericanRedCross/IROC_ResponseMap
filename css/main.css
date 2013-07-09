@@ -9,64 +9,30 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-<<<<<<< HEAD
-
-html,
-button,
-input,
-select,
-textarea {
-    /*color: #222;*/
-}
-
-=======
  html, button, input, select, textarea {
     /*color: #222;*/
 }
->>>>>>> master
 body {
     font-size: 1em;
     line-height: 1.4;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-<<<<<<< HEAD
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-=======
  ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
 }
->>>>>>> master
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
 }
-<<<<<<< HEAD
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-=======
 /*
  * A better looking default horizontal rule
  */
  hr {
->>>>>>> master
     display: block;
     height: 1px;
     border: 0;
@@ -74,22 +40,6 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-<<<<<<< HEAD
-
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
-img {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-=======
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
@@ -100,27 +50,10 @@ fieldset {
  * Remove default fieldset styles.
  */
  fieldset {
->>>>>>> master
     border: 0;
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Old Browser prompt
-   ========================================================================== */
-
-.oldBrowser {
-=======
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -131,32 +64,11 @@ textarea {
    Old Browser prompt
    ========================================================================== */
  .oldBrowser {
->>>>>>> master
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
 }
-<<<<<<< HEAD
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font: 12px Arial,sans-serif;
-}
-
-
-header {
-    float: left;
-    height: 100px;
-    background-color: rgba(255,255,255,0.8);
-=======
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -170,42 +82,24 @@ header {
     float: left;
     height: 100px;
     background-color: rgba(255, 255, 255, 0.8);
->>>>>>> master
     width: 100%;
     color: #000;
     z-index: 1000;
     position: relative;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 header img {
     padding: 5px;
     margin: 10px 15px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 header p {
     float:right;
     font: bold 30px arial;
     margin-right: 20px;
     color: #6d6e70;
 }
-<<<<<<< HEAD
-
-#container
-{
-    min-height: 100%;     
-}
-
-=======
 #container {
     min-height: 100%;
 }
->>>>>>> master
 #map {
     margin: 0;
     padding: 0;
@@ -218,11 +112,7 @@ header p {
 #right {
     float: right;
     width: 350px;
-<<<<<<< HEAD
-    background-color: rgba(255,255,255,0.8);
-=======
     background-color: rgba(255, 255, 255, 0.8);
->>>>>>> master
     /*border-left: 1px solid darkgrey;*/
     z-index: 50;
     position: absolute;
@@ -232,24 +122,6 @@ header p {
     padding-left:5px;
 }
 #controls {
-<<<<<<< HEAD
-    height: 55px;
-/*    border-bottom: 1px solid #d7d7d8;*/
-    background-repeat:no-repeat;
-}
-
-#money, #people, #supplies, #disasters {
-    width: 90%;
-    height: 23%;
-    margin: 5px;
-    text-align: left;
-    overflow-y: auto;
-}
-#money {
-    margin-top: 45px;
-}
-
-=======
     height: 100px;
     /*    border-bottom: 1px solid #d7d7d8;*/
     background-repeat:no-repeat;
@@ -262,60 +134,23 @@ header p {
     overflow-y: auto;
     float:left;
 }
->>>>>>> master
 .total {
     float: right;
     font: 16px Arial, #6d6e70;
     margin-top: -25px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 h3 {
     font: 20px Arial, #6d6e70;
     margin: 6px 0;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 #slider {
     width:90%;
     margin: 40px 0 0 14px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 #sliderValue {
     text-align: center;
     font-size:18px;
 }
-<<<<<<< HEAD
-
-.leaflet-container {
-    background: #fff;
-}
-
-.iconStack {
-    height: 24px;
-    width: 24px;
-}
-
-#majorEvent {
-    z-index: 10000;
-    position: absolute;
-    top: 150px;
-    left: 50px;
-    font: 40px Arial;
-    color: #6d6e70;
-}
-
-.disaster {
-    height: 24px;
-    width: 24px;
-=======
 .leaflet-container {
     background: #fff;
 }
@@ -332,7 +167,6 @@ h3 {
 .disaster {
     height: 30px;
     width: 30px;
->>>>>>> master
     margin:2px;
 }
 .disasterHeading {
@@ -340,9 +174,6 @@ h3 {
     width: 60px;
     margin: 5px;
 }
-<<<<<<< HEAD
-
-=======
 #disclaimer {
     position: absolute;
     bottom: 0;
@@ -378,7 +209,6 @@ input[type='range']::-webkit-slider-thumb {
     height: 20px;
     width: 20px;
 }
->>>>>>> master
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -386,47 +216,19 @@ input[type='range']::-webkit-slider-thumb {
 /*
  * Image replacement
  */
-<<<<<<< HEAD
-
-.ir {
-=======
  .ir {
->>>>>>> master
     background-color: transparent;
     border: 0;
     overflow: hidden;
     /* IE 6/7 fallback */
     *text-indent: -9999px;
 }
-<<<<<<< HEAD
-
-.ir:before {
-    content: "";
-=======
 .ir:before {
     content:"";
->>>>>>> master
     display: block;
     width: 0;
     height: 150%;
 }
-<<<<<<< HEAD
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-=======
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
@@ -438,7 +240,6 @@ input[type='range']::-webkit-slider-thumb {
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
  .visuallyhidden {
->>>>>>> master
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -448,21 +249,11 @@ input[type='range']::-webkit-slider-thumb {
     position: absolute;
     width: 1px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-<<<<<<< HEAD
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-=======
  .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
->>>>>>> master
     clip: auto;
     height: auto;
     margin: 0;
@@ -470,24 +261,12 @@ input[type='range']::-webkit-slider-thumb {
     position: static;
     width: auto;
 }
-<<<<<<< HEAD
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-=======
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
  .invisible {
     visibility: hidden;
 }
->>>>>>> master
 /*
  * Clearfix: contain floats
  *
@@ -499,19 +278,6 @@ input[type='range']::-webkit-slider-thumb {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-<<<<<<< HEAD
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-=======
  .clearfix:before, .clearfix:after {
     content:" ";
     /* 1 */
@@ -521,121 +287,28 @@ input[type='range']::-webkit-slider-thumb {
 .clearfix:after {
     clear: both;
 }
->>>>>>> master
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-<<<<<<< HEAD
-
-.clearfix {
-    *zoom: 1;
-}
-
-=======
  .clearfix {
     *zoom: 1;
 }
->>>>>>> master
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-<<<<<<< HEAD
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-=======
  @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
->>>>>>> master
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
-<<<<<<< HEAD
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-=======
  @media print {
     * {
         background: transparent !important;
@@ -684,4 +357,3 @@ input[type='range']::-webkit-slider-thumb {
         page-break-after: avoid;
     }
 }
->>>>>>> master
