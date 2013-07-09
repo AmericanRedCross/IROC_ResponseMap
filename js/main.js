@@ -253,7 +253,7 @@ function buildStuff(year, dName) {
                 sleepingMats = sleepingMats + pSleepingMats;
                 mosquitoNets = mosquitoNets + pMosquitoNets;
                 foodParcels = foodParcels + pFoodParcels;
-                tarps = Tarps + pTarps;
+                tarps = tarps + pTarps;
                 vehicles = vehicles + pVehicles;
                 otherItems = otherItems + pOtherItems;
                 riceBags = riceBags + pRiceBags;
