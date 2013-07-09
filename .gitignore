@@ -43,4 +43,8 @@ Thumbs.db
 *.esproj
 nbproject
 *.sublime-project
+<<<<<<< HEAD
 *.sublime-workspace
+=======
+*.sublime-workspace
+>>>>>>> master
