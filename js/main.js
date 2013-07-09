@@ -8,385 +8,346 @@ var center = new L.LatLng(30, 60);
 var money = 0;
 var people = 0;
 var supplies = 0;
+var hygieneKits = 0;
+var blankets = 0;
+var jerryCans = 0;
+var buckets = 0;
+var tents = 0;
+var kitchenSets = 0;
+var sleepingMats = 0;
+var mosquitoNets = 0;
+var foodParcels = 0;
+var tarps = 0;
+var vehicles = 0;
+var otherItems = 0;
+var riceBags = 0;
 
 var highlight;
 
-Number.prototype.formatNumber = function(c, d, t){
-	var n = this, c = isNaN(c = Math.abs(c)) ? 2 : c, d = d == undefined ? "," : d, t = t == undefined ? "." : t, s = n < 0 ? "-" : "", i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", j = (j = i.length) > 3 ? j % 3 : 0;
-	return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+var redStyle = {
+    color: "#fff",
+    weight: 1,
+    fillColor: "red",
+    fillOpacity: 0.7
+}
+var greyStyle = {
+    color: "#fff",
+    weight: 1,
+    fillColor: "grey",
+}
+
+var highlightStyle = {
+    fillColor: "red",
+    fillOpacity: 0.5
 };
 
-var bounds = new L.LatLngBounds([90,250],[-80,-200]);
+Number.prototype.formatNumber = function(c, d, t) {
+    var n = this,
+        c = isNaN(c = Math.abs(c)) ? 2 : c,
+        d = d == undefined ? "," : d,
+        t = t == undefined ? "." : t,
+        s = n < 0 ? "-" : "",
+        i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
+        j = (j = i.length) > 3 ? j % 3 : 0;
+    return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+};
+
+var bounds = new L.LatLngBounds([90, 250], [-80, -200]);
 
 
-var map = L.map('map',{
-	center: center,
-	zoom: 1,
-	attributionControl: false,
-	zoomControl: false,
-	maxBounds: bounds,
-	// dragging: false
+var map = L.map('map', {
+    center: center,
+    zoom: 1,
+    attributionControl: false,
+    zoomControl: false,
+    maxBounds: bounds,
+    // dragging: false
 });
 
 var attrib = new L.Control.Attribution({
-	position: 'bottomleft'
+    position: 'bottomleft'
 });
 attrib.addAttribution('Map Data &copy; <a href="http://redcross.org">Red Cross</a>');
 map.addControl(attrib);
 
 function getWorld() {
-	$.ajax({
-		type: 'GET',
-		url: "data/worldcountries.json",
-		contentType: "application/json",
-		dataType: 'json',
-		timeout: 10000,
-		success: function(json) {
-			worldcountries = json;
-			getIROC();
-		},
-		error: function(e) {
-			console.log(e);
-		}
-	});
+    $.ajax({
+        type: 'GET',
+        url: "data/worldcountries2.json",
+        contentType: "application/json",
+        dataType: 'json',
+        timeout: 10000,
+        success: function(json) {
+            worldcountries = json;
+            getIROC();
+        },
+        error: function(e) {
+            console.log(e);
+        }
+    });
 }
 
 function getIROC() {
-	$.ajax({
-		type: 'GET',
-		url: "data/iroc_response.json",
-		contentType: "application/json",
-		dataType: 'json',
-		timeout: 10000,
-		success: function(json) {
-			iroc_response = json;
-			parseWorld(worldcountries,iroc_response,'1999');
-			buildStuff('1999');
+    $.ajax({
+        type: 'GET',
+        url: "data/iroc_response.json",
+        contentType: "application/json",
+        dataType: 'json',
+        timeout: 10000,
+        success: function(json) {
+            iroc_response = json;
+            parseWorld(worldcountries, iroc_response, '1999');
+            buildStuff('1999');
 
-		},
-		error: function(e) {
-			console.log(e);
-		}
-	});
+        },
+        error: function(e) {
+            console.log(e);
+        }
+    });
 }
 
-function parseWorld(world,iroc,year) {
-	var red = [];
-	var borders = [];
-	var grey = [];
-	displayed = [];
-	notdisplayed = [];
+function parseWorld(world, iroc, year) {
+    var red = [];
+    var borders = [];
+    var grey = [];
+    displayed = [];
 
-	var redStyle = {
-		color: "#fff",
-		weight: 1,
-		fillColor: "red",
-		fillOpacity: 0.7
-	}
-	var greyStyle = {
-		color: "#fff",
-		weight: 1,
-		fillColor: "grey",
-	}
+    if (year) {
+        year = (new Date(year).getFullYear() + 1);
+    } else {
+        year = new Date().getFullYear();
+    }
 
-	var highlightStyle = {
-		fillColor: "red",
-		fillOpacity: 0.5		    
-	};
+    $.each(iroc, function(a, b) {
+        var pName = b.Country.toUpperCase();
+        var pYear = new Date(b.Date).getFullYear();
+        if (pYear == year) {
+            if ($.inArray(pName, displayed) == -1) {
+                displayed.push(pName);
+            }
+        }
+    });
 
-	if (year) {
-		year = (new Date(year).getFullYear() + 1);
-	} else {
-		year = new Date().getFullYear();
-	}
+    $.each(world.features, function(a, b) {
+        var cName = b.properties.name.toUpperCase();
+        if ($.inArray(cName, displayed) == -1) {
+            grey.push(b);
+        } else {
+            red.push(b);
+        }
+    });
 
-	$.each(iroc, function(a, b) {
-		var pName = b.Country.toUpperCase();
-		var pYear = new Date(b.Date).getFullYear();
-		if (pYear == year) {
-			if ($.inArray(pName, displayed) == -1) {
-				displayed.push(pName);
-			}
-		}
-	});
+    highlight = function(feature, layer) {
+        (function(layer, properties) {
+            layer.on("mouseover", function(e) {
+                // layer.setStyle(highlightStyle);
+            })
+            layer.on("mouseout", function(e) {
+                // layer.setStyle(redStyle);
+            })
 
-	$.each(world.features, function(a, b) {
-		var cName = b.properties.name.toUpperCase();
-		if ($.inArray(cName, displayed) == -1) {
-			grey.push(b);
-		} else {
-			red.push(b);
-		}
-	});
+            layer.on("click", function(e) {
+                redLayer.setStyle(redStyle);
+                layer.setStyle(highlightStyle);
+                $("#majorEvent").empty();
+                buildStuff(year, properties.name);
+            });
+        })(layer, feature.properties);
+    };
 
-	highlight = function(feature, layer) {
-		(function(layer, properties) {
+    redLayer = L.geoJson(red, {
+        style: redStyle,
+        onEachFeature: highlight
+    });
 
-			layer.on("mouseover", function (e){
-				layer.setStyle(highlightStyle);
-				$("#majorEvent").empty();
-				buildStuff(year,properties.name);
-			});				
-			layer.on("mouseout", function (e){
-				layer.setStyle(redStyle);
-				buildStuff(year);
-				$("#majorEvent").empty();
-				annotate(year);
-			});
+    redLayer.addTo(map);
 
-			})(layer, feature.properties);
-		};
+    greyLayer = L.geoJson(grey, {
+        style: greyStyle
+    });
 
-		redLayer = L.geoJson(red, {
-			style: redStyle,
-			onEachFeature: highlight
-		});
-
-		redLayer.addTo(map);
-
-		greyLayer = L.geoJson(grey, {
-			style: greyStyle
-		});
-
-		greyLayer.addTo(map);
-	}
-
-	function buildStuff(year,dName) {
-		money = 0;
-		people = 0;
-		supplies = 0;
-		var disasters = [];
-		$.each(iroc_response, function(a,b) {
-			var pYear = new Date(b.Date).getFullYear();
-			if (dName) {
-				if ((pYear == year) && (dName == b.Country)) {
-
-					if (b.Money == '') {
-						b.Money = 0;
-					}
-					if (b.PeopleDeployed == '') {
-						b.PeopleDeployed = 0;
-					}
-					if (b.TotalSupplies == '') {
-						b.TotalSupplies = 0;
-					}
-					var pMoney = parseInt(b.Money);
-					var pPeople = parseInt(b.PeopleDeployed);
-					var pSupplies = parseInt(b.TotalSupplies);
-
-					money = money + pMoney;
-					people = people + pPeople;
-					supplies = supplies + pSupplies;
-
-					disasters.push(b);
-					var dType = b.DisasterType.toLowerCase().replace(/\s+/g, '');
-					$("#majorEvent").append('<img src="images/'+ dType + '.png" alt="'+ dType +'" class="disasterHeading" />' + b.DisasterName + '<br />');
-				}
-			} else {
-				if (pYear == year) {
-
-					if (b.Money == '') {
-						b.Money = 0;
-					}
-					if (b.PeopleDeployed == '') {
-						b.PeopleDeployed = 0;
-					}
-					if (b.TotalSupplies == '') {
-						b.TotalSupplies = 0;
-					}
-					var pMoney = parseInt(b.Money);
-					var pPeople = parseInt(b.PeopleDeployed);
-					var pSupplies = parseInt(b.TotalSupplies);
-
-					money = money + pMoney;
-					people = people + pPeople;
-					supplies = supplies + pSupplies;
-
-					disasters.push(b);
-				}
-			}
-
-		});
-moneyFormated = money.formatNumber(0, '.', ',');
-peopleFormated = people.formatNumber(0, '.', ',');
-suppliesFormated = supplies.formatNumber(0, '.', ',');
-
-if (moneyFormated < 1) {
-	moneyFormated = '';
-}
-if (peopleFormated < 1) {
-	peopleFormated = '';
-}
-if (suppliesFormated < 1) {
-	suppliesFormated ='';
-}
-$('#moneyTotal').html('$' + moneyFormated);
-$('#peopleTotal').html(peopleFormated);
-$('#suppliesTotal').html(suppliesFormated);
-$('#disastersTotal').html(disasters.length);
-
-var moneyCount = Math.floor(money/1000000);
-if (moneyCount<1) {
-	moneyCount = 1;
-}
-$("#moneyStack").empty();
-var moneyStacks = Math.floor(moneyCount/10);
-var moneyRemain = Math.ceil(moneyCount % 10);
-if (moneyStacks > 1) {
-	for (i=0;i<moneyStacks;i++) {
-		$("#moneyStack").append('<img src="images/moneybag.png" alt="moneybag" name="$10 million" class="iconStack moneybag" />');
-	}
-	for (i=0;i<moneyRemain;i++) {
-		$("#moneyStack").append('<img src="images/money.png" alt="moneybag" name="$1 million" class="iconStack money" />');
-	}
-} else if (money == 0) {
-	$("#moneyStack").append('No donations made.');
-} else {
-	for (i=0;i<moneyCount;i++) {
-		$("#moneyStack").append('<img src="images/money.png" alt="moneybag" name="$1 million"  class="iconStack money" />');
-	}
+    greyLayer.addTo(map);
 }
 
-$("#peopleStack").empty();
-var peopleStacks = Math.floor(people/10);
-var peopleRemain = Math.ceil(people % 10);
-if (peopleStacks > 1) {
-	for (i=0;i<peopleStacks;i++) {
-		$("#peopleStack").append('<img src="images/people.png" alt="people" name="10" class="iconStack people" />');
-	}
-	for (i=0;i<peopleRemain;i++) {
-		$("#peopleStack").append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
-	}
-} else if (people == 0){
-	$("#peopleStack").append('No staff responded.');
-} else {
-	for (i=0;i<people;i++) {
-		$("#peopleStack").append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
-	}
-}
-var supStacksMil;
-var supRemainMil;
-var supCount;
-var supStacks;
-var supRemain;
-
-if (supplies > 1000000) {
-	supStacksMil = Math.floor(supplies/1000000);
-	supRemainMil = Math.ceil(supplies % 1000000);
-	supStacks = Math.floor(supRemainMil/10000);
-	if (supStacks < 1) {
-		supStacks = 1;
-	}
-	supRemain = Math.ceil(supStacks % 10);
-} else {
-	supStacks = Math.floor(supplies/10000);
-	if (supStacks < 1) {
-		supStacks = 1;
-	}
-	supRemain = Math.ceil(supStacks % 10);
+function reloadYear() {
+    var year = $('#slider').val();
+    buildStuff(year);
+    $("#majorEvent").empty();
+    redLayer.setStyle(redStyle);
 }
 
-$("#suppliesStack").empty();
-if (supStacksMil) {
-	for (i=0;i<supStacksMil;i++) {
-		$("#suppliesStack").append('<img src="images/milboxes.png" alt="supplies" name="1000000" class="iconStack boxes" />');
-	}
-	for (i=0;i<supStacks;i++) {
-		$("#suppliesStack").append('<img src="images/boxes.png" alt="supplies" name="100000" class="iconStack boxes" />');
-	}
-	for (i=0;i<supRemain;i++) {
-		$("#suppliesStack").append('<img src="images/supplies.png" alt="supplies" name="10000" class="iconStack supplies" />');
-	}
-} else if (supStacks > 1) {
-	for (i=0;i<supStacks;i++) {
-		$("#suppliesStack").append('<img src="images/boxes.png" alt="supplies" name="100000" class="iconStack boxes" />');
-	}
-	for (i=0;i<supRemain;i++) {
-		$("#suppliesStack").append('<img src="images/supplies.png" alt="supplies" name="10000" class="iconStack supplies" />');
-	}
-} else if (supplies == 0) {
-	$("#suppliesStack").append('No supplies distributed.');
-} else {
-	for (i=0;i<supStacks;i++) {
-		$("#suppliesStack").append('<img src="images/supplies.png" alt="moneybag" name="10000" class="iconStack supplies" />');
-	}
-}
+function buildStuff(year, dName) {
+    money = 0;
+    people = 0;
+    supplies = 0;
+    var disasters = [];
+    $.each(iroc_response, function(a, b) {
+        var pYear = new Date(b.Date).getFullYear();
+        if (dName) {
+            if ((pYear == year) && (dName == b.Country)) {
 
-$('#disastersStack').empty();
-$.each(disasters, function(a,b){
-	var dType = b.DisasterType.toLowerCase().replace(/\s+/g, '');
-	$('#disastersStack').append('<a title="'+ b.DisasterName +'"><img src="images/'+ dType + '.png" alt="'+ dType +'" class="disaster" name="'+ b.DisasterName +'"/></a>');
-});
-}
+                if (b.Money == '') {
+                    b.Money = 0;
+                }
+                if (b.PeopleDeployed == '') {
+                    b.PeopleDeployed = 0;
+                }
+                if (b.TotalSupplies == '') {
+                    b.TotalSupplies = 0;
+                }
+                var pMoney = parseInt(b.Money);
+                var pPeople = parseInt(b.PeopleDeployed);
+                var pSupplies = parseInt(b.TotalSupplies);
 
-function annotate(year) {
-	var html;
-	$('#majorEvent').empty();
-	switch (year) {
-		case "1999":
-			html = '<img src="images/earthquake.png" alt="earthquake" class="disasterHeading" />Turkey Earthquake';
-			break;
-		case "2000":
-			html = '';
-			break;
-		case "2001":
-			html = '<img src="images/earthquake.png" alt="earthquake" class="disasterHeading" />Indian Earthquake';
-			break;
-		case "2002":
-			html = '';
-			break;
-		case "2003":
-			html = '';
-			break;
-		case "2004":
-			html = '<img src="images/tsunami.png" alt="tsunami" class="disasterHeading" />Asian Tsunami';
-			break;
-		case "2005":
-			html = '<img src="images/earthquake.png" alt="earthquake" class="disasterHeading" />Pakistan Earthquake';
-			break;
-		case "2006":
-			html = '';
-			break;
-		case "2007":
-			html = '';
-			break;
-		case "2008":
-			html = '<img src="images/earthquake.png" alt="earthquake" class="disasterHeading" />China Sichuan Earthquake';
-			break;
-		case "2009":
-			html = '';
-			break;
-		case "2010":
-			html = '<img src="images/earthquake.png" alt="earthquake" class="disasterHeading" />Haiti Earthquake <br /><img src="images/floods.png" alt="floods" class="disasterHeading" />Pakistan Floods';
-			break;
-		case "2011":
-			html = '<img src="images/earthquake.png" alt="earthquake" class="disasterHeading" />Japan Earthquake & Tsunami';
-			break;
-		case "2012":
-			html = '';
-			break;
-		case "2013":
-			html = '';
-			break;
-		}
+                money = money + pMoney;
+                people = people + pPeople;
+                supplies = supplies + pSupplies;
 
-	$('#majorEvent').append(html).show(700);
+                disasters.push(b);
+                var dType = b.DisasterType.toLowerCase().replace(/\s+/g, '');
+                $('#disastersStack').empty();
+                $("#majorEvent").append('<img src="images/' + dType + '.png" alt="' + dType + '" class="disasterHeading" />' + b.DisasterName + '<br />');
+            }
+        } else {
+            $('#majorEvent').empty();
+            if (pYear == year) {
+
+                if (b.Money == '') {
+                    b.Money = 0;
+                }
+                if (b.PeopleDeployed == '') {
+                    b.PeopleDeployed = 0;
+                }
+                if (b.TotalSupplies == '') {
+                    b.TotalSupplies = 0;
+                }
+                var pMoney = parseInt(b.Money);
+                var pPeople = parseInt(b.PeopleDeployed);
+                var pSupplies = parseInt(b.TotalSupplies);
+
+                var pHygieneKits = parseInt(b.HygieneKits);
+                var pBlankets = parseInt(b.Blankets);
+                var pJerryCans = parseInt(b.JerryCans);
+                var pBuckets = parseInt(b.Buckets);
+                var pTents = parseInt(b.Tents);
+                var pKitchenSets = parseInt(b.KitchenSets);
+                var pSleepingMats = parseInt(b.SleepingMats);
+                var pMosquitoNets = parseInt(b.MosquitoNets);
+                var pFoodParcels = parseInt(b.FoodParcels);
+                var pTarps = parseInt(b.Tarps);
+                var pVehicles = parseInt(b.Vehicles);
+                var pOtherItems = parseInt(b.OtherItems);
+                var pRiceBags = parseInt(b.RiceBags);
+
+                money = money + pMoney;
+                people = people + pPeople;
+                supplies = supplies + pSupplies;
+                //create total for each supply type
+
+                hygieneKits = hygieneKits + pHygieneKits;
+                blankets = blankets + pBlankets;
+                jerryCans = jerryCans + pJerryCans;
+                buckets = buckets + pBuckets;
+                tents = tents + pTents;
+                kitchenSets = kitchenSets + pKitchenSets;
+                sleepingMats = sleepingMats + pSleepingMats;
+                mosquitoNets = mosquitoNets + pMosquitoNets;
+                foodParcels = foodParcels + pFoodParcels;
+                tarps = Tarps + pTarps;
+                vehicles = vehicles + pVehicles;
+                otherItems = otherItems + pOtherItems;
+                riceBags = riceBags + pRiceBags;
+
+                disasters.push(b);
+            }
+
+            $('#disastersStack').empty();
+            $.each(disasters, function(a, b) {
+                var dType = b.DisasterType.toLowerCase().replace(/\s+/g, '');
+                $('#disastersStack').append('<a title="' + b.DisasterName + '"><img src="images/' + dType + '.png" alt="' + dType + '" class="disaster" name="' + b.DisasterName + '"/></a>');
+            });
+        }
+
+    });
+    moneyFormated = money.formatNumber(0, '.', ',');
+    peopleFormated = people.formatNumber(0, '.', ',');
+    suppliesFormated = supplies.formatNumber(0, '.', ',');
+
+    if (moneyFormated < 1) {
+        moneyFormated = '';
+    }
+    if (peopleFormated < 1) {
+        peopleFormated = '';
+    }
+    if (suppliesFormated < 1) {
+        suppliesFormated = '';
+    }
+    $('#moneyTotal').html('$' + moneyFormated);
+    $('#peopleTotal').html(peopleFormated);
+    $('#suppliesTotal').html(suppliesFormated);
+    $('#disastersTotal').html(disasters.length);
+
+    var moneyCount = Math.floor(money / 1000000);
+    if (moneyCount < 1) {
+        moneyCount = 1;
+    }
+    $("#moneyStack").empty();
+    var moneyStacks = Math.floor(moneyCount / 10);
+    var moneyRemain = Math.ceil(moneyCount % 10);
+    if (moneyStacks > 1) {
+        for (i = 0; i < moneyStacks; i++) {
+            $("#moneyStack").append('<img src="images/moneybag.png" alt="moneybag" name="$10 million" class="iconStack moneybag" />');
+        }
+        for (i = 0; i < moneyRemain; i++) {
+            $("#moneyStack").append('<img src="images/money.png" alt="moneybag" name="$1 million" class="iconStack money" />');
+        }
+    } else if (money == 0) {
+        $("#moneyStack").append('No donations made.');
+    } else {
+        for (i = 0; i < moneyCount; i++) {
+            $("#moneyStack").append('<img src="images/money.png" alt="moneybag" name="$1 million"  class="iconStack money" />');
+        }
+    }
+
+    $("#peopleStack").empty();
+    var peopleStacks = Math.floor(people / 10);
+    var peopleRemain = Math.ceil(people % 10);
+    if (peopleStacks > 1) {
+        for (i = 0; i < peopleStacks; i++) {
+            $("#peopleStack").append('<img src="images/people.png" alt="people" name="10" class="iconStack people" />');
+        }
+        for (i = 0; i < peopleRemain; i++) {
+            $("#peopleStack").append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
+        }
+    } else if (people == 0) {
+        $("#peopleStack").append('No staff responded.');
+    } else {
+        for (i = 0; i < people; i++) {
+            $("#peopleStack").append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
+        }
+    }
+
+
+
+
+
 }
 
 //fire function to for initial page load
 getWorld();
 
 //slider control
-$('#slider').change(function (){
-	var selectedYear = this.value;
-	$('#controls').css({'background-image': 'url(images/'+selectedYear+'.png)',
-		'background-repeat': 'no-repeat',
-		'background-position': '80px 0'});
-	map.removeLayer(redLayer);
-	map.removeLayer(greyLayer);
-	parseWorld(worldcountries,iroc_response,selectedYear);
-	buildStuff(selectedYear);
-	annotate(selectedYear);
+$('#slider').change(function() {
+    var selectedYear = this.value;
+    $('#controls').css({
+        'background-image': 'url(images/' + selectedYear + '.png)',
+        'background-repeat': 'no-repeat',
+        'background-position': '80px 0'
+    });
+    map.removeLayer(redLayer);
+    map.removeLayer(greyLayer);
+    parseWorld(worldcountries, iroc_response, selectedYear);
+    buildStuff(selectedYear);
 });
 
 $('#slider').change();

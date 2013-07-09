@@ -26,11 +26,18 @@
                 <p>International Response Operations</p>
             </header>
             <div id="map"></div>
-            <div id="majorEvent"></div>
             <div id="right">
                 <div id="controls">
                     <input type="range" value="1999" min="1999" max="2013" step="1" id="slider" />
                     <!-- <div id="sliderValue">&nbsp;</div> -->
+                    <!-- <input onClick="reloadYear();" type="reset" value="Reload Year"  /> -->
+                    <p class="button_link">Reload Year</p>
+                </div>
+                <div id="disasters">
+                    <h3>Disasters</h3>
+                    <div id="majorEvent"></div>
+                    <p id="disastersTotal" class="total"></p>
+                    <p id="disastersStack"></p>
                 </div>
                 <div id="money">
                     <h3>Money</h3>
@@ -47,13 +54,12 @@
                     <p id="suppliesTotal" class="total"></p>
                     <p id="suppliesStack"></p>
                 </div> 
-                <div id="disasters">
-                    <h3>Disasters</h3>
-                    <p id="disastersTotal" class="total"></p>
-                    <p id="disastersStack"></p>
-                </div>
                 <div id="disclaimer">
-                    <p><a title="The maps on this page do not imply the expression of any opinion on the part of the American Red Cross concerning the legal status of a territory or of its authorities.">Disclaimer</a></p>
+                    <p>
+                        &copy; <a href="http://redcross.org" title="Red Cross">Red Cross</a> | 
+                        <a title="The maps on this page do not imply the expression of any opinion on the part of the American Red Cross concerning the legal status of a territory or of its authorities.">Disclaimer</a>
+                        
+                    </p>
                 </div>
             </div>
         </div>
