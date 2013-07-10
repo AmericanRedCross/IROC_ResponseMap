@@ -26,6 +26,10 @@
                 <p>International Response Operations</p>
             </header>
             <div id="map"></div>
+            <div id="disclaimerText">
+                <img src="images/close.gif" onClick="closeDisclaimer();" class="close" alt="close" />
+                <p>Disclaimer</p><hr />
+                The maps on this page do not imply the expression of any opinion on the part of the American Red Cross concerning the legal status of a territory or of its authorities.</div>
             <div id="right">
                 <div id="controls">
                     <input type="range" value="1999" min="1999" max="2013" step="1" id="slider" />
@@ -57,9 +61,9 @@
                 <div id="disclaimer">
                     <p>
                         &copy; <a href="http://redcross.org" title="Red Cross">Red Cross</a> | 
-                        <a title="The maps on this page do not imply the expression of any opinion on the part of the American Red Cross concerning the legal status of a territory or of its authorities.">Disclaimer</a>
-                        
+                        <a title="Disclaimer" onClick="showDisclaimer();">Disclaimer</a>
                     </p>
+                    
                 </div>
             </div>
         </div>

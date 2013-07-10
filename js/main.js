@@ -25,15 +25,15 @@ var riceBags = 0;
 var highlight;
 
 var redStyle = {
-    color: "#fff",
+    color: '#fff',
     weight: 1,
-    fillColor: "red",
+    fillColor: 'red',
     fillOpacity: 0.7
 }
 var greyStyle = {
-    color: "#fff",
+    color: '#fff',
     weight: 1,
-    fillColor: "grey",
+    fillColor: 'grey',
 }
 
 var highlightStyle = {
@@ -52,7 +52,7 @@ Number.prototype.formatNumber = function(c, d, t) {
     return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
 };
 
-var bounds = new L.LatLngBounds([90, 250], [-80, -200]);
+var bounds = new L.LatLngBounds([90, 200], [-80, -200]);
 
 
 var map = L.map('map', {
@@ -60,7 +60,7 @@ var map = L.map('map', {
     zoom: 1,
     attributionControl: false,
     zoomControl: false,
-    maxBounds: bounds,
+    maxBounds: bounds
     // dragging: false
 });
 
@@ -73,8 +73,8 @@ map.addControl(attrib);
 function getWorld() {
     $.ajax({
         type: 'GET',
-        url: "data/worldcountries2.json",
-        contentType: "application/json",
+        url: 'data/worldcountries2.json',
+        contentType: 'application/json',
         dataType: 'json',
         timeout: 10000,
         success: function(json) {
@@ -90,8 +90,8 @@ function getWorld() {
 function getIROC() {
     $.ajax({
         type: 'GET',
-        url: "data/iroc_response.json",
-        contentType: "application/json",
+        url: 'data/iroc_response.json',
+        contentType: 'application/json',
         dataType: 'json',
         timeout: 10000,
         success: function(json) {
@@ -140,16 +140,14 @@ function parseWorld(world, iroc, year) {
     highlight = function(feature, layer) {
         (function(layer, properties) {
             layer.on("mouseover", function(e) {
-                // layer.setStyle(highlightStyle);
-            })
-            layer.on("mouseout", function(e) {
-                // layer.setStyle(redStyle);
-            })
+                var position = layer.getBounds().getCenter();
+                layer.bindLabel(properties.name);
 
+            })
             layer.on("click", function(e) {
                 redLayer.setStyle(redStyle);
                 layer.setStyle(highlightStyle);
-                $("#majorEvent").empty();
+                $('#majorEvent').empty();
                 buildStuff(year, properties.name);
             });
         })(layer, feature.properties);
@@ -172,7 +170,7 @@ function parseWorld(world, iroc, year) {
 function reloadYear() {
     var year = $('#slider').val();
     buildStuff(year);
-    $("#majorEvent").empty();
+    $('#majorEvent').empty();
     redLayer.setStyle(redStyle);
 }
 
@@ -206,7 +204,7 @@ function buildStuff(year, dName) {
                 disasters.push(b);
                 var dType = b.DisasterType.toLowerCase().replace(/\s+/g, '');
                 $('#disastersStack').empty();
-                $("#majorEvent").append('<img src="images/' + dType + '.png" alt="' + dType + '" class="disasterHeading" />' + b.DisasterName + '<br />');
+                $('#majorEvent').append('<img src="images/' + dType + '.png" alt="' + dType + '" class="disasterHeading" />' + b.DisasterName + '<br />');
             }
         } else {
             $('#majorEvent').empty();
@@ -291,46 +289,58 @@ function buildStuff(year, dName) {
     if (moneyCount < 1) {
         moneyCount = 1;
     }
-    $("#moneyStack").empty();
+    $('#moneyStacks').empty();
     var moneyStacks = Math.floor(moneyCount / 10);
     var moneyRemain = Math.ceil(moneyCount % 10);
     if (moneyStacks > 1) {
         for (i = 0; i < moneyStacks; i++) {
-            $("#moneyStack").append('<img src="images/moneybag.png" alt="moneybag" name="$10 million" class="iconStack moneybag" />');
+            $('#moneyStacks').append('<img src="images/moneybag.png" alt="moneybag" name="$10 million" class="iconStack moneybag" />');
         }
         for (i = 0; i < moneyRemain; i++) {
-            $("#moneyStack").append('<img src="images/money.png" alt="moneybag" name="$1 million" class="iconStack money" />');
+            $('#moneyStacks').append('<img src="images/money.png" alt="moneybag" name="$1 million" class="iconStack money" />');
         }
     } else if (money == 0) {
-        $("#moneyStack").append('No donations made.');
+        $('#moneyStacks').append('No donations made.');
     } else {
         for (i = 0; i < moneyCount; i++) {
-            $("#moneyStack").append('<img src="images/money.png" alt="moneybag" name="$1 million"  class="iconStack money" />');
+            $('#moneyStacks').append('<img src="images/money.png" alt="moneybag" name="$1 million"  class="iconStack money" />');
         }
     }
 
-    $("#peopleStack").empty();
+    $('#peopleStacks').empty();
     var peopleStacks = Math.floor(people / 10);
     var peopleRemain = Math.ceil(people % 10);
     if (peopleStacks > 1) {
         for (i = 0; i < peopleStacks; i++) {
-            $("#peopleStack").append('<img src="images/people.png" alt="people" name="10" class="iconStack people" />');
+            $('#peopleStacks').append('<img src="images/people.png" alt="people" name="10" class="iconStack people" />');
         }
         for (i = 0; i < peopleRemain; i++) {
-            $("#peopleStack").append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
+            $('#peopleStacks').append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
         }
     } else if (people == 0) {
-        $("#peopleStack").append('No staff responded.');
+        $('#peopleStacks').append('No staff responded.');
     } else {
         for (i = 0; i < people; i++) {
-            $("#peopleStack").append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
+            $('#peopleStacks').append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
         }
     }
 
-
-
-
-
+    $('#suppliesStacks').empty();
+    $('#suppliesStacks').append('<ul>');
+    if (hygieneKits > 0){$('#suppliesStacks').append('<li><img src="images/hygienekits.png" alt="hygiene kits" />'+hygieneKits+'</li>')}
+    if (blankets > 0){$('#suppliesStacks').append('<li><img src="images/blankets.png" alt="blankets" />'+blankets+'</li>')}
+    if (jerryCans > 0){$('#suppliesStacks').append('<li><img src="images/jerrycans.png" alt="jerryCans" />'+jerryCans+'</li>')}
+    if (buckets > 0){$('#suppliesStacks').append('<li><img src="images/buckets.png" alt="buckets" />'+buckets+'</li>')}
+    if (tents > 0){$('#suppliesStacks').append('<li><img src="images/tents.png" alt="tents" />'+tents+'</li>')}
+    if (kitchenSets > 0){$('#suppliesStacks').append('<li><img src="images/kitchensets.png" alt="kitchen sets" />'+kitchenSets+'</li>')}
+    if (sleepingMats > 0){$('#suppliesStacks').append('<li><img src="images/sleepingmats.png" alt="sleeping mats" />'+sleepingMats+'</li>')}
+    if (mosquitoNets > 0){$('#suppliesStacks').append('<li><img src="images/mosquitonets.png" alt="mosquito Nets" />'+mosquitoNets+'</li>')}
+    if (foodParcels > 0){$('#suppliesStacks').append('<li><img src="images/foodparcels.png" alt="Food Parcels" />'+foodParcels+'</li>')}
+    if (riceBags > 0){$('#suppliesStacks').append('<li><img src="images/ricebags.png" alt="rice Bags" />'+riceBags+'</li>')}
+    if (tarps > 0){$('#suppliesStacks').append('<li><img src="images/tarps.png" alt="tarps" />'+tarps+'</li>')}
+    if (vehicles > 0){$('#suppliesStacks').append('<li><img src="images/vehicles.png" alt="vehicles" />'+vehicles+'</li>')}
+    if (otherItems > 0){$('#suppliesStacks').append('<li><img src="images/othertems.png" alt="other Items" />'+otherItems+'</li>')}
+    $('#suppliesStacks').append('</ul>');
 }
 
 //fire function to for initial page load
@@ -352,12 +362,10 @@ $('#slider').change(function() {
 
 $('#slider').change();
 
-// $(document).on('hover', '.disaster', (function() {
-//     var cHigh = $(this).name();
-//     $.each(red, function(a, b) {
-// 		var cName = b.properties.name.toUpperCase();
-// 		if (cName == cHigh) {
-// 			highlight();
-// 		}
-// 	});
-// }));
+//disclaimer text
+function showDisclaimer() {
+	$('#disclaimerText').show();
+}
+function closeDisclaimer() {
+	$('#disclaimerText').hide();
+}

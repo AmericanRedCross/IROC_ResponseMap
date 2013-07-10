@@ -26,7 +26,3 @@
 //html5shiv
 // var jsHTML5 = document.createElement('script');
 // jsHTML5.setAttribute('src', 'je/vendor/html5shiv.js');
-
-//accounting js to format money
-var jsAccount = document.createElement('script');
-jsAccount.setAttribute('src','js/vendor/accounting.js');
