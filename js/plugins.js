@@ -23,6 +23,6 @@
 
 // Place any jQuery/helper plugins in here.
 
-//html5shiv
-// var jsHTML5 = document.createElement('script');
-// jsHTML5.setAttribute('src', 'je/vendor/html5shiv.js');
+//tooltips
+var jstooltip = document.createElement('script');
+jstooltip.setAttribute('src', 'je/vendor/jquery.tooltipster.min.js');

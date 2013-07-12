@@ -10,9 +10,10 @@
     <meta name="description" content="American Red Cross response to International Disasters since 1999">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
@@ -33,10 +34,8 @@
             <div id="right">
                 <div id="controls">
                     <input type="range" value="1999" min="1999" max="2013" step="1" id="slider" />
-                    <!-- <div id="sliderValue">&nbsp;</div> -->
-                    <!-- <input onClick="reloadYear();" type="reset" value="Reload Year"  /> -->
                     <button class="button_link" onClick="reloadYear();">Refresh <span id="currentYear"></span></button>
-                    <!--<button class="button_link" onClick="showAll();">Show All</button>-->
+                    <!-- <button class="button_link" onClick="showAll();">Show All</button> -->
                 </div>
                 <div id="disasters">
                     <h3>Disasters</h3>
@@ -70,6 +69,7 @@
         </div>
         <script src="//cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="js/vendor/jquery.tooltipster.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 

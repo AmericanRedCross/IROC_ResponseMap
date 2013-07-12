@@ -266,7 +266,7 @@ function buildStuff(year, dName) {
                 disasters.push(b);
                 var dType = b.DisasterType.toLowerCase().replace(/\s+/g, '');
                 $('#disastersStack').empty();
-                $('#majorEvent').append('<a title="'+dType+'"><img src="images/' + dType + '.png" alt="' + dType + '" class="disasterHeading" />' + b.DisasterName + '</a><br />');
+                $('#majorEvent').append('<a class="tooltip" title="'+dType+'"><img src="images/' + dType + '.png" alt="' + dType + '" class="disasterHeading" />' + b.DisasterName + '</a><br />');
             }
         } else if (year) {
             $('#majorEvent').empty();
@@ -294,7 +294,7 @@ function buildStuff(year, dName) {
             $('#disastersStack').empty();
             $.each(disasters, function(a, b) {
                 var dType = b.DisasterType.toLowerCase().replace(/\s+/g, '');
-                $('#disastersStack').append('<a title="' + b.DisasterName + '"><img src="images/' + dType + '.png" alt="' + dType + '" class="iconStack" name="' + b.DisasterName + '"/></a>');
+                $('#disastersStack').append('<a class="tooltip" title="' + b.DisasterName + '"><img src="images/' + dType + '.png" alt="' + dType + '" class="iconStack" name="' + b.DisasterName + '"/></a>');
             });
         } else {
             $('#majorEvent').empty();
@@ -320,7 +320,7 @@ function buildStuff(year, dName) {
             $('#disastersStack').empty();
             $.each(disasters, function(a, b) {
                 var dType = b.DisasterType.toLowerCase().replace(/\s+/g, '');
-                $('#disastersStack').append('<a title="' + b.DisasterName + '"><img src="images/' + dType + '.png" alt="' + dType + '" class="iconStack" name="' + b.DisasterName + '"/></a>');
+                $('#disastersStack').append('<a class="tooltip" title="' + b.DisasterName + '"><img src="images/' + dType + '.png" alt="' + dType + '" class="iconStack" name="' + b.DisasterName + '"/></a>');
             });
         }
 
@@ -365,16 +365,16 @@ function buildStuff(year, dName) {
     var moneyRemain = Math.ceil(moneyCount % 10);
     if (moneyStacks > 1) {
         for (i = 0; i < moneyStacks; i++) {
-            $('#moneyStack').append('<a title="$10 million"><img src="images/moneybag.png" alt="moneybag" name="$10 million" class="iconStack moneybag" /></a>');
+            $('#moneyStack').append('<a class="tooltip" title="$10 million"><img src="images/moneybag.png" alt="moneybag" name="$10 million" class="iconStack moneybag" /></a>');
         }
         for (i = 0; i < moneyRemain; i++) {
-            $('#moneyStack').append('<a title="$1 million"><img src="images/money.png" alt="moneybag" name="$1 million" class="iconStack money" /></a>');
+            $('#moneyStack').append('<a class="tooltip" title="$1 million"><img src="images/money.png" alt="moneybag" name="$1 million" class="iconStack money" /></a>');
         }
     } else if (money == 0) {
         $('#moneyStack').append('No donations made.');
     } else {
         for (i = 0; i < moneyCount; i++) {
-            $('#moneyStack').append('<a title="$1 million"><img src="images/money.png" alt="moneybag" name="$1 million"  class="iconStack money" /></a>');
+            $('#moneyStack').append('<a class="tooltip" title="$1 million"><img src="images/money.png" alt="moneybag" name="$1 million"  class="iconStack money" /></a>');
         }
     }
 
@@ -383,58 +383,58 @@ function buildStuff(year, dName) {
     var peopleRemain = Math.ceil(people % 10);
     if (peopleStacks > 1) {
         for (i = 0; i < peopleStacks; i++) {
-            $('#peopleStack').append('<a title="10 Staff"><img src="images/people.png" alt="people" name="10" class="iconStack people" /></a>');
+            $('#peopleStack').append('<a class="tooltip" title="10 Staff"><img src="images/people.png" alt="people" name="10" class="iconStack people" /></a>');
         }
         for (i = 0; i < peopleRemain; i++) {
-            $('#peopleStack').append('<a title="1 Staff"><img src="images/male.png" alt="person" name="1" class="iconStack person" /></a>');
+            $('#peopleStack').append('<a class="tooltip" title="1 Staff"><img src="images/male.png" alt="person" name="1" class="iconStack person" /></a>');
         }
     } else if (people == 0) {
         $('#peopleStack').append('No staff responded.');
     } else {
         for (i = 0; i < people; i++) {
-            $('#peopleStack').append('<a title="1 Staff"><img src="images/male.png" alt="person" name="1" class="iconStack person" /></a>');
+            $('#peopleStack').append('<a class="tooltip" title="1 Staff"><img src="images/male.png" alt="person" name="1" class="iconStack person" /></a>');
         }
     }
 
     $('#suppliesStack').empty();
     if (hygieneKits > 0) {
-        $('#suppliesStack').append('<li><a title="Hygiene Kits"><img src="images/hygienekits.png" class="iconStack supplyIcon" alt="hygiene kits" />' + hygieneKitsFormated + '</a></li>')
+        $('#suppliesStack').append('<li><a class="tooltip" title="Hygiene Kits"><img src="images/hygienekits.png" class="iconStack supplyIcon" alt="hygiene kits" />' + hygieneKitsFormated + '</a></li>')
     }
     if (blankets > 0) {
-        $('#suppliesStack').append('<li><a title="Blankets"><img src="images/blankets.png" class="iconStack supplyIcon" alt="blankets" />' + blanketsFormated + '</a></li>')
+        $('#suppliesStack').append('<li><a class="tooltip" title="Blankets"><img src="images/blankets.png" class="iconStack supplyIcon" alt="blankets" />' + blanketsFormated + '</a></li>')
     }
     if (jerryCans > 0) {
-        $('#suppliesStack').append('<li><a title="Jerry Cans"><img src="images/jerrycans.png" class="iconStack supplyIcon" alt="jerryCans" />' + jerryCansFormated + '</a></li>')
+        $('#suppliesStack').append('<li><a class="tooltip" title="Jerry Cans"><img src="images/jerrycans.png" class="iconStack supplyIcon" alt="jerryCans" />' + jerryCansFormated + '</a></li>')
     }
     if (buckets > 0) {
-        $('#suppliesStack').append('<li><a title="Buckets"><img src="images/buckets.png" class="iconStack supplyIcon" alt="buckets" />' + bucketsFormated + '</a></li>')
+        $('#suppliesStack').append('<li><a class="tooltip" title="Buckets"><img src="images/buckets.png" class="iconStack supplyIcon" alt="buckets" />' + bucketsFormated + '</a></li>')
     }
     if (tents > 0) {
-        $('#suppliesStack').append('<li><a title="Tents"><img src="images/tents.png" class="iconStack supplyIcon" alt="tents" />' + tentsFormated + '</a></li>')
+        $('#suppliesStack').append('<li><a class="tooltip" title="Tents"><img src="images/tents.png" class="iconStack supplyIcon" alt="tents" />' + tentsFormated + '</a></li>')
     }
     if (kitchenSets > 0) {
-        $('#suppliesStack').append('<li><a title="Kitchen Sets"><img src="images/kitchensets.png" class="iconStack supplyIcon" alt="kitchen sets" />' + kitchenSetsFormated + '</a></li>')
+        $('#suppliesStack').append('<li><a class="tooltip" title="Kitchen Sets"><img src="images/kitchensets.png" class="iconStack supplyIcon" alt="kitchen sets" />' + kitchenSetsFormated + '</a></li>')
     }
     if (sleepingMats > 0) {
-        $('#suppliesStack').append('<li><a title="Sleeping Mats"><img src="images/sleepingmats.png" class="iconStack supplyIcon" alt="sleeping mats" />' + sleepingMatsFormated + '</a></li>')
+        $('#suppliesStack').append('<li><a class="tooltip" title="Sleeping Mats"><img src="images/sleepingmats.png" class="iconStack supplyIcon" alt="sleeping mats" />' + sleepingMatsFormated + '</a></li>')
     }
     if (mosquitoNets > 0) {
-        $('#suppliesStack').append('<li><a title="Mosquito Nets"><img src="images/mosquitonets.png" class="iconStack supplyIcon" alt="mosquito Nets" />' + mosquitoNetsFormated + '</a></li>')
+        $('#suppliesStack').append('<li><a class="tooltip" title="Mosquito Nets"><img src="images/mosquitonets.png" class="iconStack supplyIcon" alt="mosquito Nets" />' + mosquitoNetsFormated + '</a></li>')
     }
     if (foodParcels > 0) {
-        $('#suppliesStack').append('<li><a title="Food Parcels"><img src="images/foodparcels.png" class="iconStack supplyIcon" alt="Food Parcels" />' + foodParcelsFormated + '</a></li>')
+        $('#suppliesStack').append('<li><a class="tooltip" title="Food Parcels"><img src="images/foodparcels.png" class="iconStack supplyIcon" alt="Food Parcels" />' + foodParcelsFormated + '</a></li>')
     }
     if (riceBags > 0) {
-        $('#suppliesStack').append('<li><a title="Rice Bags"><img src="images/ricebags.png" class="iconStack supplyIcon" alt="rice Bags" />' + riceBagsFormated + '</a></li>')
+        $('#suppliesStack').append('<li><a class="tooltip" title="Rice Bags"><img src="images/ricebags.png" class="iconStack supplyIcon" alt="rice Bags" />' + riceBagsFormated + '</a></li>')
     }
     if (tarps > 0) {
-        $('#suppliesStack').append('<li><a title="Tarps"><img src="images/tarps.png" class="iconStack supplyIcon" alt="tarps" />' + tarpsFormated + '</a></li>')
+        $('#suppliesStack').append('<li><a class="tooltip" title="Tarps"><img src="images/tarps.png" class="iconStack supplyIcon" alt="tarps" />' + tarpsFormated + '</a></li>')
     }
     if (vehicles > 0) {
-        $('#suppliesStack').append('<li><a title="Vehicles"><img src="images/vehicles.png" class="iconStack supplyIcon" alt="vehicles" />' + vehiclesFormated + '</a></li>')
+        $('#suppliesStack').append('<li><a class="tooltip" title="Vehicles"><img src="images/vehicles.png" class="iconStack supplyIcon" alt="vehicles" />' + vehiclesFormated + '</a></li>')
     }
     if (otherItems > 0) {
-        $('#suppliesStack').append('<li><a title="Other Items"><img src="images/otheritems.png" class="iconStack supplyIcon" alt="other Items" />' + otherItemsFormated + '</a></li>')
+        $('#suppliesStack').append('<li><a class="tooltip" title="Other Items"><img src="images/otheritems.png" class="iconStack supplyIcon" alt="other Items" />' + otherItemsFormated + '</a></li>')
     }
 }
 
@@ -449,6 +449,7 @@ $('#slider').change(function() {
         'background-repeat': 'no-repeat',
         'background-position': '80px 0'
     });
+    $('#currentYear').html(selectedYear);
     map.removeLayer(redLayer);
     map.removeLayer(greyLayer);
     parseWorld(worldcountries, iroc_response, selectedYear);
@@ -467,25 +468,14 @@ function closeDisclaimer() {
     $('#disclaimerText').hide();
 }
 
-// $('#year').click(function (){
-//     reloadYear();
-//     alert('test');
-// });
-// $('#total').click(function(){
-//     map.removeLayer(redLayer);
-//     map.removeLayer(greyLayer);
-//     parseWorld(worldcountries, iroc_response);
-//     buildStuff();
-// });
+function showAll(){
+    map.removeLayer(redLayer);
+    map.removeLayer(greyLayer);
+    parseWorld(worldcountries, iroc_response);
+    buildStuff();
+}
 
-$(function(){
-    $('#year').click(function () {
-      console.log('event fired');
-    });
-    console.log('doc ready');
-});
-
-$(window).load(function() {
-    console.log("window loaded");
+$(document).ready(function() {
+    $('.tooltip').tooltipster();
 });
 
