@@ -3,7 +3,7 @@ var displayed;
 var notdisplayed;
 var redLayer;
 var greyLayer;
-var center = new L.LatLng(30, 60);
+var center = new L.LatLng(30, 0);
 
 var money = 0;
 var people = 0;
@@ -139,11 +139,7 @@ function parseWorld(world, iroc, year) {
 
     highlight = function(feature, layer) {
         (function(layer, properties) {
-            layer.on("mouseover", function(e) {
-                var position = layer.getBounds().getCenter();
-                layer.bindLabel(properties.name);
-
-            })
+            layer.on("mouseover", function(e) {})
             layer.on("click", function(e) {
                 redLayer.setStyle(redStyle);
                 layer.setStyle(highlightStyle);
@@ -181,67 +177,103 @@ function buildStuff(year, dName) {
     var disasters = [];
     $.each(iroc_response, function(a, b) {
         var pYear = new Date(b.Date).getFullYear();
-        if (dName) {
+        if (b.Money == '') {
+            b.Money = 0;
+        }
+        if (b.PeopleDeployed == '') {
+            b.PeopleDeployed = 0;
+        }
+        if (b.TotalSupplies == '') {
+            b.TotalSupplies = 0;
+        }
+        if (b.Money == '') {
+            b.Money = 0;
+        }
+        if (b.HygieneKits == '') {
+            b.HygieneKits = 0;
+        }
+        if (b.Blankets == '') {
+            b.Blankets = 0;
+        }
+        if (b.JerryCans == '') {
+            b.JerryCans = 0;
+        }
+        if (b.Buckets == '') {
+            b.Buckets = 0;
+        }
+        if (b.Tents == '') {
+            b.Tents = 0;
+        }
+        if (b.KitchenSets == '') {
+            b.KitchenSets = 0;
+        }
+        if (b.SleepingMats == '') {
+            b.SleepingMats = 0;
+        }
+        if (b.FoodParcels == '') {
+            b.FoodParcels = 0;
+        }
+        if (b.Tarps == '') {
+            b.Tarps = 0;
+        }
+        if (b.Vehicles == '') {
+            b.Vehicles = 0;
+        }
+        if (b.OtherItems == '') {
+            b.OtherItems = 0;
+        }
+        if (b.RiceBags == '') {
+            b.RiceBags = 0;
+        }
+
+        var pMoney = parseInt(b.Money);
+        var pPeople = parseInt(b.PeopleDeployed);
+        var pSupplies = parseInt(b.TotalSupplies);
+
+        var pHygieneKits = parseInt(b.HygieneKits);
+        var pBlankets = parseInt(b.Blankets);
+        var pJerryCans = parseInt(b.JerryCans);
+        var pBuckets = parseInt(b.Buckets);
+        var pTents = parseInt(b.Tents);
+        var pKitchenSets = parseInt(b.KitchenSets);
+        var pSleepingMats = parseInt(b.SleepingMats);
+        var pMosquitoNets = parseInt(b.MosquitoNets);
+        var pFoodParcels = parseInt(b.FoodParcels);
+        var pTarps = parseInt(b.Tarps);
+        var pVehicles = parseInt(b.Vehicles);
+        var pOtherItems = parseInt(b.OtherItems);
+        var pRiceBags = parseInt(b.RiceBags);
+
+        if ((dName) && (year)){
             if ((pYear == year) && (dName == b.Country)) {
-
-                if (b.Money == '') {
-                    b.Money = 0;
-                }
-                if (b.PeopleDeployed == '') {
-                    b.PeopleDeployed = 0;
-                }
-                if (b.TotalSupplies == '') {
-                    b.TotalSupplies = 0;
-                }
-                var pMoney = parseInt(b.Money);
-                var pPeople = parseInt(b.PeopleDeployed);
-                var pSupplies = parseInt(b.TotalSupplies);
-
                 money = money + pMoney;
                 people = people + pPeople;
                 supplies = supplies + pSupplies;
+                hygieneKits = hygieneKits + pHygieneKits;
+                blankets = blankets + pBlankets;
+                jerryCans = jerryCans + pJerryCans;
+                buckets = buckets + pBuckets;
+                tents = tents + pTents;
+                kitchenSets = kitchenSets + pKitchenSets;
+                sleepingMats = sleepingMats + pSleepingMats;
+                mosquitoNets = mosquitoNets + pMosquitoNets;
+                foodParcels = foodParcels + pFoodParcels;
+                tarps = tarps + pTarps;
+                vehicles = vehicles + pVehicles;
+                otherItems = otherItems + pOtherItems;
+                riceBags = riceBags + pRiceBags;
 
                 disasters.push(b);
                 var dType = b.DisasterType.toLowerCase().replace(/\s+/g, '');
                 $('#disastersStack').empty();
-                $('#majorEvent').append('<img src="images/' + dType + '.png" alt="' + dType + '" class="disasterHeading" />' + b.DisasterName + '<br />');
+                $('#majorEvent').append('<a title="'+dType+'"><img src="images/' + dType + '.png" alt="' + dType + '" class="disasterHeading" />' + b.DisasterName + '</a><br />');
             }
-        } else {
+        } else if (year) {
             $('#majorEvent').empty();
             if (pYear == year) {
-
-                if (b.Money == '') {
-                    b.Money = 0;
-                }
-                if (b.PeopleDeployed == '') {
-                    b.PeopleDeployed = 0;
-                }
-                if (b.TotalSupplies == '') {
-                    b.TotalSupplies = 0;
-                }
-                var pMoney = parseInt(b.Money);
-                var pPeople = parseInt(b.PeopleDeployed);
-                var pSupplies = parseInt(b.TotalSupplies);
-
-                var pHygieneKits = parseInt(b.HygieneKits);
-                var pBlankets = parseInt(b.Blankets);
-                var pJerryCans = parseInt(b.JerryCans);
-                var pBuckets = parseInt(b.Buckets);
-                var pTents = parseInt(b.Tents);
-                var pKitchenSets = parseInt(b.KitchenSets);
-                var pSleepingMats = parseInt(b.SleepingMats);
-                var pMosquitoNets = parseInt(b.MosquitoNets);
-                var pFoodParcels = parseInt(b.FoodParcels);
-                var pTarps = parseInt(b.Tarps);
-                var pVehicles = parseInt(b.Vehicles);
-                var pOtherItems = parseInt(b.OtherItems);
-                var pRiceBags = parseInt(b.RiceBags);
-
                 money = money + pMoney;
                 people = people + pPeople;
                 supplies = supplies + pSupplies;
-                //create total for each supply type
-
                 hygieneKits = hygieneKits + pHygieneKits;
                 blankets = blankets + pBlankets;
                 jerryCans = jerryCans + pJerryCans;
@@ -262,7 +294,33 @@ function buildStuff(year, dName) {
             $('#disastersStack').empty();
             $.each(disasters, function(a, b) {
                 var dType = b.DisasterType.toLowerCase().replace(/\s+/g, '');
-                $('#disastersStack').append('<a title="' + b.DisasterName + '"><img src="images/' + dType + '.png" alt="' + dType + '" class="disaster" name="' + b.DisasterName + '"/></a>');
+                $('#disastersStack').append('<a title="' + b.DisasterName + '"><img src="images/' + dType + '.png" alt="' + dType + '" class="iconStack" name="' + b.DisasterName + '"/></a>');
+            });
+        } else {
+            $('#majorEvent').empty();
+                money = money + pMoney;
+                people = people + pPeople;
+                supplies = supplies + pSupplies;
+                hygieneKits = hygieneKits + pHygieneKits;
+                blankets = blankets + pBlankets;
+                jerryCans = jerryCans + pJerryCans;
+                buckets = buckets + pBuckets;
+                tents = tents + pTents;
+                kitchenSets = kitchenSets + pKitchenSets;
+                sleepingMats = sleepingMats + pSleepingMats;
+                mosquitoNets = mosquitoNets + pMosquitoNets;
+                foodParcels = foodParcels + pFoodParcels;
+                tarps = tarps + pTarps;
+                vehicles = vehicles + pVehicles;
+                otherItems = otherItems + pOtherItems;
+                riceBags = riceBags + pRiceBags;
+
+                disasters.push(b);
+
+            $('#disastersStack').empty();
+            $.each(disasters, function(a, b) {
+                var dType = b.DisasterType.toLowerCase().replace(/\s+/g, '');
+                $('#disastersStack').append('<a title="' + b.DisasterName + '"><img src="images/' + dType + '.png" alt="' + dType + '" class="iconStack" name="' + b.DisasterName + '"/></a>');
             });
         }
 
@@ -270,6 +328,19 @@ function buildStuff(year, dName) {
     moneyFormated = money.formatNumber(0, '.', ',');
     peopleFormated = people.formatNumber(0, '.', ',');
     suppliesFormated = supplies.formatNumber(0, '.', ',');
+    hygieneKitsFormated = hygieneKits.formatNumber(0, '.', ',');
+    blanketsFormated = blankets.formatNumber(0, '.', ',');
+    jerryCansFormated = jerryCans.formatNumber(0, '.', ',');
+    bucketsFormated = buckets.formatNumber(0, '.', ',');
+    tentsFormated = tents.formatNumber(0, '.', ',');
+    kitchenSetsFormated = kitchenSets.formatNumber(0, '.', ',');
+    sleepingMatsFormated = sleepingMats.formatNumber(0, '.', ',');
+    mosquitoNetsFormated = mosquitoNets.formatNumber(0, '.', ',');
+    foodParcelsFormated = foodParcels.formatNumber(0, '.', ',');
+    tarpsFormated = tarps.formatNumber(0, '.', ',');
+    vehiclesFormated = vehicles.formatNumber(0, '.', ',');
+    otherItemsFormated = otherItems.formatNumber(0, '.', ',');
+    riceBagsFormated = riceBags.formatNumber(0, '.', ',');
 
     if (moneyFormated < 1) {
         moneyFormated = '';
@@ -289,58 +360,82 @@ function buildStuff(year, dName) {
     if (moneyCount < 1) {
         moneyCount = 1;
     }
-    $('#moneyStacks').empty();
+    $('#moneyStack').empty();
     var moneyStacks = Math.floor(moneyCount / 10);
     var moneyRemain = Math.ceil(moneyCount % 10);
     if (moneyStacks > 1) {
         for (i = 0; i < moneyStacks; i++) {
-            $('#moneyStacks').append('<img src="images/moneybag.png" alt="moneybag" name="$10 million" class="iconStack moneybag" />');
+            $('#moneyStack').append('<a title="$10 million"><img src="images/moneybag.png" alt="moneybag" name="$10 million" class="iconStack moneybag" /></a>');
         }
         for (i = 0; i < moneyRemain; i++) {
-            $('#moneyStacks').append('<img src="images/money.png" alt="moneybag" name="$1 million" class="iconStack money" />');
+            $('#moneyStack').append('<a title="$1 million"><img src="images/money.png" alt="moneybag" name="$1 million" class="iconStack money" /></a>');
         }
     } else if (money == 0) {
-        $('#moneyStacks').append('No donations made.');
+        $('#moneyStack').append('No donations made.');
     } else {
         for (i = 0; i < moneyCount; i++) {
-            $('#moneyStacks').append('<img src="images/money.png" alt="moneybag" name="$1 million"  class="iconStack money" />');
+            $('#moneyStack').append('<a title="$1 million"><img src="images/money.png" alt="moneybag" name="$1 million"  class="iconStack money" /></a>');
         }
     }
 
-    $('#peopleStacks').empty();
+    $('#peopleStack').empty();
     var peopleStacks = Math.floor(people / 10);
     var peopleRemain = Math.ceil(people % 10);
     if (peopleStacks > 1) {
         for (i = 0; i < peopleStacks; i++) {
-            $('#peopleStacks').append('<img src="images/people.png" alt="people" name="10" class="iconStack people" />');
+            $('#peopleStack').append('<a title="10 Staff"><img src="images/people.png" alt="people" name="10" class="iconStack people" /></a>');
         }
         for (i = 0; i < peopleRemain; i++) {
-            $('#peopleStacks').append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
+            $('#peopleStack').append('<a title="1 Staff"><img src="images/male.png" alt="person" name="1" class="iconStack person" /></a>');
         }
     } else if (people == 0) {
-        $('#peopleStacks').append('No staff responded.');
+        $('#peopleStack').append('No staff responded.');
     } else {
         for (i = 0; i < people; i++) {
-            $('#peopleStacks').append('<img src="images/male.png" alt="person" name="1" class="iconStack person" />');
+            $('#peopleStack').append('<a title="1 Staff"><img src="images/male.png" alt="person" name="1" class="iconStack person" /></a>');
         }
     }
 
-    $('#suppliesStacks').empty();
-    $('#suppliesStacks').append('<ul>');
-    if (hygieneKits > 0){$('#suppliesStacks').append('<li><img src="images/hygienekits.png" alt="hygiene kits" />'+hygieneKits+'</li>')}
-    if (blankets > 0){$('#suppliesStacks').append('<li><img src="images/blankets.png" alt="blankets" />'+blankets+'</li>')}
-    if (jerryCans > 0){$('#suppliesStacks').append('<li><img src="images/jerrycans.png" alt="jerryCans" />'+jerryCans+'</li>')}
-    if (buckets > 0){$('#suppliesStacks').append('<li><img src="images/buckets.png" alt="buckets" />'+buckets+'</li>')}
-    if (tents > 0){$('#suppliesStacks').append('<li><img src="images/tents.png" alt="tents" />'+tents+'</li>')}
-    if (kitchenSets > 0){$('#suppliesStacks').append('<li><img src="images/kitchensets.png" alt="kitchen sets" />'+kitchenSets+'</li>')}
-    if (sleepingMats > 0){$('#suppliesStacks').append('<li><img src="images/sleepingmats.png" alt="sleeping mats" />'+sleepingMats+'</li>')}
-    if (mosquitoNets > 0){$('#suppliesStacks').append('<li><img src="images/mosquitonets.png" alt="mosquito Nets" />'+mosquitoNets+'</li>')}
-    if (foodParcels > 0){$('#suppliesStacks').append('<li><img src="images/foodparcels.png" alt="Food Parcels" />'+foodParcels+'</li>')}
-    if (riceBags > 0){$('#suppliesStacks').append('<li><img src="images/ricebags.png" alt="rice Bags" />'+riceBags+'</li>')}
-    if (tarps > 0){$('#suppliesStacks').append('<li><img src="images/tarps.png" alt="tarps" />'+tarps+'</li>')}
-    if (vehicles > 0){$('#suppliesStacks').append('<li><img src="images/vehicles.png" alt="vehicles" />'+vehicles+'</li>')}
-    if (otherItems > 0){$('#suppliesStacks').append('<li><img src="images/othertems.png" alt="other Items" />'+otherItems+'</li>')}
-    $('#suppliesStacks').append('</ul>');
+    $('#suppliesStack').empty();
+    if (hygieneKits > 0) {
+        $('#suppliesStack').append('<li><a title="Hygiene Kits"><img src="images/hygienekits.png" class="iconStack supplyIcon" alt="hygiene kits" />' + hygieneKitsFormated + '</a></li>')
+    }
+    if (blankets > 0) {
+        $('#suppliesStack').append('<li><a title="Blankets"><img src="images/blankets.png" class="iconStack supplyIcon" alt="blankets" />' + blanketsFormated + '</a></li>')
+    }
+    if (jerryCans > 0) {
+        $('#suppliesStack').append('<li><a title="Jerry Cans"><img src="images/jerrycans.png" class="iconStack supplyIcon" alt="jerryCans" />' + jerryCansFormated + '</a></li>')
+    }
+    if (buckets > 0) {
+        $('#suppliesStack').append('<li><a title="Buckets"><img src="images/buckets.png" class="iconStack supplyIcon" alt="buckets" />' + bucketsFormated + '</a></li>')
+    }
+    if (tents > 0) {
+        $('#suppliesStack').append('<li><a title="Tents"><img src="images/tents.png" class="iconStack supplyIcon" alt="tents" />' + tentsFormated + '</a></li>')
+    }
+    if (kitchenSets > 0) {
+        $('#suppliesStack').append('<li><a title="Kitchen Sets"><img src="images/kitchensets.png" class="iconStack supplyIcon" alt="kitchen sets" />' + kitchenSetsFormated + '</a></li>')
+    }
+    if (sleepingMats > 0) {
+        $('#suppliesStack').append('<li><a title="Sleeping Mats"><img src="images/sleepingmats.png" class="iconStack supplyIcon" alt="sleeping mats" />' + sleepingMatsFormated + '</a></li>')
+    }
+    if (mosquitoNets > 0) {
+        $('#suppliesStack').append('<li><a title="Mosquito Nets"><img src="images/mosquitonets.png" class="iconStack supplyIcon" alt="mosquito Nets" />' + mosquitoNetsFormated + '</a></li>')
+    }
+    if (foodParcels > 0) {
+        $('#suppliesStack').append('<li><a title="Food Parcels"><img src="images/foodparcels.png" class="iconStack supplyIcon" alt="Food Parcels" />' + foodParcelsFormated + '</a></li>')
+    }
+    if (riceBags > 0) {
+        $('#suppliesStack').append('<li><a title="Rice Bags"><img src="images/ricebags.png" class="iconStack supplyIcon" alt="rice Bags" />' + riceBagsFormated + '</a></li>')
+    }
+    if (tarps > 0) {
+        $('#suppliesStack').append('<li><a title="Tarps"><img src="images/tarps.png" class="iconStack supplyIcon" alt="tarps" />' + tarpsFormated + '</a></li>')
+    }
+    if (vehicles > 0) {
+        $('#suppliesStack').append('<li><a title="Vehicles"><img src="images/vehicles.png" class="iconStack supplyIcon" alt="vehicles" />' + vehiclesFormated + '</a></li>')
+    }
+    if (otherItems > 0) {
+        $('#suppliesStack').append('<li><a title="Other Items"><img src="images/otheritems.png" class="iconStack supplyIcon" alt="other Items" />' + otherItemsFormated + '</a></li>')
+    }
 }
 
 //fire function to for initial page load
@@ -363,9 +458,33 @@ $('#slider').change(function() {
 $('#slider').change();
 
 //disclaimer text
+
 function showDisclaimer() {
-	$('#disclaimerText').show();
+    $('#disclaimerText').show();
 }
+
 function closeDisclaimer() {
-	$('#disclaimerText').hide();
+    $('#disclaimerText').hide();
 }
+
+// $('#year').click(function (){
+//     reloadYear();
+//     alert('test');
+// });
+// $('#total').click(function(){
+//     map.removeLayer(redLayer);
+//     map.removeLayer(greyLayer);
+//     parseWorld(worldcountries, iroc_response);
+//     buildStuff();
+// });
+$(function(){
+    $('#year').click(function () {
+      console.log('event fired');
+    });
+    console.log('doc ready');
+});
+
+$( window ).load(function() {
+        console.log( "window loaded" );
+});
+

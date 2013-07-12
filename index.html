@@ -35,7 +35,8 @@
                     <input type="range" value="1999" min="1999" max="2013" step="1" id="slider" />
                     <!-- <div id="sliderValue">&nbsp;</div> -->
                     <!-- <input onClick="reloadYear();" type="reset" value="Reload Year"  /> -->
-                    <p class="button_link">Reload Year</p>
+                    <p id="year" class="button_link">Refresh <!-- <span id="currentYear"></span> --></p>
+                    <p id="total" class="button_link">Show All</p>
                 </div>
                 <div id="disasters">
                     <h3>Disasters</h3>
@@ -56,7 +57,7 @@
                 <div id="supplies">
                     <h3>Supplies</h3>
                     <p id="suppliesTotal" class="total"></p>
-                    <p id="suppliesStack"></p>
+                    <ul id="suppliesStack"></ul>
                 </div> 
                 <div id="disclaimer">
                     <p>
