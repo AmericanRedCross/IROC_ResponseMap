@@ -80,7 +80,7 @@ body {
 }
 header {
     float: left;
-    height: 100px;
+    height: 50px;
     background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
     color: #000;
@@ -90,11 +90,12 @@ header {
 header img {
     padding: 5px;
     margin: 10px 15px;
+    height: 40px;
 }
 header p {
     float:right;
     font: bold 30px arial;
-    margin-right: 20px;
+    margin: 5px 20px 5px 5px;
     color: #6d6e70;
 }
 #container {
@@ -104,21 +105,21 @@ header p {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 0;
+    top: 50px;
     bottom:0;
     left:0;
-    right:0;
+    right:350px;
 }
 #right {
     float: right;
     width: 350px;
     background-color: rgba(255, 255, 255, 0.8);
     /*border-left: 1px solid darkgrey;*/
-    z-index: 50;
+ /*   z-index: 50;*/
     position: absolute;
     bottom: 0;
     right: 0;
-    top: 100px;
+    top: 50px;
     padding-left:5px;
 }
 #controls {
@@ -130,7 +131,7 @@ header p {
 #money, #people, #supplies, #disasters {
     width: 90%;
     /*height: 17%;*/
-    margin: 5px;
+    margin: 0 5px;
     overflow-y: auto;
     float:left;
 }
@@ -155,8 +156,20 @@ h3 {
     background: #fff;
 }
 .iconStack {
-    height: 30px;
-    width: 30px;
+    height: 26px;
+    width: 26px;
+    margin: 1px;
+}
+.supplyIcon {
+    margin-right: 4px;
+}
+#suppliesStack {
+    padding: 0 0 0 15px;
+}
+#suppliesStack li {
+    width:100px;
+    float:left;
+    display:inline;
 }
 #majorEvent {
     float: left;
@@ -164,20 +177,15 @@ h3 {
     color: #000;
     cursor: pointer;
 }
-.disaster {
-    height: 30px;
-    width: 30px;
-    margin:2px;
-}
 .disasterHeading {
-    height:30px;
-    width: 30px;
+    height:26px;
+    width: 26px;
     margin: 5px;
 }
 #disclaimer {
     position: absolute;
     bottom: 0;
-    right: 5px;
+    right: 10px;
     font: 12px Arial;
     color: #6d6e70;
     cursor: pointer;
@@ -205,16 +213,15 @@ h3 {
 }
 
 .button_link {
-    width: 75px;
     padding: 10px 15px;
     background: #8ec06c;
     color: #fff;
     cursor: pointer;
     float: right;
-    margin-right: 20px;
+    margin-right: 10px;
     font:12px Arial;
 }
-/*input[type='range'] {
+input[type='range'] {
     -webkit-appearance: none !important;
     -webkit-border-radius: 5px;
     -webkit-box-shadow: inset 0 0 5px #333;
@@ -229,7 +236,7 @@ input[type='range']::-webkit-slider-thumb {
     border: 1px solid #999;
     height: 20px;
     width: 20px;
-}*/
+}
 
 .leaflet-label {
     background: rgb(235, 235, 235);
