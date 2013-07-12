@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>American Red Cross</title>
     <meta name="description" content="American Red Cross response to International Disasters since 1999">
@@ -35,8 +35,8 @@
                     <input type="range" value="1999" min="1999" max="2013" step="1" id="slider" />
                     <!-- <div id="sliderValue">&nbsp;</div> -->
                     <!-- <input onClick="reloadYear();" type="reset" value="Reload Year"  /> -->
-                    <p id="year" class="button_link">Refresh <!-- <span id="currentYear"></span> --></p>
-                    <p id="total" class="button_link">Show All</p>
+                    <button class="button_link" onClick="reloadYear();">Refresh <span id="currentYear"></span></button>
+                    <!--<button class="button_link" onClick="showAll();">Show All</button>-->
                 </div>
                 <div id="disasters">
                     <h3>Disasters</h3>

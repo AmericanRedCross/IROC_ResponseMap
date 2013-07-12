@@ -477,6 +477,7 @@ function closeDisclaimer() {
 //     parseWorld(worldcountries, iroc_response);
 //     buildStuff();
 // });
+
 $(function(){
     $('#year').click(function () {
       console.log('event fired');
@@ -484,7 +485,7 @@ $(function(){
     console.log('doc ready');
 });
 
-$( window ).load(function() {
-        console.log( "window loaded" );
+$(window).load(function() {
+    console.log("window loaded");
 });
 
