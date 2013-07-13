@@ -174,6 +174,19 @@ function buildStuff(year, dName) {
     money = 0;
     people = 0;
     supplies = 0;
+    hygieneKits = 0;
+    blankets = 0;
+    jerryCans = 0;
+    buckets = 0;
+    tents = 0;
+    kitchenSets = 0;
+    sleepingMats = 0;
+    mosquitoNets = 0;
+    foodParcels = 0;
+    tarps = 0;
+    vehicles = 0;
+    otherItems = 0;
+    riceBags = 0;
     var disasters = [];
     $.each(iroc_response, function(a, b) {
         var pYear = new Date(b.Date).getFullYear();
@@ -396,7 +409,7 @@ function buildStuff(year, dName) {
         }
     }
 
-    $('#suppliesStack').empty();
+    $('#suppliesStack').html('');
     if (hygieneKits > 0) {
         $('#suppliesStack').append('<li><a class="tooltip" title="Hygiene Kits"><img src="images/hygienekits.png" class="iconStack supplyIcon" alt="hygiene kits" />' + hygieneKitsFormated + '</a></li>')
     }
@@ -435,6 +448,9 @@ function buildStuff(year, dName) {
     }
     if (otherItems > 0) {
         $('#suppliesStack').append('<li><a class="tooltip" title="Other Items"><img src="images/otheritems.png" class="iconStack supplyIcon" alt="other Items" />' + otherItemsFormated + '</a></li>')
+    }
+    if ( $('#suppliesStack').children().length == 0 ) {
+        $('#suppliesStack').append('No supplies distributed.');
     }
 }
 
