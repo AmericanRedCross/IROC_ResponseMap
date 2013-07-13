@@ -34,11 +34,11 @@ body {
  */
  hr {
     display: block;
+    margin: 1em 0;
+    padding: 0;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
 }
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
@@ -50,9 +50,9 @@ body {
  * Remove default fieldset styles.
  */
  fieldset {
-    border: 0;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 /*
  * Allow only vertical resizing of textareas.
@@ -65,9 +65,9 @@ body {
    ========================================================================== */
  .oldBrowser {
     margin: 0.2em 0;
+    padding: 0.2em 0;
     background: #ccc;
     color: #000;
-    padding: 0.2em 0;
 }
 /* ==========================================================================
    Author's custom styles
@@ -79,74 +79,74 @@ body {
     font: 12px Arial, sans-serif;
 }
 header {
+    position: relative;
+    z-index: 1000;
     float: left;
+    width: 100%;
     height: 50px;
     background-color: rgba(255, 255, 255, 0.8);
-    width: 100%;
     color: #000;
-    z-index: 1000;
-    position: relative;
 }
 header img {
-    padding: 5px;
     margin: 10px 15px;
+    padding: 5px;
     height: 40px;
 }
 header p {
     float:right;
-    font: bold 30px arial;
     margin: 5px 20px 5px 5px;
     color: #6d6e70;
+    font: bold 30px arial;
 }
 #container {
     min-height: 100%;
 }
 #map {
-    margin: 0;
-    padding: 0;
     position: absolute;
     top: 50px;
+    right:350px;
     bottom:0;
     left:0;
-    right:350px;
+    margin: 0;
+    padding: 0;
 }
 #right {
-    float: right;
-    width: 350px;
-    background-color: rgba(255, 255, 255, 0.8);
     /*border-left: 1px solid darkgrey;*/
  /*   z-index: 50;*/
     position: absolute;
-    bottom: 0;
-    right: 0;
     top: 50px;
+    right: 0;
+    bottom: 0;
+    float: right;
     padding-left:5px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 #controls {
+    margin-bottom: 5px;
     height: 100px;
     /*    border-bottom: 1px solid #d7d7d8;*/
     background-repeat:no-repeat;
-    margin-bottom: 5px;
 }
 #money, #people, #supplies, #disasters {
-    width: 90%;
+    float:left;
+    overflow-y: auto;
     /*height: 17%;*/
     margin: 0 5px;
-    overflow-y: auto;
-    float:left;
+    width: 90%;
 }
 .total {
     float: right;
-    font: 16px Arial, #6d6e70;
     margin-top: -25px;
+    font: 16px Arial, #6d6e70;
 }
 h3 {
-    font: 20px Arial, #6d6e70;
     margin: 6px 0;
+    font: 20px Arial, #6d6e70;
 }
 #slider {
-    width:90%;
     margin: 50px 0 0 14px;
+    width:90%;
 }
 #sliderValue {
     text-align: center;
@@ -156,9 +156,9 @@ h3 {
     background: #fff;
 }
 .iconStack {
-    height: 26px;
-    width: 26px;
     margin: 1px;
+    width: 26px;
+    height: 26px;
 }
 .supplyIcon {
     margin-right: 4px;
@@ -167,43 +167,43 @@ h3 {
     padding: 0 0 0 15px;
 }
 #suppliesStack li {
-    width:100px;
-    float:left;
     display:inline;
+    float:left;
+    width:100px;
 }
 #majorEvent {
     float: left;
-    font: 16px Arial;
     color: #000;
+    font: 16px Arial;
     cursor: pointer;
 }
 .disasterHeading {
-    height:26px;
-    width: 26px;
     margin: 5px;
+    width: 26px;
+    height:26px;
 }
 #disclaimer {
     position: absolute;
-    bottom: 0;
     right: 10px;
-    font: 12px Arial;
+    bottom: 0;
     color: #6d6e70;
+    font: 12px Arial;
     cursor: pointer;
 }
 #disclaimer a:link, #disclaimer a:visited {
     color: #6d6e70;
-    cursor: pointer;
     text-decoration: none;
+    cursor: pointer;
 }
 #disclaimerText {
-    display: none;
     position: absolute;
     top: 45%;
     left: 30%;
-    width: 300px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 1px solid #fff;
+    display: none;
     padding: 5px;
+    width: 300px;
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
 }
 .close {
@@ -213,19 +213,19 @@ h3 {
 }
 
 .button_link {
-    border: none;
-    background: #8ec06c;
-    padding: 10px 15px;
-    color: #fff;
-    cursor: pointer;
     float: right;
     margin:5px 10px;
-    font:12px Arial;
-    text-decoration: none;
-    text-shadow: none;
+    padding: 10px 15px;
+    border: none;
+    background: #8ec06c;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    font:12px Arial;
+    cursor: pointer;
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
     -o-transition: 0.25s;
@@ -234,43 +234,43 @@ h3 {
 }
 
 input[type='range'] {
-    -webkit-appearance: none !important;
-    -webkit-border-radius: 5px;
-    -webkit-box-shadow: inset 0 0 5px #333;
-    background-color: #999;
     height: 10px;
+    -webkit-border-radius: 5px;
+    background-color: #999;
+    -webkit-box-shadow: inset 0 0 5px #333;
     cursor: pointer;
+    -webkit-appearance: none !important;
 }
 input[type='range']::-webkit-slider-thumb {
-    -webkit-appearance: none !important;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
     -webkit-border-radius: 2px;
     background-color: #efefef;
-    border: 1px solid #999;
-    height: 20px;
-    width: 20px;
+    -webkit-appearance: none !important;
 }
 
 .leaflet-label {
-    background: rgb(235, 235, 235);
-    background: rgba(235, 235, 235, 0.81);
-    background-clip: padding-box;
+    position: absolute;
+    z-index: 6;
+    display: block;
+    padding: 1px 6px;
+    border-width: 4px;
+    border-style: solid;
     border-color: #777;
     border-color: rgba(0,0,0,0.25);
     border-radius: 4px;
-    border-style: solid;
-    border-width: 4px;
+    background: rgb(235, 235, 235);
+    background: rgba(235, 235, 235, 0.81);
+    background-clip: padding-box;
     color: #111;
-    display: block;
+    white-space: nowrap;
     font: 12px/20px Arial, Helvetica, sans-serif;
     font-weight: bold;
-    padding: 1px 6px;
-    position: absolute;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    white-space: nowrap;
-    z-index: 6;
 }
 
 .leaflet-label.leaflet-clickable {
@@ -278,14 +278,14 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .leaflet-label:before {
-    border-right: 6px solid black;
-    border-right-color: inherit;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    content: "";
     position: absolute;
     top: 5px;
     left: -10px;
+    border-top: 6px solid transparent;
+    border-right: 6px solid black;
+    border-right-color: inherit;
+    border-bottom: 6px solid transparent;
+    content: "";
 }
 
 /* ==========================================================================
@@ -296,17 +296,17 @@ input[type='range']::-webkit-slider-thumb {
  * Image replacement
  */
  .ir {
-    background-color: transparent;
-    border: 0;
     overflow: hidden;
+    border: 0;
+    background-color: transparent;
     /* IE 6/7 fallback */
     *text-indent: -9999px;
 }
 .ir:before {
-    content:"";
     display: block;
     width: 0;
     height: 150%;
+    content:"";
 }
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
@@ -319,26 +319,26 @@ input[type='range']::-webkit-slider-thumb {
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
  .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
     position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
     width: 1px;
+    height: 1px;
+    border: 0;
 }
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
  .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
     position: static;
+    overflow: visible;
+    clip: auto;
+    margin: 0;
     width: auto;
+    height: auto;
 }
 /*
  * Hide visually and from screenreaders, but maintain layout
@@ -358,9 +358,9 @@ input[type='range']::-webkit-slider-thumb {
  *    `:before` to contain the top-margins of child elements.
  */
  .clearfix:before, .clearfix:after {
-    content:" ";
     /* 1 */
     display: table;
+    content:" ";
     /* 2 */
 }
 .clearfix:after {
@@ -391,9 +391,9 @@ input[type='range']::-webkit-slider-thumb {
  @media print {
     * {
         background: transparent !important;
-        color: #000 !important;
         /* Black prints faster: h5bp.com/s */
         box-shadow: none !important;
+        color: #000 !important;
         text-shadow: none !important;
     }
     a, a:visited {
