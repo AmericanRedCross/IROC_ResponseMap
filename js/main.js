@@ -43,12 +43,12 @@ var highlightStyle = {
 
 Number.prototype.formatNumber = function(c, d, t) {
     var n = this,
-        c = isNaN(c = Math.abs(c)) ? 2 : c,
-        d = d == undefined ? "," : d,
-        t = t == undefined ? "." : t,
-        s = n < 0 ? "-" : "",
-        i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
-        j = (j = i.length) > 3 ? j % 3 : 0;
+    c = isNaN(c = Math.abs(c)) ? 2 : c,
+    d = d == undefined ? "," : d,
+    t = t == undefined ? "." : t,
+    s = n < 0 ? "-" : "",
+    i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
+    j = (j = i.length) > 3 ? j % 3 : 0;
     return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
 };
 
@@ -311,24 +311,24 @@ function buildStuff(year, dName) {
             });
         } else {
             $('#majorEvent').empty();
-                money = money + pMoney;
-                people = people + pPeople;
-                supplies = supplies + pSupplies;
-                hygieneKits = hygieneKits + pHygieneKits;
-                blankets = blankets + pBlankets;
-                jerryCans = jerryCans + pJerryCans;
-                buckets = buckets + pBuckets;
-                tents = tents + pTents;
-                kitchenSets = kitchenSets + pKitchenSets;
-                sleepingMats = sleepingMats + pSleepingMats;
-                mosquitoNets = mosquitoNets + pMosquitoNets;
-                foodParcels = foodParcels + pFoodParcels;
-                tarps = tarps + pTarps;
-                vehicles = vehicles + pVehicles;
-                otherItems = otherItems + pOtherItems;
-                riceBags = riceBags + pRiceBags;
+            money = money + pMoney;
+            people = people + pPeople;
+            supplies = supplies + pSupplies;
+            hygieneKits = hygieneKits + pHygieneKits;
+            blankets = blankets + pBlankets;
+            jerryCans = jerryCans + pJerryCans;
+            buckets = buckets + pBuckets;
+            tents = tents + pTents;
+            kitchenSets = kitchenSets + pKitchenSets;
+            sleepingMats = sleepingMats + pSleepingMats;
+            mosquitoNets = mosquitoNets + pMosquitoNets;
+            foodParcels = foodParcels + pFoodParcels;
+            tarps = tarps + pTarps;
+            vehicles = vehicles + pVehicles;
+            otherItems = otherItems + pOtherItems;
+            riceBags = riceBags + pRiceBags;
 
-                disasters.push(b);
+            disasters.push(b);
 
             $('#disastersStack').empty();
             $.each(disasters, function(a, b) {
@@ -338,120 +338,120 @@ function buildStuff(year, dName) {
         }
 
     });
-    moneyFormated = money.formatNumber(0, '.', ',');
-    peopleFormated = people.formatNumber(0, '.', ',');
-    suppliesFormated = supplies.formatNumber(0, '.', ',');
-    hygieneKitsFormated = hygieneKits.formatNumber(0, '.', ',');
-    blanketsFormated = blankets.formatNumber(0, '.', ',');
-    jerryCansFormated = jerryCans.formatNumber(0, '.', ',');
-    bucketsFormated = buckets.formatNumber(0, '.', ',');
-    tentsFormated = tents.formatNumber(0, '.', ',');
-    kitchenSetsFormated = kitchenSets.formatNumber(0, '.', ',');
-    sleepingMatsFormated = sleepingMats.formatNumber(0, '.', ',');
-    mosquitoNetsFormated = mosquitoNets.formatNumber(0, '.', ',');
-    foodParcelsFormated = foodParcels.formatNumber(0, '.', ',');
-    tarpsFormated = tarps.formatNumber(0, '.', ',');
-    vehiclesFormated = vehicles.formatNumber(0, '.', ',');
-    otherItemsFormated = otherItems.formatNumber(0, '.', ',');
-    riceBagsFormated = riceBags.formatNumber(0, '.', ',');
+moneyFormated = money.formatNumber(0, '.', ',');
+peopleFormated = people.formatNumber(0, '.', ',');
+suppliesFormated = supplies.formatNumber(0, '.', ',');
+hygieneKitsFormated = hygieneKits.formatNumber(0, '.', ',');
+blanketsFormated = blankets.formatNumber(0, '.', ',');
+jerryCansFormated = jerryCans.formatNumber(0, '.', ',');
+bucketsFormated = buckets.formatNumber(0, '.', ',');
+tentsFormated = tents.formatNumber(0, '.', ',');
+kitchenSetsFormated = kitchenSets.formatNumber(0, '.', ',');
+sleepingMatsFormated = sleepingMats.formatNumber(0, '.', ',');
+mosquitoNetsFormated = mosquitoNets.formatNumber(0, '.', ',');
+foodParcelsFormated = foodParcels.formatNumber(0, '.', ',');
+tarpsFormated = tarps.formatNumber(0, '.', ',');
+vehiclesFormated = vehicles.formatNumber(0, '.', ',');
+otherItemsFormated = otherItems.formatNumber(0, '.', ',');
+riceBagsFormated = riceBags.formatNumber(0, '.', ',');
 
-    if (moneyFormated < 1) {
-        moneyFormated = '';
-    }
-    if (peopleFormated < 1) {
-        peopleFormated = '';
-    }
-    if (suppliesFormated < 1) {
-        suppliesFormated = '';
-    }
-    $('#moneyTotal').html('$' + moneyFormated);
-    $('#peopleTotal').html(peopleFormated);
-    $('#suppliesTotal').html(suppliesFormated);
-    $('#disastersTotal').html(disasters.length);
+if (moneyFormated < 1) {
+    moneyFormated = '';
+}
+if (peopleFormated < 1) {
+    peopleFormated = '';
+}
+if (suppliesFormated < 1) {
+    suppliesFormated = '';
+}
+$('#moneyTotal').html('$' + moneyFormated);
+$('#peopleTotal').html(peopleFormated);
+$('#suppliesTotal').html(suppliesFormated);
+$('#disastersTotal').html(disasters.length);
 
-    var moneyCount = Math.floor(money / 1000000);
-    if (moneyCount < 1) {
-        moneyCount = 1;
+var moneyCount = Math.floor(money / 1000000);
+if (moneyCount < 1) {
+    moneyCount = 1;
+}
+$('#moneyStack').empty();
+var moneyStacks = Math.floor(moneyCount / 10);
+var moneyRemain = Math.ceil(moneyCount % 10);
+if (moneyStacks > 1) {
+    for (i = 0; i < moneyStacks; i++) {
+        $('#moneyStack').append('<a class="tooltip" title="$10 million"><img src="images/moneybag.png" alt="moneybag" name="$10 million" class="iconStack moneybag" /></a>');
     }
-    $('#moneyStack').empty();
-    var moneyStacks = Math.floor(moneyCount / 10);
-    var moneyRemain = Math.ceil(moneyCount % 10);
-    if (moneyStacks > 1) {
-        for (i = 0; i < moneyStacks; i++) {
-            $('#moneyStack').append('<a class="tooltip" title="$10 million"><img src="images/moneybag.png" alt="moneybag" name="$10 million" class="iconStack moneybag" /></a>');
-        }
-        for (i = 0; i < moneyRemain; i++) {
-            $('#moneyStack').append('<a class="tooltip" title="$1 million"><img src="images/money.png" alt="moneybag" name="$1 million" class="iconStack money" /></a>');
-        }
-    } else if (money == 0) {
-        $('#moneyStack').append('No donations made.');
-    } else {
-        for (i = 0; i < moneyCount; i++) {
-            $('#moneyStack').append('<a class="tooltip" title="$1 million"><img src="images/money.png" alt="moneybag" name="$1 million"  class="iconStack money" /></a>');
-        }
+    for (i = 0; i < moneyRemain; i++) {
+        $('#moneyStack').append('<a class="tooltip" title="$1 million"><img src="images/money.png" alt="moneybag" name="$1 million" class="iconStack money" /></a>');
     }
+} else if (money == 0) {
+    $('#moneyStack').append('No donations made.');
+} else {
+    for (i = 0; i < moneyCount; i++) {
+        $('#moneyStack').append('<a class="tooltip" title="$1 million"><img src="images/money.png" alt="moneybag" name="$1 million"  class="iconStack money" /></a>');
+    }
+}
 
-    $('#peopleStack').empty();
-    var peopleStacks = Math.floor(people / 10);
-    var peopleRemain = Math.ceil(people % 10);
-    if (peopleStacks > 1) {
-        for (i = 0; i < peopleStacks; i++) {
-            $('#peopleStack').append('<a class="tooltip" title="10 Staff"><img src="images/people.png" alt="people" name="10" class="iconStack people" /></a>');
-        }
-        for (i = 0; i < peopleRemain; i++) {
-            $('#peopleStack').append('<a class="tooltip" title="1 Staff"><img src="images/male.png" alt="person" name="1" class="iconStack person" /></a>');
-        }
-    } else if (people == 0) {
-        $('#peopleStack').append('No staff responded.');
-    } else {
-        for (i = 0; i < people; i++) {
-            $('#peopleStack').append('<a class="tooltip" title="1 Staff"><img src="images/male.png" alt="person" name="1" class="iconStack person" /></a>');
-        }
+$('#peopleStack').empty();
+var peopleStacks = Math.floor(people / 10);
+var peopleRemain = Math.ceil(people % 10);
+if (peopleStacks > 1) {
+    for (i = 0; i < peopleStacks; i++) {
+        $('#peopleStack').append('<a class="tooltip" title="10 Staff"><img src="images/people.png" alt="people" name="10" class="iconStack people" /></a>');
     }
+    for (i = 0; i < peopleRemain; i++) {
+        $('#peopleStack').append('<a class="tooltip" title="1 Staff"><img src="images/male.png" alt="person" name="1" class="iconStack person" /></a>');
+    }
+} else if (people == 0) {
+    $('#peopleStack').append('<p class="noItems">No staff responded.</p>');
+} else {
+    for (i = 0; i < people; i++) {
+        $('#peopleStack').append('<a class="tooltip" title="1 Staff"><img src="images/male.png" alt="person" name="1" class="iconStack person" /></a>');
+    }
+}
 
-    $('#suppliesStack').html('');
-    if (hygieneKits > 0) {
-        $('#suppliesStack').append('<li><a class="tooltip" title="Hygiene Kits"><img src="images/hygienekits.png" class="iconStack supplyIcon" alt="hygiene kits" />' + hygieneKitsFormated + '</a></li>')
-    }
-    if (blankets > 0) {
-        $('#suppliesStack').append('<li><a class="tooltip" title="Blankets"><img src="images/blankets.png" class="iconStack supplyIcon" alt="blankets" />' + blanketsFormated + '</a></li>')
-    }
-    if (jerryCans > 0) {
-        $('#suppliesStack').append('<li><a class="tooltip" title="Jerry Cans"><img src="images/jerrycans.png" class="iconStack supplyIcon" alt="jerryCans" />' + jerryCansFormated + '</a></li>')
-    }
-    if (buckets > 0) {
-        $('#suppliesStack').append('<li><a class="tooltip" title="Buckets"><img src="images/buckets.png" class="iconStack supplyIcon" alt="buckets" />' + bucketsFormated + '</a></li>')
-    }
-    if (tents > 0) {
-        $('#suppliesStack').append('<li><a class="tooltip" title="Tents"><img src="images/tents.png" class="iconStack supplyIcon" alt="tents" />' + tentsFormated + '</a></li>')
-    }
-    if (kitchenSets > 0) {
-        $('#suppliesStack').append('<li><a class="tooltip" title="Kitchen Sets"><img src="images/kitchensets.png" class="iconStack supplyIcon" alt="kitchen sets" />' + kitchenSetsFormated + '</a></li>')
-    }
-    if (sleepingMats > 0) {
-        $('#suppliesStack').append('<li><a class="tooltip" title="Sleeping Mats"><img src="images/sleepingmats.png" class="iconStack supplyIcon" alt="sleeping mats" />' + sleepingMatsFormated + '</a></li>')
-    }
-    if (mosquitoNets > 0) {
-        $('#suppliesStack').append('<li><a class="tooltip" title="Mosquito Nets"><img src="images/mosquitonets.png" class="iconStack supplyIcon" alt="mosquito Nets" />' + mosquitoNetsFormated + '</a></li>')
-    }
-    if (foodParcels > 0) {
-        $('#suppliesStack').append('<li><a class="tooltip" title="Food Parcels"><img src="images/foodparcels.png" class="iconStack supplyIcon" alt="Food Parcels" />' + foodParcelsFormated + '</a></li>')
-    }
-    if (riceBags > 0) {
-        $('#suppliesStack').append('<li><a class="tooltip" title="Rice Bags"><img src="images/ricebags.png" class="iconStack supplyIcon" alt="rice Bags" />' + riceBagsFormated + '</a></li>')
-    }
-    if (tarps > 0) {
-        $('#suppliesStack').append('<li><a class="tooltip" title="Tarps"><img src="images/tarps.png" class="iconStack supplyIcon" alt="tarps" />' + tarpsFormated + '</a></li>')
-    }
-    if (vehicles > 0) {
-        $('#suppliesStack').append('<li><a class="tooltip" title="Vehicles"><img src="images/vehicles.png" class="iconStack supplyIcon" alt="vehicles" />' + vehiclesFormated + '</a></li>')
-    }
-    if (otherItems > 0) {
-        $('#suppliesStack').append('<li><a class="tooltip" title="Other Items"><img src="images/otheritems.png" class="iconStack supplyIcon" alt="other Items" />' + otherItemsFormated + '</a></li>')
-    }
-    if ( $('#suppliesStack').children().length == 0 ) {
-        $('#suppliesStack').append('No supplies distributed.');
-    }
+$('#suppliesStack').html('');
+if (hygieneKits > 0) {
+    $('#suppliesStack').append('<li><a class="tooltip" title="Hygiene Kits"><img src="images/hygienekits.png" class="iconStack supplyIcon" alt="hygiene kits" />' + hygieneKitsFormated + '</a></li>')
+}
+if (blankets > 0) {
+    $('#suppliesStack').append('<li><a class="tooltip" title="Blankets"><img src="images/blankets.png" class="iconStack supplyIcon" alt="blankets" />' + blanketsFormated + '</a></li>')
+}
+if (jerryCans > 0) {
+    $('#suppliesStack').append('<li><a class="tooltip" title="Jerry Cans"><img src="images/jerrycans.png" class="iconStack supplyIcon" alt="jerryCans" />' + jerryCansFormated + '</a></li>')
+}
+if (buckets > 0) {
+    $('#suppliesStack').append('<li><a class="tooltip" title="Buckets"><img src="images/buckets.png" class="iconStack supplyIcon" alt="buckets" />' + bucketsFormated + '</a></li>')
+}
+if (tents > 0) {
+    $('#suppliesStack').append('<li><a class="tooltip" title="Tents"><img src="images/tents.png" class="iconStack supplyIcon" alt="tents" />' + tentsFormated + '</a></li>')
+}
+if (kitchenSets > 0) {
+    $('#suppliesStack').append('<li><a class="tooltip" title="Kitchen Sets"><img src="images/kitchensets.png" class="iconStack supplyIcon" alt="kitchen sets" />' + kitchenSetsFormated + '</a></li>')
+}
+if (sleepingMats > 0) {
+    $('#suppliesStack').append('<li><a class="tooltip" title="Sleeping Mats"><img src="images/sleepingmats.png" class="iconStack supplyIcon" alt="sleeping mats" />' + sleepingMatsFormated + '</a></li>')
+}
+if (mosquitoNets > 0) {
+    $('#suppliesStack').append('<li><a class="tooltip" title="Mosquito Nets"><img src="images/mosquitonets.png" class="iconStack supplyIcon" alt="mosquito Nets" />' + mosquitoNetsFormated + '</a></li>')
+}
+if (foodParcels > 0) {
+    $('#suppliesStack').append('<li><a class="tooltip" title="Food Parcels"><img src="images/foodparcels.png" class="iconStack supplyIcon" alt="Food Parcels" />' + foodParcelsFormated + '</a></li>')
+}
+if (riceBags > 0) {
+    $('#suppliesStack').append('<li><a class="tooltip" title="Rice Bags"><img src="images/ricebags.png" class="iconStack supplyIcon" alt="rice Bags" />' + riceBagsFormated + '</a></li>')
+}
+if (tarps > 0) {
+    $('#suppliesStack').append('<li><a class="tooltip" title="Tarps"><img src="images/tarps.png" class="iconStack supplyIcon" alt="tarps" />' + tarpsFormated + '</a></li>')
+}
+if (vehicles > 0) {
+    $('#suppliesStack').append('<li><a class="tooltip" title="Vehicles"><img src="images/vehicles.png" class="iconStack supplyIcon" alt="vehicles" />' + vehiclesFormated + '</a></li>')
+}
+if (otherItems > 0) {
+    $('#suppliesStack').append('<li><a class="tooltip" title="Other Items"><img src="images/otheritems.png" class="iconStack supplyIcon" alt="other Items" />' + otherItemsFormated + '</a></li>')
+}
+if ( $('#suppliesStack').children().length == 0 ) {
+    $('#suppliesStack').append('<p class="noItems">No supplies distributed.</p>');
+}
 }
 
 //fire function to for initial page load
