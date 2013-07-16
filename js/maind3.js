@@ -52,24 +52,6 @@ Number.prototype.formatNumber = function(c, d, t) {
     return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
 };
 
-var bounds = new L.LatLngBounds([90, 200], [-80, -200]);
-
-
-var map = L.map('map', {
-    center: center,
-    zoom: 1,
-    attributionControl: false,
-    zoomControl: false,
-    maxBounds: bounds
-    // dragging: false
-});
-
-var attrib = new L.Control.Attribution({
-    position: 'bottomleft'
-});
-attrib.addAttribution('Map Data &copy; <a href="http://redcross.org">Red Cross</a>');
-map.addControl(attrib);
-
 function getWorld() {
     $.ajax({
         type: 'GET',
@@ -137,17 +119,17 @@ function parseWorld(world, iroc, year) {
         }
     });
 
-    highlight = function(feature, layer) {
-        (function(layer, properties) {
-            layer.on("mouseover", function(e) {})
-            layer.on("click", function(e) {
-                redLayer.setStyle(redStyle);
-                layer.setStyle(highlightStyle);
-                $('#majorEvent').empty();
-                buildStuff(year, properties.name);
-            });
-        })(layer, feature.properties);
-    };
+    // highlight = function(feature, layer) {
+    //     (function(layer, properties) {
+    //         layer.on("mouseover", function(e) {})
+    //         layer.on("click", function(e) {
+    //             redLayer.setStyle(redStyle);
+    //             layer.setStyle(highlightStyle);
+    //             $('#majorEvent').empty();
+    //             buildStuff(year, properties.name);
+    //         });
+    //     })(layer, feature.properties);
+    // };
 
     redLayer = L.geoJson(red, {
         style: redStyle,
@@ -495,3 +477,50 @@ $(document).ready(function() {
     $('.tooltip').tooltipster();
 });
 
+
+
+/** D3 Code **/
+var svg = d3.select("map")
+    .append("svg")
+    .call(d3.behavior.zoom()
+    .on("zoom", redraw))
+    .append("g");
+  
+  // graphics layer
+  var countries = svg.append("g").attr("id", "countries");
+
+  // our renderer  
+  var path = d3.geo.path();
+  
+  // our projection
+  var projection = d3.geo.mercator()
+ 
+  // get countries and add to the map
+  d3.json("data/worldcountries.json", function(collection) {
+ 
+  countries.selectAll("path")
+    .data(collection.features)
+    .enter().append("path")
+        .style('fill', function( d ){ return colors( d.properties.name ); })
+        .style('stroke', '#fff')
+        .style('stroke-width', '1.5px')
+        .attr('class', 'state')
+        .attr("d", path.projection( projection ))
+
+  });
+
+  // random color scale;
+  var colors = d3.scale.category10();
+ 
+  function redraw() {
+    svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+  }
+
+  function reproject( proj ){
+    // the new projection 
+    var p = d3.geo[ proj ];
+
+    // update all paths 
+    countries.selectAll("path").transition().duration(1000).attr("d", d3.geo.path().projection( p() ));
+
+  }

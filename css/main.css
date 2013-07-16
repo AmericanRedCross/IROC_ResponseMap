@@ -111,8 +111,6 @@ header p {
     padding: 0;
 }
 #right {
-    /*border-left: 1px solid darkgrey;*/
- /*   z-index: 50;*/
     position: absolute;
     top: 50px;
     right: 0;
@@ -125,13 +123,10 @@ header p {
 #controls {
     margin-bottom: 5px;
     height: 100px;
-    /*    border-bottom: 1px solid #d7d7d8;*/
-    background-repeat:no-repeat;
 }
 #money, #people, #supplies, #disasters {
     float:left;
     overflow-y: auto;
-    /*height: 17%;*/
     margin: 0 5px;
     width: 90%;
 }
