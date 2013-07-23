@@ -23,6 +23,7 @@ var otherItems = 0;
 var riceBags = 0;
 
 var highlight;
+var labelName;
 
 var redStyle = {
     color: '#fff',
@@ -139,7 +140,12 @@ function parseWorld(world, iroc, year) {
 
     highlight = function(feature, layer) {
         (function(layer, properties) {
-            layer.on("mouseover", function(e) {})
+            layer.on("mouseover", function(e) {
+                displayName(e);
+            })
+            layer.on("mouseout", function(e) {
+                clearName(e);
+            })
             layer.on("click", function(e) {
                 redLayer.setStyle(redStyle);
                 layer.setStyle(highlightStyle);
@@ -149,15 +155,24 @@ function parseWorld(world, iroc, year) {
         })(layer, feature.properties);
     };
 
+    labelName = function(feature, layer) {
+       layer.on({
+            mouseover: displayName,
+            mouseout: clearName
+        }); 
+    }
+
     redLayer = L.geoJson(red, {
         style: redStyle,
         onEachFeature: highlight
+        
     });
 
     redLayer.addTo(map);
 
     greyLayer = L.geoJson(grey, {
-        style: greyStyle
+        style: greyStyle,
+        onEachFeature: labelName
     });
 
     greyLayer.addTo(map);
@@ -454,6 +469,35 @@ if ( $('#suppliesStack').children().length == 0 ) {
 }
 }
 
+// pass country name to Tooltip  div on mouseover/out
+function displayName(e) {    
+    var countryTarget = e.target;
+    var tooltipText = countryTarget.feature.properties.name;
+    $('#tooltip').append(tooltipText);
+    if (tooltipText == '') {
+        $('#tooltip').hide();
+    } else {
+        $('#tooltip').show();
+    }
+}
+
+function clearName(e) {
+    $('#tooltip').empty();
+}
+
+// tooltip follows cursor
+$(document).ready(function() {
+    $('#container').mouseover(function(e) {        
+        //Set the X and Y axis of the tooltip
+        $('#tooltip').css('top', e.pageY + 10 );
+        $('#tooltip').css('left', e.pageX + 20 );         
+    }).mousemove(function(e) {    
+        //Keep changing the X and Y axis for the tooltip, thus, the tooltip move along with the mouse
+        $("#tooltip").css({top:(e.pageY+15)+"px",left:(e.pageX+20)+"px"});        
+    });
+});
+
+
 //fire function to for initial page load
 getWorld();
 
@@ -491,7 +535,5 @@ function showAll(){
     buildStuff();
 }
 
-$(document).ready(function() {
-    $('.tooltip').tooltipster();
-});
+
 

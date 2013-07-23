@@ -12,7 +12,6 @@
 
     <link rel="stylesheet" type="text/css" href="//cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -27,10 +26,12 @@
                 <p>International Response Operations</p>
             </header>
             <div id="map"></div>
+            <div id="tooltip"></div>
             <div id="disclaimerText">
                 <img src="images/close.gif" onClick="closeDisclaimer();" class="close" alt="close" />
                 <p>Disclaimer</p><hr />
-                The maps on this page do not imply the expression of any opinion on the part of the American Red Cross concerning the legal status of a territory or of its authorities.</div>
+                The maps on this page do not imply the expression of any opinion on the part of the American Red Cross concerning the legal status of a territory or of its authorities.
+            </div>
             <div id="right">
                 <div id="controls">
                     <input type="range" value="1999" min="1999" max="2013" step="1" id="slider" />
@@ -67,9 +68,9 @@
                 </div>
             </div>
         </div>
+
         <script src="//cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script src="js/vendor/jquery.tooltipster.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
