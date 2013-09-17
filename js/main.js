@@ -534,6 +534,3 @@ function showAll(){
     parseWorld(worldcountries, iroc_response);
     buildStuff();
 }
-
-
-
