@@ -98,6 +98,15 @@ header p {
     color: #6d6e70;
     font: bold 30px arial;
 }
+#slider{
+    outline: none !important;
+}
+.button_link{
+    outline: none !important;
+}
+.button_link:hover{
+    background-color: #79b451;
+} 
 #container {
     min-height: 100%;
 }
